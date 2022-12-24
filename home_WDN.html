@@ -1,0 +1,500 @@
+<!--
+ Html home document for web dev navigations website.
+developed by Keawe Aquarian 260351368, Magda Prieto 261067065, Qi Yao 261051100
+script date Nov, 22 2022
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Dev Navigations</title>
+    <meta name="description" content="Travel Agency offering packeges for vacations around the world.">
+    <meta name="keywords" content="Vacations, flights, packeges, hotels, paradice, beaches, adventure">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/headerFooterStyle.css">
+    <link rel="stylesheet" href="style/headerFooterLayout.css">
+    <link rel="stylesheet" href="style/homeStyle.css">
+    <link rel="stylesheet" href="style/homeLayout.css">
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script/home.js"></script>
+</head>
+
+<!-- Main body -->
+
+<body>
+    <!-- Site Header -->
+    <header>
+        <div id="topNav">
+            <!-- Company Logo -->
+            <a href="home_WDN.html" class="logo"><img src="images/companylogo.jpg" alt="Web Dev Navigations Logo"></a>
+            <!-- Phone Number and popup -->
+            <button type="button" id="phoneBtn" onclick="openPhoneMessage()">1-800-888-8080 <i
+                    class="fa fa-phone"></i></button>
+            <button type="button" id="phoneBtnSmall" onclick="openPhoneMessage()"><i
+                    class="fa fa-phone fa-2x"></i></button>
+            <div class="phonePopUp" id="phonePopUp">
+                <div class="animation">
+                    <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
+                </div>
+                <h2>
+                    Call today! 1-800-888-8080
+                </h2>
+                <p>
+                    Your dream vacation is in good hands with us.
+                </p>
+                <button type="button" onclick="closePhoneMessage()">
+                    Close
+                </button>
+            </div>
+            <!-- Sign in form button -->
+            <button type="button" class="signInBtn" onclick="openForm()">Sign In</button>
+
+            <!-- Sign in form -->
+            <div class="popupLogIn" id="myForm">
+                <form action="home_WDN.html" class="logInForm">
+                    <h1>Login</h1>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" id="email" placeholder="Enter Email" name="email" required>
+
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" id="password" placeholder="Enter Password" name="password" required>
+
+                    <button type="submit" class="btn">Login</button>
+                    <button type="button" class="btn close" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+            <!-- language toggle -->
+            <a class="language" href="Fr_home_WDN.html">Fr</a>
+
+            <!-- Country select -->
+            <div class="countries">
+                <label for="countries">Choose a country to visit:</label>
+
+                <select name="countries" id="countries" onchange="handleSelect(this.value)">
+                    <option value="Australia">Australia</option>
+                    <option value="Caribbean">Caribbean</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Maldives">Maldives</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Thailand">Thailand</option>
+                </select>
+            </div>
+        </div>
+        <div id="bottomNav">
+            <!-- Website Navigation -->
+            <nav>
+                <ul>
+                    <li>
+                        <a class="nav-link" href="home_WDN.html"><span class="link">Home</span></a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="Destinations-EN.html">Destinations</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="booking_form.html">Bookings</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="insurance.html">Insurance</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="contact-us.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main section -->
+    <main>
+
+        <!-- Opening image -->
+        <img src="images/manOnMountain.jpg" alt="Man on mountain">
+
+        <div class="comments">
+            <h1>
+                Adventure Awaits
+            </h1>
+            <p>
+                Feeling like your batteries are on empty? Time to recharge with a travel vacation.
+                Our staff are magicians when it comes to organizing your perfect holiday away.
+                See our many packages or contact us by phone and feel the excitement today!
+            </p>
+        </div>
+
+        <!-- Adventure options -->
+        <section class="journeys">
+            <h2>
+                Discover our journeys
+            </h2>
+            <p>
+                Magic awaits you and your family with any of our package vacations.
+            </p>
+            <div class="journeysRow">
+
+                <div class="popup" onclick="myFunction(1)">
+                    <div class="journeysCol">
+                        <img src="images/australia.jpg" alt="Sydni">
+                        <div class="title">
+                            <h3>Australia</h3>
+                        </div>
+                    </div>
+                    <div class="popuptext" id="myPopup1">
+                        Australia Zodiacs take you up the spectacular King George River, where you’ll feel dwarfed by
+                        the towering
+                        red rock canyon walls, then cooled by the mist of King George Falls. View an outdoor Aboriginal
+                        art gallery,
+                        portraying images of the Wandjina spirits. Explore the Ord River, one of the most stunning river
+                        systems in
+                        Australia. Visit Montgomery Reef,
+                        where the tide drops so rapidly that waters trapped atop the reef create a raging torrent as
+                        they escape.
+                        <table class="center">
+                            <tr>
+                                <th>Package Name</th>
+                                <th>Duration</th>
+                                <th>Price p/p CAD</th>
+                            </tr>
+                            <tr>
+                                <td>Magic Australia</td>
+                                <td>3d + 2n</td>
+                                <td>660</td>
+                            </tr>
+                            <tr>
+                                <td>Great SeightSeeing</td>
+                                <td>4d +3n</td>
+                                <td>1,100</td>
+                            </tr>
+                            <tr>
+                                <td>Coral Reef</td>
+                                <td>5d +4n</td>
+                                <td>1,320</td>
+                            </tr>
+                            <tr>
+                                <td>Kangaroo Land</td>
+                                <td>6d + 5n</td>
+                                <td>1,320</td>
+                            </tr>
+                            <tr>
+                                <td>Sydney</td>
+                                <td>7d + 6n</td>
+                                <td>1,540</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="popup" onclick="myFunction(6)">
+                    <div class="journeysCol">
+                        <img src="images/greece.jpg" alt="greece">
+                        <div class="title">
+                            <h3>Greece </h3>
+                        </div>
+                    </div>
+                    <div class="popuptext" id="myPopup6">
+                        Greece is synonymous for far too many with ‘sun, islands, sea’. Don’t ignore the sun-kissed
+                        archipelagos and 15,000km of coast but discover its panoply of other highlights. Glorious
+                        mountains mix stark peaks with lush alpine meadows and woods – plus dazzling snow fields in
+                        winter. There are rivers and dramatic gorges, plus quiet hiking trails as easy or difficult as
+                        you wish. Everywhere you'll find richly diverse flora and fauna. Thousands of years of colourful
+                        history place a host of legendary gods and humans amid one of the world’s finest concentrations
+                        of stupendous archaeological memories. Enjoy the sun – but explore.
+                        <table class="center">
+                            <tr>
+                                <th>Package Name</th>
+                                <th>Duration</th>
+                                <th>Price p/p CAD</th>
+                            </tr>
+                            <tr>
+                                <td>Salonic Islands </td>
+                                <td>3d + 2n</td>
+                                <td>1,800 </td>
+                            </tr>
+                            <tr>
+                                <td>Aegean Sea </td>
+                                <td>4d +3n</td>
+                                <td>2,400 </td>
+                            </tr>
+                            <tr>
+                                <td>Ionian Sea </td>
+                                <td>5d +4n</td>
+                                <td>3,000 </td>
+                            </tr>
+                            <tr>
+                                <td>Crete </td>
+                                <td>6d + 5n</td>
+                                <td>3,600 </td>
+                            </tr>
+                            <tr>
+                                <td>Zakhyntos </td>
+                                <td>7d + 6n</td>
+                                <td>4,200 </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="popup" onclick="myFunction(4)">
+                    <div class="journeysCol">
+                        <img src="images/Caribbean.jpg" alt="beach">
+                        <div class="title">
+                            <h3>Caribbean</h3>
+                        </div>
+                    </div>
+                    <div class="popuptext" id="myPopup4">
+                        The Caribbean is a joyous mosaic of islands beckoning paradise-hunters, an explosion of color,
+                        fringed by beaches and soaked in rum. It’s a lively and intoxicating profusion of people and
+                        places spread over 7000 islands (fewer than 10% are inhabited). But, for all they share, there’s
+                        also much that makes them different.
+                        <table class="center">
+                            <tr>
+                                <th>Package Name</th>
+                                <th>Duration</th>
+                                <th>Price p/p CAD</th>
+                            </tr>
+                            <tr>
+                                <td>Caribbean Pearl </td>
+                                <td>3d + 2n</td>
+                                <td>1,000</td>
+                            </tr>
+                            <tr>
+                                <td>Discovery</td>
+                                <td>4d +3n</td>
+                                <td>1,100</td>
+                            </tr>
+                            <tr>
+                                <td>Virgin Islands </td>
+                                <td>5d +4n</td>
+                                <td>1,420</td>
+                            </tr>
+                            <tr>
+                                <td>Grenadines</td>
+                                <td>6d + 5n</td>
+                                <td>1,720</td>
+                            </tr>
+                            <tr>
+                                <td>Aruba</td>
+                                <td>7d + 6n</td>
+                                <td>1,940</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="services">
+            <h2>
+                We have Many Services to Meet All Your Adventure Needs
+            </h2>
+            <div class="servicesRow">
+                <a href="booking_form.html" class="servicesLink">
+                    <div class="servicesCol">
+                        <img src="images/hotel.png" alt="Hotel icon">
+                        <div class="servicesTitle">
+                            <h3>Hotels</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="booking_form.html" class="servicesLink">
+                    <div class="servicesCol">
+                        <img src="images/airplane.png" alt="Flights icon">
+                        <div class="servicesTitle">
+                            <h3>Flights</h3>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="Destinations-EN.html#myPopup1" class="servicesLink">
+                    <div class="servicesCol">
+                        <img src="images/vacations.png" alt="Vacation icon">
+                        <div class="servicesTitle">
+                            <h3>Vacation Packages</h3>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="booking_form.html" class="servicesLink">
+                    <div class="servicesCol">
+                        <img src="images/car.png" alt="Car icon">
+                        <div class="servicesTitle">
+                            <h3>Car Rentals</h3>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="booking_form.html" class="servicesLink">
+                    <div class="servicesCol">
+                        <img src="images/safe-flight.png" alt="flight Insurance icon">
+                        <div class="servicesTitle">
+                            <h3>Travel Insurance</h3>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="Destinations-EN.html#myPopup1" class="servicesLink">
+                    <div class="servicesCol">
+                        <img src="images/activities.png" alt="Activities icon">
+                        <div class="servicesTitle">
+                            <h3>Activities</h3>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="contact-us.html#realtors" class="servicesLink">
+                    <div class="servicesCol">
+                        <img src="images/employees.png" alt="Staff icon">
+                        <div class="servicesTitle">
+                            <h3>A Caring Staff</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="booking_form.html" class="servicesLink">
+                    <div class="servicesCol">
+                        <img src="images/task.png" alt="Task icon">
+                        <div class="servicesTitle">
+                            <h3>Planning Assistance</h3>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Checklist -->
+        <article>
+            <h2>
+                Before any trip make sure to review these checklists!
+            </h2>
+            <div id="list">
+                <div>
+                    <ol class="firstList">
+                        <li>Traveling overseas
+                            <ol class="secondList">
+                                <li>Essentials
+                                    <ol class="thirdList">
+                                        <li>Your passport!</li>
+                                        <li>Cash and debit card on hand</li>
+                                        <li>Sunscreen and bug spray</li>
+                                        <li>Headphones, chargers, and adaptors</li>
+                                    </ol>
+                                </li>
+                                <li>Recommended
+                                    <ol class="thirdList">
+                                        <li>Travel-sized toiletries</li>
+                                        <li>Any medications or vitamins you need</li>
+                                        <li>Earplugs and eye mask</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+
+                        <li>Just for fun!
+                            <ol class="secondList">
+                                <li>Reusable Water Bottle</li>
+                                <li>Books</li>
+                                <li>Camera</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <ol class="firstList">
+                        <li>Traveling Domestic
+                            <ol class="secondList">
+                                <li>Essentials
+                                    <ol class="thirdList">
+                                        <li>Comfortable Walking Shoes</li>
+                                        <li>drivers licence</li>
+                                        <li>Clothing and Shoes</li>
+                                        <li>Sun Protection</li>
+                                    </ol>
+                                </li>
+                                <li>Recommended
+                                    <ol class="thirdList">
+                                        <li>Student ID card</li>
+                                        <li>A Few Plastic Bags</li>
+                                        <li> Rain Jacket</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>Just for fun!
+                            <ol class="secondList">
+                                <li>One or Two Nice Outfits</li>
+                                <li>Hiking Boots</li>
+                                <li>Luggage Locks</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- Testimonials -->
+        <div class="testimonial">
+            <h1>
+                What Our Clients Say
+            </h1>
+            <p>
+                Have confidence that when you put your vacation plans in our hands we deliver.
+            </p>
+            <div class="testimonialRow">
+                <div class="testimonialCol">
+                    <img src="images/woman1.jpg" alt="">
+                    <div>
+                        <p>Unbelievable service. We booked a package deal to Greece and it met every expectation and
+                            beyond.</p>
+                        <h3>
+                            Judy Rutherford
+                        </h3>
+                    </div>
+                </div>
+                <div class="testimonialCol">
+                    <img src="images/man.jpg" alt="">
+                    <div>
+                        <p>Super friendly staff. Their options are extensive, so it really helped to be able to speak to
+                            them on the phone.
+                            We definitely feel like we got our moneys worth.
+                        </p>
+                        <h3>Danny Bates</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h3>About Us</h3>
+        <p>Situated in the center of Montreal, Web Dev Navigations prides itself on offering the most complete and
+            satisfying travel experiences.
+            Whether you are looking for a quick get away or an extended tour around the world, we can offer our insight
+            and guidance, giving our customers
+            the best experiences at the best prices. Remember to visit us on social media to share your journey.
+        </p>
+        <div class="social">
+            <a href="https://www.facebook.com/people/WebDev-Navigations/100088040271621/"><i
+                    class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/WebDNavigations"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/webdevnavigations/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/school/mcgill-university/mycompany/verification/"><i
+                    class="fa fa-linkedin"></i></a>
+        </div>
+
+        <p class="footer-text">
+            © Copyright 2022. All Rights Reserved.
+        </p>
+        <a href="mailto:contact@webdevnavigations.com" class="footer-text">contact@webdevnavigations.com</a>
+
+        <a href="https://www.flaticon.com/free-icons/car" title="car icons">Icons created by Konkapp - Flaticon</a>
+    </footer>
+</body>
+
+</html>

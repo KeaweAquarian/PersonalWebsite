@@ -1,0 +1,1063 @@
+﻿<!--
+ Html destinations document for web dev navigations website.
+developed by Keawe Aquarian 260351368, Magda Prieto 261067065, Qi Yao 261051100
+script date Nov, 22 2022
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <meta name="description" content="Travel Agency offering packeges for vacations around the world.">
+    <meta name="keywords" content="Vacations, flights, packeges, hotels, paradice, beaches, adventure">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/headerFooterStyle.css">
+    <link rel="stylesheet" href="style/headerFooterLayout.css">
+    <link rel="stylesheet" href="style/DestinationsStyle.css">
+    <link rel="stylesheet" href="style/DestinationsLayout.css">
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script/headerFooter.js"></script>
+    <script src="script/Destinations.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="topNav">
+        <!-- Company Logo -->
+        <a href="home_WDN.html" class="logo"><img src="images/companylogo.jpg" alt="Web Dev Navigations Logo"></a>
+        <!-- Phone Number and popup -->
+        <button type="button" id="phoneBtn" onclick="openPhoneMessage()">1-800-888-8080 <i
+                class="fa fa-phone"></i></button>
+        <button type="button" id="phoneBtnSmall" onclick="openPhoneMessage()"><i
+                class="fa fa-phone fa-2x"></i></button>
+        <div class="phonePopUp" id="phonePopUp">
+            <div class="animation">
+                <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
+            </div>
+            <h2>
+                Call today! 1-800-888-8080
+            </h2>
+            <p>
+                Your dream vacation is in good hands with us.
+            </p>
+            <button type="button" onclick="closePhoneMessage()">
+                Close
+            </button>
+        </div>
+        <!-- Sign in form button -->
+        <button type="button" class="signInBtn" onclick="openForm()">Sign In</button>
+
+        <!-- Sign in form -->
+        <div class="popupLogIn" id="myForm">
+            <form action="home_WDN.html" class="logInForm">
+                <h1>Login</h1>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" id="email" placeholder="Enter Email" name="email" required>
+
+                <label for="password"><b>Password</b></label>
+                <input type="password" id="password" placeholder="Enter Password" name="password" required>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn close" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+        <!-- language toggle -->
+        <a class="language" href="Destinations_FR.html">Fr</a>
+
+        <!-- Country select -->
+        <div class="countries">
+            <label for="countries">Choose a country to visit:</label>
+
+            <select name="countries" id="countries" onchange="handleSelect(this.value)">
+                <option value="Australia">Australia</option>
+                <option value="Caribbean">Caribbean</option>
+                <option value="Greece">Greece</option>
+                <option value="Italy">Italy</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Thailand">Thailand</option>
+            </select>
+        </div>
+    </div>
+    <div id="bottomNav">
+        <!-- Website Navigation -->
+        <nav>
+            <ul>
+                <li>
+                    <a class="nav-link" href="home_WDN.html"><span class="link">Home</span></a>
+                </li>
+                <li>
+                    <a class="nav-link" href="Destinations-EN.html">Destinations</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="booking_form.html">Bookings</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="insurance.html">Insurance</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="contact-us.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+  <main>
+
+
+    <div class="destinationPackages">
+      <h1>
+        Let us take you to the best destinations in the World!
+      </h1>
+      <h4>
+        We have curated an unique selection of World destinations to enrich your life, through locations and
+        experiencies tailored for travellers like you, that enjoy geography, culture as well as outdoors activities.
+        We are delighted that you are our guest!
+      </h4>
+
+    </div>
+
+    <!-- Destinations tiles  copy entire section-->
+
+    <section class="DestinationsList">
+
+      <div class="destinationsRow">
+        <div class="popup" onclick="myFunction(1)">
+          <div class="destinationsCol">
+            <img src="images/australia.jpg" alt="Sydni">
+            <div class="title">
+              <h3>Australia</h3>
+            </div>
+          </div>
+          <div class="popuptext" id="myPopup1">
+            <iframe width="560" height="380" src="https://www.youtube.com/embed/vUF7ja9ehIs"
+              title="YouTube video player" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            Australia Zodiacs take you up the spectacular King George River, where you’ll feel dwarfed by the towering
+            red rock canyon walls, then cooled by the mist of King George Falls. View an outdoor Aboriginal art gallery,
+            portraying images of the Wandjina spirits. Explore the Ord River, one of the most stunning river systems in
+            Australia. Visit Montgomery Reef,
+            where the tide drops so rapidly that waters trapped atop the reef create a raging torrent as they escape.
+            <table class="center">
+              <tr>
+                <th>Package Name</th>
+                <th>Duration</th>
+                <th>Price p/p CAD</th>
+              </tr>
+              <tr>
+                <td>Magic Australia</td>
+                <td>3d + 2n</td>
+                <td>660</td>
+              </tr>
+              <tr>
+                <td>Great SeightSeeing</td>
+                <td>4d +3n</td>
+                <td>1,100</td>
+              </tr>
+              <tr>
+                <td>Coral Reef</td>
+                <td>5d +4n</td>
+                <td>1,320</td>
+              </tr>
+              <tr>
+                <td>Kangaroo Land</td>
+                <td>6d + 5n</td>
+                <td>1,320</td>
+              </tr>
+              <tr>
+                <td>Sydney</td>
+                <td>7d + 6n</td>
+                <td>1,540</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="popup" onclick="myFunction(2)">
+          <div class="destinationsCol">
+            <img src="images/bali.jpg" alt="Sydni">
+            <div class="title">
+              <h3>Indonesia</h3>
+            </div>
+          </div>
+          <div class="popuptext" id="myPopup2">
+            <iframe width="560" height="415" src="https://www.youtube.com/embed/IwtNFzX0ni8"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            Whoever coined the phrase 'tropical paradise' must have had Bali, Indonesia in mind.
+
+            Enjoy welcome ceremonies at secluded villages & dive in to explore the vibrant undersea.
+
+            <table class="center">
+              <tr>
+                <th>Package Name</th>
+                <th>Duration</th>
+                <th>Price p/p CAD</th>
+              </tr>
+              <tr>
+                <td>Nasa Dua </td>
+                <td>3d + 2n</td>
+                <td>1,600 </td>
+              </tr>
+              <tr>
+                <td>Temples Tour </td>
+                <td>4d +3n</td>
+                <td>1,850 </td>
+              </tr>
+              <tr>
+                <td>Nusa Penida </td>
+                <td>5d +4n</td>
+                <td>2,100 </td>
+              </tr>
+              <tr>
+                <td>Ubud </td>
+                <td>6d + 5n</td>
+                <td>2,250 </td>
+              </tr>
+              <tr>
+                <td>Lombok </td>
+                <td>7d + 6n</td>
+                <td>2,650 </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+
+        <div class="popup" onclick="myFunction(3)">
+          <div class="destinationsCol">
+            <img src="images/CanRockies.jpg" alt="Sydni">
+            <div class="title">
+              <h3>Canada</h3>
+            </div>
+          </div>
+          <div class="popuptext" id="myPopup3">
+            <iframe width="560" height="415" src="https://www.youtube.com/embed/ThFCg0tBDck"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            The majestic Canadian Rockies span nearly 69,500 square miles across two provinces. Along this great expanse
+            are quiet alpine towns and breathtaking scenery. When combined with private, first-class accommodation
+            aboard VIA Rail's Canadian, it makes for the perfect romantic getaway.
+            Once in Jasper, you will have time to explore the beautiful town before taking a day excursion to the
+            Columbia Icefield enroute to Lake Louise. Amidst scenery of majestic cascading mountains, you will spend the
+            night at Lake Louise before continuing to your next destination, Banff, home to hot springs and the
+            spectacular Banff National Park.
+            With your days of sightseeing, you will witness sights like the Surprise Corner, Tunnel Mountain Drive, and
+            a unique gondola ride to the top of the Sulphur Mountains. Your exciting rail journey ends after your stay
+            in Banff as you transfer to Calgary to make your way home. Well-planned sightseeing and ample time at your
+            leisure complete this itinerary to create a truly memorable vacation.
+
+            <table class="center">
+              <tr>
+                <th>Package Name</th>
+                <th>Duration</th>
+                <th>Price p/p CAD</th>
+              </tr>
+              <tr>
+                <td>Mountain Escape </td>
+                <td>3d + 2n</td>
+                <td>660</td>
+              </tr>
+              <tr>
+                <td>Relax in the Rockies </td>
+                <td>4d +3n</td>
+                <td>1,100</td>
+              </tr>
+              <tr>
+                <td>Canadian Adventures </td>
+                <td>5d +4n</td>
+                <td>1,320</td>
+              </tr>
+              <tr>
+                <td>Major Lakes </td>
+                <td>6d + 5n</td>
+                <td>1,320</td>
+              </tr>
+              <tr>
+                <td>Rockies De Luxe </td>
+                <td>7d + 6n</td>
+                <td>1,540</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="destinationsRow">
+        <div class="popup" onclick="myFunction(4)">
+          <div class="destinationsCol">
+            <img src="images/Caribbean.jpg" alt="Sydni">
+            <div class="title">
+              <h3>Caribbean</h3>
+            </div>
+          </div>
+          <div class="popuptext" id="myPopup4">
+            <iframe width="560" height="380" src="https://www.youtube.com/embed/hRpxiDCZj8E"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+              The Caribbean is a joyous mosaic of islands beckoning paradise-hunters, an explosion of color, fringed by beaches and soaked in rum. It’s a lively and intoxicating profusion of people and places spread over 7000 islands (fewer than 10% are inhabited). But, for all they share, there’s also much that makes them different. 
+              <table class="center">
+              <tr>
+                <th>Package Name</th>
+                <th>Duration</th>
+                <th>Price p/p CAD</th>
+              </tr>
+              <tr>
+                <td>Caribbean Pearl </td>
+                <td>3d + 2n</td>
+                <td>1,000</td>
+              </tr>
+              <tr>
+                <td>Discovery</td>
+                <td>4d +3n</td>
+                <td>1,100</td>
+              </tr>
+              <tr>
+                <td>Virgin Islands </td>
+                <td>5d +4n</td>
+                <td>1,420</td>
+              </tr>
+              <tr>
+                <td>Grenadines</td>
+                <td>6d + 5n</td>
+                <td>1,720</td>
+              </tr>
+              <tr>
+                <td>Aruba</td>
+                <td>7d + 6n</td>
+                <td>1,940</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="popup" onclick="myFunction(5)">
+          <div class="destinationsCol">
+            <img src="images/dubia2.jpg" alt="Sydni">
+            <div class="title">
+              <h3>UAE Dubai</h3>
+            </div>
+          </div>
+          <div class="popuptext" id="myPopup5">
+            <iframe width="560" height="415" src="https://www.youtube.com/embed/2bLBm2ieSbU"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+              Dubai is famous for its glittering skylines but look beyond and you’ll be rewarded with a stirring alchemy of heritage and culture, unlike anywhere else in the world. The city’s past dates back to the days of the Iron Age and, more recently, the nomadic Bedouins who spent their lives traversing the sands. There’s no better way to experience Dubai culture than by embarking on a desert adventure yourself. The Al Marmoom Bedouin Experience allows you to step back in time and follow in the footsteps of Dubai’s earliest inhabitants. You’ll also come across Arabian gazelle, desert foxes and wild camels roaming the sands as they have done for millennia.
+            <table class="center">
+              <tr>
+                <th>Package Name</th>
+                <th>Duration</th>
+                <th>Price p/p CAD</th>
+              </tr>
+              <tr>
+                <td>Burj Al-Arab</td>
+                <td>3d + 2n</td>
+                <td>2,785 </td>
+              </tr>
+              <tr>
+                <td>Jumeirah Beach </td>
+                <td>4d +3n</td>
+                <td>3,714 </td>
+              </tr>
+              <tr>
+                <td>High-rises </td>
+                <td>5d +4n</td>
+                <td>4,642</td>
+              </tr>
+              <tr>
+                <td>Dessert Experience </td>
+                <td>6d + 5n</td>
+                <td>5,571 </td>
+              </tr>
+              <tr>
+                <td>Rockies De Luxe </td>
+                <td>7d + 6n</td>
+                <td>6,500</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+
+        <div class="popup" onclick="myFunction(6)">
+          <div class="destinationsCol">
+            <img src="images/greece.jpg" alt="Sydni">
+            <div class="title">
+              <h3>Greece </h3>
+            </div>
+          </div>
+          <div class="popuptext" id="myPopup6">
+            <iframe width="560" height="415" src="https://www.youtube.com/embed/YpKlUIDf4oY"
+              title="YouTube video player" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+              Greece is synonymous for far too many with ‘sun, islands, sea’. Don’t ignore the sun-kissed archipelagos and 15,000km of coast but discover its panoply of other highlights. Glorious mountains mix stark peaks with lush alpine meadows and woods – plus dazzling snow fields in winter. There are rivers and dramatic gorges, plus quiet hiking trails as easy or difficult as you wish. Everywhere you'll find richly diverse flora and fauna. Thousands of years of colourful history place a host of legendary gods and humans amid one of the world’s finest concentrations of stupendous archaeological memories. Enjoy the sun – but explore.
+            <table class="center">
+              <tr>
+                <th>Package Name</th>
+                <th>Duration</th>
+                <th>Price p/p CAD</th>
+              </tr>
+              <tr>
+                <td>Salonic Islands </td>
+                <td>3d + 2n</td>
+                <td>1,800 </td>
+              </tr>
+              <tr>
+                <td>Aegean Sea </td>
+                <td>4d +3n</td>
+                <td>2,400 </td>
+              </tr>
+              <tr>
+                <td>Ionian Sea </td>
+                <td>5d +4n</td>
+                <td>3,000 </td>
+              </tr>
+              <tr>
+                <td>Crete </td>
+                <td>6d + 5n</td>
+                <td>3,600 </td>
+              </tr>
+              <tr>
+                <td>Zakhyntos </td>
+                <td>7d + 6n</td>
+                <td>4,200 </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="destinationsRow">
+        <div class="popup" onclick="myFunction(7)">
+          <div class="destinationsCol">
+            <img src="images/Iceland.jpg" alt="Sydni">
+            <div class="title">
+              <h3>Iceland </h3>
+            </div>
+          </div>
+          <div class="popuptext" id="myPopup7">
+            <iframe width="560" height="380" src="https://www.youtube.com/embed/u_f90pXw5sQ"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+              Iceland is often called the Land of Ice and Fire, a land where volcanoes and geothermal heat have made their mark on the landscape, along with the many glaciers and glacier lagoons, a land of pristine and unspoiled nature. Iceland, the lonely island in the middle of the North Atlantic, has become a popular spot for Hollywood blockbuster films. 
+              <table class="center">
+              <tr>
+                <th>Package Name</th>
+                <th>Duration</th>
+                <th>Price p/p CAD</th>
+              </tr>
+              <tr>
+                <td>Blue Lagoon </td>
+                <td>3d + 2n</td>
+                <td>2,200 </td>
+              </tr>
+              <tr>
+                <td>Reykjavik </td>
+                <td>4d +3n</td>
+                <td>4,400 </td>
+              </tr>
+              <tr>
+                <td>Reykjanes </td>
+                <td>5d +4n</td>
+                <td>5,500 </td>
+              </tr>
+              <tr>
+                <td>Husafell Region </td>
+                <td>6d + 5n</td>
+                <td>6,600 </td>
+              </tr>
+              <tr>
+                <td>South Iceland </td>
+                <td>7d + 6n</td>
+                <td>7,700 </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="popup" onclick="myFunction(8)">
+          <div class="destinationsCol">
+            <img src="images/India.jpg" alt="Sydni">
+            <div class="title">
+              <h3>India </h3>
+            </div>
+          </div>
+          <div class="popuptext" id="myPopup8">
+            <iframe width="560" height="415" src="https://www.youtube.com/embed/HWGzQlrJOqM"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+              As beautiful as it is bamboozling, India is an endlessly fascinating country that challenges and surprises even the most seasoned traveller. Stretched between the golden beaches of the Indian Ocean and the snow-capped peaks of the Himalayas, India dazzles with an incredible tapestry of natural and man-made wonders.
+            <table class="center">
+              <tr>
+                <th>Package Name</th>
+                <th>Duration</th>
+                <th>Price p/p CAD</th>
+              </tr>
+              <tr>
+                <td>Jaipur </td>
+                <td>3d + 2n</td>
+                <td>1,500 </td>
+              </tr>
+              <tr>
+                <td>Goa </td>
+                <td>4d +3n</td>
+                <td>1,800 </td>
+              </tr>
+              <tr>
+                <td>Delhi/Mumbai </td>
+                <td>5d +4n</td>
+                <td>2,100 </td>
+              </tr>
+              <tr>
+                <td>Taj Mahal </td>
+                <td>6d + 5n</td>
+                <td>2,250 </td>
+              </tr>
+              <tr>
+                <td>Qutb Minar </td>
+                <td>7d + 6n</td>
+                <td>2,650 </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+
+        <div class="popup" onclick="myFunction(9)">
+          <div class="destinationsCol">
+            <img src="images/SouthAmerica.jpg" alt="Sydni">
+            <div class="title">
+              <h3>Sychelles </h3>
+            </div>
+          </div>
+          <div class="popuptext" id="myPopup9">
+            <iframe width="560" height="415" src="https://www.youtube.com/embed/HdibaJMnuVs"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+              Cruise The Turquoise Waters of a Far-Flung Paradise in The Seychelles. Get Ready for an Unforgettable Vacation. One hundred fifteen coral and granite islands rising from the Indian Ocean make up the Seychelles, a pristine hideaway of white-sand beaches, majestic granite cliffs, palm-fringed jungles, and astonishing azure waters. Trading in exclusivity, luxury, and undeveloped natural environments, the Seychelles is an ideal beach escape for those who can afford all that gorgeous privacy.
+            <table class="center">
+              <tr>
+                <th>Package Name</th>
+                <th>Duration</th>
+                <th>Price p/p CAD</th>
+              </tr>
+              <tr>
+                <td>Anse Lazio </td>
+                <td>3d + 2n</td>
+                <td>4,500 </td>
+              </tr>
+              <tr>
+                <td>Moyenne Island </td>
+                <td>4d +3n</td>
+                <td>6,000 </td>
+              </tr>
+              <tr>
+                <td>Mahe Island </td>
+                <td>5d +4n</td>
+                <td>7,500 </td>
+              </tr>
+              <tr>
+                <td>Parks & Gardens </td>
+                <td>6d + 5n</td>
+                <td>9,000 </td>
+              </tr>
+              <tr>
+                <td>St Anne </td>
+                <td>7d + 6n</td>
+                <td>10,500 </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="destinationsRow">
+        <div class="popup" onclick="myFunction(10)">
+          <div class="destinationsCol">
+            <img src="images/Italy.jpg" alt="Sydni">
+            <div class="title">
+              <h3>Italy </h3>
+            </div>
+          </div>
+          <div class="popuptext" id="myPopup10">
+            <iframe width="560" height="380" src="https://www.youtube.com/embed/FlRwssZYRM0"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+              Italy comprises some of the most varied and scenic landscapes on Earth and is often described as a country shaped like a boot. At its broad top stand the Alps, which are among the world’s most rugged mountains. Italy’s highest points are along Monte Rosa, which peaks in Switzerland, and along Mont Blanc, which peaks in France. 
+              <table class="center">
+              <tr>
+                <th>Package Name</th>
+                <th>Duration</th>
+                <th>Price p/p CAD</th>
+              </tr>
+              <tr>
+                <td>Tuscany </td>
+                <td>3d + 2n</td>
+                <td>1,500 </td>
+              </tr>
+              <tr>
+                <td>Umbria </td>
+                <td>4d +3n</td>
+                <td>2,100</td>
+              </tr>
+              <tr>
+                <td>Puglia </td>
+                <td>5d +4n</td>
+                <td>2,500 </td>
+              </tr>
+              <tr>
+                <td>Cinque Terre </td>
+                <td>6d + 5n</td>
+                <td>3,000 </td>
+              </tr>
+              <tr>
+                <td>Capri/Amalfi Coast</td>
+                <td>7d + 6n</td>
+                <td>3,500 </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="popup" onclick="myFunction(11)">
+          <div class="destinationsCol">
+            <img src="images/Japan.jpg" alt="Sydni">
+            <div class="title">
+              <h3>Japan </h3>
+            </div>
+          </div>
+          <div class="popuptext" id="myPopup11">
+            <iframe width="560" height="415" src="https://www.youtube.com/embed/WLIv7HnZ_fE"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+              A destination praised and adored by countless travellers; Japan continues to engage and delight visitors with unmatched scenery, traditional experiences and delicious cuisines. For those wanting to experience the joys and wonders then keep reading. Here are the top 5 reasons why Japan should be on your bucket list.
+            <table class="center">
+              <tr>
+                <th>Package Name</th>
+                <th>Duration</th>
+                <th>Price p/p CAD</th>
+              </tr>
+              <tr>
+                <td>Tokyo </td>
+                <td>3d + 2n</td>
+                <td>2,400 </td>
+              </tr>
+              <tr>
+                <td>Kyoto </td>
+                <td>4d +3n</td>
+                <td>3,200 </td>
+              </tr>
+              <tr>
+                <td>Hiroshima </td>
+                <td>5d +4n</td>
+                <td>4,000 </td>
+              </tr>
+              <tr>
+                <td>Okinawa  </td>
+                <td>6d + 5n</td>
+                <td>4,800 </td>
+              </tr>
+              <tr>
+                <td>Osaka </td>
+                <td>7d + 6n</td>
+                <td>5,600 </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+
+        <div class="popup" onclick="myFunction(12)">
+          <div class="destinationsCol">
+            <img src="images/Jordan.jpg" alt="Sydni">
+            <div class="title">
+              <h3>Jordan </h3>
+            </div>
+          </div>
+          <div class="popuptext" id="myPopup12">
+            <iframe width="560" height="415" src="https://www.youtube.com/embed/zC4t3fP1vhY"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+              Jordan is one of the most interesting places to visit in the Middle East. A compact country with a rich history which offers plenty of things to see and do, and still considered by many as a safe haven in a somewhat problematic region. Petra is a symbol of the country and the place everyone wants to visit.
+            <table class="center">
+              <tr>
+                <th>Package Name</th>
+                <th>Duration</th>
+                <th>Price p/p CAD</th>
+              </tr>
+              <tr>
+                <td>Petra </td>
+                <td>3d + 2n</td>
+                <td>1,500 </td>
+              </tr>
+              <tr>
+                <td>The Dead Sea </td>
+                <td>4d +3n</td>
+                <td>1,800 </td>
+              </tr>
+              <tr>
+                <td>Jerash </td>
+                <td>5d +4n</td>
+                <td>2,200 </td>
+              </tr>
+              <tr>
+                <td>Amman </td>
+                <td>6d + 5n</td>
+                <td>2,500 </td>
+              </tr>
+              <tr>
+                <td>Umm Qais </td>
+                <td>7d + 6n</td>
+                <td>2,800 </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="destinationsRow">
+        <div class="popup" onclick="myFunction(13)">
+          <div class="destinationsCol">
+            <img src="images/Maldives.jpg" alt="Sydni">
+            <div class="title">
+              <h3>Maldives</h3>
+            </div>
+          </div>
+          <div class="popuptext" id="myPopup13">
+            <iframe width="560" height="380" src="https://www.youtube.com/embed/NUNsSUf25HI"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+              The Maldives is a nation of islands in the Indian Ocean, that spans across the equator. The country is comprised of 1192 islands that stretch along a length of 871 kilometers. While the country covers an area of approximately 90,000 square kilometers, only 298 square kilometers of that is dry land. The islands are grouped into a double chain of 26 atolls. 
+
+              The country’s unique geography mesmerizes the visitor. Reefs that offer bands of color, tiny jewel-like islands rimmed with the whitest of soft sand surrounded by the clearest shallow waters that one can imagine. Only 200 of the islands are inhabited, and a select few on each of the atolls are resorts and some of the islands are used for industry and agriculture. 
+              
+              The beauty of the Maldives is not only above the water. The Maldives is home to about five percent of the planet’s reefs that comes with an explosion of color contributed by soft and hard corals that form them. The reefs are home to a thousand species of fish. Lured by the rich nutrients that flow in with the currents, large pelagic fishes such as manta rays and whale sharks also make the Maldives their home. 
+              <table class="center">
+              <tr>
+                <th>Package Name</th>
+                <th>Duration</th>
+                <th>Price p/p CAD</th>
+              </tr>
+              <tr>
+                <td>Petra </td>
+                <td>3d + 2n</td>
+                <td>1,500 </td>
+              </tr>
+              <tr>
+                <td>The Dead Sea </td>
+                <td>4d +3n</td>
+                <td>1,800 </td>
+              </tr>
+              <tr>
+                <td>Jerash </td>
+                <td>5d +4n</td>
+                <td>2,200 </td>
+              </tr>
+              <tr>
+                <td>Amman </td>
+                <td>6d + 5n</td>
+                <td>2,500 </td>
+              </tr>
+              <tr>
+                <td>Umm Qais </td>
+                <td>7d + 6n</td>
+                <td>2,800 </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="popup" onclick="myFunction(14)">
+          <div class="destinationsCol">
+            <img src="images/Nepal.jpg" alt="Sydni">
+            <div class="title">
+              <h3>Nepal </h3>
+            </div>
+          </div>
+          <div class="popuptext" id="myPopup14">
+            <iframe width="560" height="415" src="https://www.youtube.com/embed/j61j9X4xCnA"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+              The Nepal Himalaya is the ultimate goal for mountain lovers. Some of the Himalaya’s most iconic and accessible hiking is on offer here, with rugged trails to Everest, the Annapurnas and beyond. Nowhere else can you trek for days in incredible mountain scenery, secure in the knowledge that a hot meal, cosy lodge and warm slice of apple pie await you at the end of the day. 
+
+              Then there's the adrenaline kick of rafting a roaring Nepali river or bungee jumping into a yawning Himalayan gorge. Canyoning, climbing, kayaking, paragliding and mountain biking all offer a rush against the backdrop of some of the world’s most dramatic landscapes. 
+              
+              Other travellers prefer to see Nepal at a more refined pace, admiring the peaks over a sunset gin and tonic from a Himalayan viewpoint, strolling through the medieval city squares of Kathmandu, Patan and Bhaktapur, and joining Tibetan Buddhist pilgrims on a spiritual stroll around centuries-old stupas and monasteries. Even after the 2015 earthquake, Nepal remains the cultural powerhouse of the Himalaya; the Kathmandu Valley in particular, offers an unrivalled collection of world-class palaces, hidden backstreet shrines and sublime temple art. Nepal is also a great place to learn about everything from Tibetan Buddhism to how to make the best momos (dumplings).
+            <table class="center">
+              <tr>
+                <th>Package Name</th>
+                <th>Duration</th>
+                <th>Price p/p CAD</th>
+              </tr>
+              <tr>
+                <td>World Peace Pagoda </td>
+                <td>3d + 2n</td>
+                <td>1,600 </td>
+              </tr>
+              <tr>
+                <td>Swayambhunath Stupa </td>
+                <td>4d +3n</td>
+                <td>1,850 </td>
+              </tr>
+              <tr>
+                <td>Maya Devi Temple </td>
+                <td>5d +4n</td>
+                <td>2,100 </td>
+              </tr>
+              <tr>
+                <td>Khathmandu’s </td>
+                <td>6d + 5n</td>
+                <td>2,250 </td>
+              </tr>
+              <tr>
+                <td>Bhaktapur </td>
+                <td>7d + 6n</td>
+                <td>2,650 </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+
+        <div class="popup" onclick="myFunction(15)">
+          <div class="destinationsCol">
+            <img src="images/Polinesians.jpg" alt="Sydni">
+            <div class="title">
+              <h3>Polynesians </h3>
+            </div>
+          </div>
+          <div class="popuptext" id="myPopup15">
+            <iframe width="560" height="415" src="https://www.youtube.com/embed/j61j9X4xCnA"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+              Situated in the easterly region on Oceania, Polynesia is a group of over 1,000 islands spread across the central and southern Pacific Ocean. The Polynesian Triangle formed by connecting three major dots of the region including Hawaii, New Zealand and Easter Island is home to plenty of other major islands such as Samoa, Tonga, the Cook Islands, Wallis, Kiribati, Tuvalu, French Polynesia and many more, exhibiting Polynesian culture, beliefs, and practices. Explore the splendours of Mother Nature in the region with plenty of other expeditions here.
+            <table class="center">
+              <tr>
+                <th>Package Name</th>
+                <th>Duration</th>
+                <th>Price p/p CAD</th>
+              </tr>
+              <tr>
+                <td>World Peace Pagoda </td>
+                <td>3d + 2n</td>
+                <td>660</td>
+              </tr>
+              <tr>
+                <td>Swayambhunath Stupa </td>
+                <td>4d +3n</td>
+                <td>1,100</td>
+              </tr>
+              <tr>
+                <td>Maya Devi Temple </td>
+                <td>5d +4n</td>
+                <td>1,320</td>
+              </tr>
+              <tr>
+                <td>Khathmandu’s  </td>
+                <td>6d + 5n</td>
+                <td>1,320</td>
+              </tr>
+              <tr>
+                <td>Bhaktapur </td>
+                <td>7d + 6n</td>
+                <td>1,540</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="destinationsRow">
+        <div class="popup" onclick="myFunction(16)">
+          <div class="destinationsCol">
+            <img src="images/Portugal.jpg" alt="Sydni">
+            <div class="title">
+              <h3>Portugal </h3>
+            </div>
+          </div>
+          <div class="popuptext" id="myPopup16">
+            <iframe width="560" height="380" src="https://www.youtube.com/embed/4BJxBNbLOQw"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+              Discover Portugal. Hang on tight as tram 28 rattles you up to Lisbon's Castelo de Sao Jorge. Step back in history as you enter Braganca's astonishingly well-preserved 13th-century citadel. Savour the world's best port amid the terraced vineyards of tiny Pinhao. Feel the rush as you scramble to your feet on a surfboard at Baleal beach. 
+              <table class="center">
+              <tr>
+                <th>Package Name</th>
+                <th>Duration</th>
+                <th>Price p/p CAD</th>
+              </tr>
+              <tr>
+                <td>Lisbon </td>
+                <td>3d + 2n</td>
+                <td>660</td>
+              </tr>
+              <tr>
+                <td>Porto </td>
+                <td>4d +3n</td>
+                <td>1,100</td>
+              </tr>
+              <tr>
+                <td>Sintra </td>
+                <td>5d +4n</td>
+                <td>1,320</td>
+              </tr>
+              <tr>
+                <td>Coimbra </td>
+                <td>6d + 5n</td>
+                <td>1,320</td>
+              </tr>
+              <tr>
+                <td>Faro/Funchal </td>
+                <td>7d + 6n</td>
+                <td>1,540</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="popup" onclick="myFunction(17)">
+          <div class="destinationsCol">
+            <img src="images/SouthAmerica.jpg" alt="Sydni">
+            <div class="title">
+              <h3>South America </h3>
+            </div>
+          </div>
+          <div class="popuptext" id="myPopup17">
+            <iframe width="560" height="415" src="https://www.youtube.com/embed/TJERhGzxRK8"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+              Angel Falls is a waterfall in Venezuela. It is the world's tallest uninterrupted waterfall, with a height of 979 metres and a plunge of 807 m. The waterfall drops over the edge of the Auyán-tepui mountain in the Canaima National Park, a UNESCO World Heritage site in the Gran Sabana region of Bolívar State. The height figure, 979 m, mostly consists of the main plunge but also includes about 400 metres of sloped cascade and rapids below the drop and a 30-metre-high plunge downstream of the talus rapids.
+            <table class="center">
+              <tr>
+                <th>Package Name</th>
+                <th>Duration</th>
+                <th>Price p/p CAD</th>
+              </tr>
+              <tr>
+                <td>Angell Falls </td>
+                <td>3d + 2n</td>
+                <td>1,600 </td>
+              </tr>
+              <tr>
+                <td>Canaima </td>
+                <td>4d +3n</td>
+                <td>1,850 </td>
+              </tr>
+              <tr>
+                <td>El Sapo Waterfalls </td>
+                <td>5d +4n</td>
+                <td>2,100 </td>
+              </tr>
+              <tr>
+                <td>Paseo Orinoco</td>
+                <td>6d + 5n</td>
+                <td>2,250 </td>
+              </tr>
+              <tr>
+                <td>Puerto Ordaz </td>
+                <td>7d + 6n</td>
+                <td>2,650 </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+
+        <div class="popup" onclick="myFunction(18)">
+          <div class="destinationsCol">
+            <img src="images/Thailand.jpg" alt="Sydni">
+            <div class="title">
+              <h3>Thailand </h3>
+            </div>
+          </div>
+          <div class="popuptext" id="myPopup18">
+            <iframe width="560" height="415" src="https://www.youtube.com/embed/vNQR3ixE8AE"
+              title="YouTube video player" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+              There’s something truly special about Southern Thailand and is best experienced on an adventure. Stop along the way to Phuket and visit the Southern Islands (Koh Samui, Phi Phi Islands, Ko Tao) for a journey you'll always remember.
+            <table class="center">
+              <tr>
+                <th>Package Name</th>
+                <th>Duration</th>
+                <th>Price p/p CAD</th>
+              </tr>
+              <tr>
+                <td>Bangkok </td>
+                <td>3d + 2n</td>
+                <td>660</td>
+              </tr>
+              <tr>
+                <td>Chiang Mai </td>
+                <td>4d +3n</td>
+                <td>1,100</td>
+              </tr>
+              <tr>
+                <td>Phuket </td>
+                <td>5d +4n</td>
+                <td>1,320</td>
+              </tr>
+              <tr>
+                <td>Trang </td>
+                <td>6d + 5n</td>
+                <td>1,320</td>
+              </tr>
+              <tr>
+                <td> De Luxe Trang </td>
+                <td>7d + 6n</td>
+                <td>1,540</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <br>
+
+    </section>
+
+
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer>
+    <h3>About Us</h3>
+    <p>Situated in the center of Montreal, Web Dev Navigations prides itself on offering the most complete and
+      satifying travel experiances.
+      Wether you are looking for a quick get away or an exstended tour around the world, we can offer our insight
+      and guidance, giving our customers
+      the best experiances at the best prices. Remember to visit us on social media to share your jurney.
+    </p>
+    <div class="social">
+      <a href="https://www.facebook.com/people/WebDev-Navigations/100088040271621/"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/WebDNavigations"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.instagram.com/webdevnavigations/"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/school/mcgill-university/mycompany/verification/"><i
+          class="fa fa-linkedin"></i></a>
+    </div>
+
+    <p class="footer-text">
+      © Copyright 2022. All Rights Reserved.
+    </p>
+    <a href="mailto:contact@webdevnavigations.com" class="footer-text">contact@webdevnavigations.com</a>
+  </footer>
+</body>
+
+</html>

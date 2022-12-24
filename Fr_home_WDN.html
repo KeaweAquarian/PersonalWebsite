@@ -1,0 +1,481 @@
+<!--
+ Html Fr_home document for web dev navigations website.
+developed by Keawe Aquarian 260351368, Magda Prieto 261067065, Qi Yao 261051100
+script date Nov, 22 2022
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Dev Navigations Home</title>
+    <meta name="description" content="Agence de voyages proposant des forfaits pour des vacances dans le monde entier.">
+    <meta name="keywords" content="Vacances, vols, forfaits, hôtels, paradis, plages, aventure">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css file -->
+    <link rel="stylesheet" href="style/headerFooterStyle.css">
+    <link rel="stylesheet" href="style/headerFooterLayout.css">
+    <link rel="stylesheet" href="style/homeStyle.css">
+    <link rel="stylesheet" href="style/homeLayout.css">
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Site script -->
+    <script src="script/home.js"></script>
+    <script src="script/headerFooter.js"></script>
+</head>
+
+<!-- Main body -->
+
+<body>
+    <!-- Site Header -->
+    <header>
+        <div id="topNav">
+            <!-- Company Logo -->
+            <a href="Fr_home_WDN.html" class="logo"><img src="images/companylogo.jpg" alt="Web Dev Navigations Logo"></a>
+            <!-- Phone Number and popup -->
+            <button type="button" id="phoneBtn" onclick="openPhoneMessage()">1-800-888-8080 <i
+                    class="fa fa-phone"></i></button>
+            <button type="button" id="phoneBtnSmall" onclick="openPhoneMessage()"><i
+                    class="fa fa-phone fa-2x"></i></button>
+            <div class="phonePopUp" id="phonePopUp">
+                <div class="animation">
+                    <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
+                </div>
+                <h2>
+                    Appelez aujourd'hui!  1-800-888-8080
+                </h2>
+                <p>
+                    Vos vacances de rêve sont entre de bonnes mains avec nous.
+                </p>
+                <button type="button" onclick="closePhoneMessage()">
+                    Close
+                </button>
+            </div>
+            <!-- Sign in form button -->
+            <button type="button" class="signInBtn" onclick="openForm()">S'inscrire</button>
+
+            <!-- Sign in form -->
+            <div class="popupLogIn" id="myForm">
+                <form action="home_WDN.html" class="logInForm">
+                    <h1>Login</h1>
+
+                    <label for="email"><b>Courriel</b></label>
+                    <input type="text" id="email" placeholder="Enter Email" name="email" required>
+
+                    <label for="password"><b>Mot de passe</b></label>
+                    <input type="password" id="password" placeholder="Enter Password" name="password" required>
+
+                    <button type="submit" class="btn">Connexion</button>
+                    <button type="button" class="btn close" onclick="closeForm()">Fermer</button>
+                </form>
+            </div>
+            <a class="language" href="home_WDN.html">En</a>
+            <!-- Country select -->
+            <div class="countries">
+                <label for="countries">Choisissez un pays à visiter:</label>
+
+                <select name="countries" id="countries" onchange="handleSelect(this.value)">
+                    <option value="Australie">Australie</option>
+                    <option value="Caraïbes">Caraïbes</option>
+                    <option value="Grèce">Grèce</option>
+                    <option value="Italie">Italie</option>
+                    <option value="Maldives">Maldives</option>
+                    <option value="le Portugal">le Portugal</option>
+                    <option value="Thaïlande">Thaïlande</option>
+                </select>
+            </div>
+        </div>
+        <div id="bottomNav">
+            <!-- Website Navigation -->
+            <nav>
+                <ul>
+                    <li>
+                        <a class="nav-link" href="Fr_home_WDN.html"><span class="link">Début</span></a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="Destinations_FR.html">Paquets</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="booking_form_fr.html">Réservations</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="insurance_fr.html">Assurance</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="contact_us_fr.html">Nous Contacter</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <img src="images/manOnMountainFr.jpg" alt="Man on mountain">
+
+        <div class="comments">
+            <h2>
+                L'aventure attend
+            </h2>
+            <p>
+                Vous avez l'impression que vos piles sont vides ? Il est temps de se ressourcer avec des vacances de voyage.
+                Notre personnel est un magicien lorsqu'il s'agit d'organiser vos vacances parfaites.
+                Voyez nos nombreux forfaits ou contactez-nous par téléphone et ressentez l'effervescence dès aujourd'hui!
+            </p>
+        </div>
+
+        <!-- Adventure options -->
+        <section class="journeys">
+             <h2>
+                Découvrez nos voyages
+             </h2>
+             <p>
+                La magie vous attend, vous et votre famille, avec n'importe lequel de nos forfaits vacances.
+             </p>
+
+        <div class="journeysRow">
+
+            <div class="popup" onclick="myFunction(1)">
+                <div class="journeysCol">
+                    <img src="images/australia.jpg" alt="Sydni">
+                    <div class="title">
+                        <h3>Australie</h3>
+                    </div>
+                </div>
+                <div class="popuptext" id="myPopup1">
+                    Les zodiacs australiens vous emmènent sur la spectaculaire rivière King George, où vous vous sentirez éclipsé par
+                    l'imposant
+                    les parois du canyon de roche rouge, puis refroidies par la brume des chutes King George. Voir un aborigène en plein air
+                    galerie d'art,
+                    représentant des images des esprits Wandjina. Explorez la rivière Ord, l'une des plus belles rivières
+                    systèmes dans
+                    Australie. Visitez le récif de Montgomery,
+                    où la marée descend si rapidement que les eaux emprisonnées au sommet du récif créent un torrent déchaîné
+                    ils s'échappent.
+                    <table class="center">
+                        <tr>
+                            <th>Nom du paquet</th>
+                            <th>Durée</th>
+                            <th>Prix ​​p/p CAD</th>
+                        </tr>
+                        <tr>
+                            <td>Magie Australie</td>
+                            <td>3d + 2n</td>
+                            <td>660</td>
+                        </tr>
+                        <tr>
+                            <td>Grande VueVoir</td>
+                            <td>4d +3n</td>
+                            <td>1,100</td>
+                        </tr>
+                        <tr>
+                            <td>Récif de corail</td>
+                            <td>5d +4n</td>
+                            <td>1,320</td>
+                        </tr>
+                        <tr>
+                            <td>Terre de kangourou</td>
+                            <td>6d + 5n</td>
+                            <td>1,320</td>
+                        </tr>
+                        <tr>
+                            <td>Sydney</td>
+                            <td>7d + 6n</td>
+                            <td>1,540</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="popup" onclick="myFunction(6)">
+                <div class="journeysCol">
+                    <img src="images/greece.jpg" alt="greece">
+                    <div class="title">
+                        <h3>Grèce</h3>
+                    </div>
+                </div>
+                <div class="popuptext" id="myPopup6">
+                    La Grèce est pour beaucoup trop synonyme de « soleil, îles, mer ». N'ignorez pas le soleil
+                    archipels et 15 000 km de côtes mais découvrez sa panoplie d'autres points forts. Glorieux
+                    les montagnes mélangent des pics abrupts avec des prairies alpines luxuriantes et des bois - ainsi que des champs de neige éblouissants dans
+                    l'hiver. Il y a des rivières et des gorges spectaculaires, ainsi que des sentiers de randonnée tranquilles aussi faciles ou difficiles que
+                    tu souhaites. Partout vous trouverez une flore et une faune richement diversifiées. Des milliers d'années de couleurs
+                    l'histoire place une foule de dieux et d'humains légendaires au milieu de l'une des plus belles concentrations du monde
+                    de formidables souvenirs archéologiques. Profitez du soleil, mais explorez.
+                    <table class="center">
+                        <tr>
+                            <th>Nom du paquet</th>
+                            <th>Durée</th>
+                            <th>Prix ​​p/p CAD</th>
+                        </tr>
+                        <tr>
+                            <td>Salonic îles</td>
+                            <td>3d + 2n</td>
+                            <td>1,800 </td>
+                        </tr>
+                        <tr>
+                            <td>Aegean Mer</td>
+                            <td>4d +3n</td>
+                            <td>2,400 </td>
+                        </tr>
+                        <tr>
+                            <td>Ionian Mer</td>
+                            <td>5d +4n</td>
+                            <td>3,000 </td>
+                        </tr>
+                        <tr>
+                            <td>Crete </td>
+                            <td>6d + 5n</td>
+                            <td>3,600 </td>
+                        </tr>
+                        <tr>
+                            <td>Zakhyntos </td>
+                            <td>7d + 6n</td>
+                            <td>4,200 </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="popup" onclick="myFunction(4)">
+                <div class="journeysCol">
+                    <img src="images/Caribbean.jpg" alt="beach">
+                    <div class="title">
+                        <h3>Caraïbes</h3>
+                    </div>
+                </div>
+                <div class="popuptext" id="myPopup4">
+                    Les Caraïbes sont une joyeuse mosaïque d'îles qui invitent les chasseurs de paradis, une explosion de couleurs,
+                    bordée de plages et imbibée de rhum. C'est une profusion vivante et enivrante de gens et
+                    lieux répartis sur 7000 îles (moins de 10% sont habités). Mais, pour tout ce qu'ils partagent, il y a
+                    aussi beaucoup qui les rend différents.
+                    <table class="center">
+                        <tr>
+                            <th>Nom du paquet</th>
+                            <th>Durée</th>
+                            <th>Prix ​​p/p CAD</th>
+                        </tr>
+                        <tr>
+                            <td>Perle des Caraïbes</td>
+                            <td>3d + 2n</td>
+                            <td>1,000</td>
+                        </tr>
+                        <tr>
+                            <td>Découverte</td>
+                            <td>4d +3n</td>
+                            <td>1,100</td>
+                        </tr>
+                        <tr>
+                            <td>Les iles vierges</td>
+                            <td>5d +4n</td>
+                            <td>1,420</td>
+                        </tr>
+                        <tr>
+                            <td>Grenadines</td>
+                            <td>6d + 5n</td>
+                            <td>1,720</td>
+                        </tr>
+                        <tr>
+                            <td>Aruba</td>
+                            <td>7d + 6n</td>
+                            <td>1,940</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Services -->
+        <section class="services">
+            <h2>
+                Nous avons de nombreux services pour répondre à tous vos besoins d'aventure
+             </h2>
+             <div class="servicesRow">
+                <div class="servicesCol">
+                    <img src="images/hotel.png" alt="Hotel icon">
+                   <div class="servicesTitle">
+                      <h3>Hôtels</h3>
+                   </div>
+                </div>
+                <div class="servicesCol">
+                   <img src="images/airplane.png" alt="Flights icon">
+                   <div class="servicesTitle">
+                      <h3>Vols</h3>
+                   </div>
+                </div>
+                <div class="servicesCol">
+                   <img src="images/vacations.png" alt="Vacation icon">
+                   <div class="servicesTitle">
+                      <h3>Forfaits vacances</h3>
+                   </div>
+                </div>
+                <div class="servicesCol">
+                    <img src="images/car.png" alt="Car icon">
+                    <div class="servicesTitle">
+                       <h3>Location de voitures</h3>
+                    </div>
+                 </div>
+                 <div class="servicesCol">
+                    <img src="images/safe-flight.png" alt="flight Insurance icon">
+                   <div class="servicesTitle">
+                      <h3>Assurance voyage</h3>
+                   </div>
+                </div>
+                <div class="servicesCol">
+                   <img src="images/activities.png" alt="Activities icon">
+                   <div class="servicesTitle">
+                      <h3>Activités</h3>
+                   </div>
+                </div>
+                <a href="contact_us_fr.html#realtors" class="servicesLink">
+                    <div class="servicesCol">
+                        <img src="images/employees.png" alt="Staff icon">
+                        <div class="servicesTitle">
+                           <h3>Un personnel attentionné</h3>
+                        </div>
+                     </div>
+                </a>
+                <div class="servicesCol">
+                   <img src="images/task.png" alt="Task icon">
+                   <div class="servicesTitle">
+                      <h3>Aide à la planification</h3>
+                   </div>
+                </div>
+             </div>
+        </section>
+<!-- Checklist -->
+        <article>
+            <h2>
+                Avant tout voyage, assurez-vous de consulter ces listes de contrôle !
+            </h2>
+            <div id="list">
+                <div>
+                    <ol class="firstList">
+                        <li>Voyager à l'étranger
+                            <ol class="secondList">
+                                <li>Essentiel
+                                    <ol class="thirdList">
+                                        <li>Ton passeport!</li>
+                                        <li>Espèces et carte de débit en main</li>
+                                        <li>Crème solaire et insectifuge</li>
+                                        <li>Écouteurs, chargeurs et adaptateurs</li>
+                                    </ol>
+                                </li>
+                                <li>Recommandé
+                                    <ol class="thirdList">
+                                        <li>Articles de toilette de voyage</li>
+                                        <li>Tous les médicaments ou vitamines dont vous avez besoin</li>
+                                        <li>Bouchons d'oreille et masque pour les yeux</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+
+                        <li>Juste pour le fun!
+                            <ol class="secondList">
+                                <li>Bouteille d'eau réutilisable</li>
+                                <li>Livres</li>
+                                <li>Caméra</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <ol class="firstList">
+                        <li>Voyage intérieur
+                            <ol class="secondList">
+                                <li>Essentiel
+                                    <ol class="thirdList">
+                                        <li>Chaussures de marche confortables</li>
+                                        <li>permis de conduire</li>
+                                        <li>Vêtements et chaussures</li>
+                                        <li>Protection solaire</li>
+                                    </ol>
+                                </li>
+                                <li>Recommandé
+                                    <ol class="thirdList">
+                                        <li>Carde d'identité d'étudiant</li>
+                                        <li>Quelques sacs en plastique</li>
+                                        <li> Imperméable</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>Juste pour le fun!
+                            <ol class="secondList">
+                                <li>Une ou deux jolies tenues</li>
+                                <li>Bottes de randonnée</li>
+                                <li>Serrures à bagages</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+        <!-- Testimonials -->
+        <div class="testimonial">
+            <h1>
+                Ce que disent nos clients
+            </h1>
+            <p>
+                Ayez confiance que lorsque vous confiez vos projets de vacances entre nos mains, nous les livrons.
+            </p>
+            <div class="testimonialRow">
+                <div class="testimonialCol">
+                    <img src="images/woman1.jpg" alt="woman">
+                    <div>
+                        <p>Service incroyable. Nous avons réservé un forfait pour la Grèce et il a répondu à toutes les attentes et
+                            au-delà.</p>
+                        <h3>
+                            Judy Rutherford
+                        </h3>
+                    </div>
+                </div>
+                <div class="testimonialCol">
+                    <img src="images/man.jpg" alt="man">
+                    <div>
+                        <p>Personnel super sympa. Leurs options sont vastes, donc cela a vraiment aidé de pouvoir parler à
+                            eux au téléphone.
+                            Nous avons vraiment l'impression d'en avoir pour notre argent.
+                        </p>
+                        <h3>Danny Bates</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <h3>À propos de nous</h3>
+        <p>Situé au centre de Montréal, Web Dev Navigations se targue d'offrir les services les plus complets et
+            expériences de voyage satisfaisantes.
+            Que vous soyez à la recherche d'une escapade rapide ou d'un long tour du monde, nous pouvons vous offrir notre point de vue
+            et des conseils, donnant à nos clients
+            les meilleures expériences aux meilleurs prix. N'oubliez pas de nous rendre visite sur les réseaux sociaux pour partager votre voyage.
+        </p>
+        <div class="social">
+            <a href="https://www.facebook.com/people/WebDev-Navigations/100088040271621/"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/WebDNavigations"><i
+                    class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/webdevnavigations/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/school/mcgill-university/mycompany/verification/"><i
+                    class="fa fa-linkedin"></i></a>
+        </div>
+
+        <p class="footer-text">
+            © Copyright 2022. Tous droits réservés.
+        </p>
+        <a href="mailto:contact@webdevnavigations.com" class="footer-text">contact@webdevnavigations.com</a>
+        <a href="https://www.flaticon.com/free-icons/car" title="car icons">Icons created by Konkapp - Flaticon</a>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,669 @@
+
+<!--
+ Html Fr_home document for web dev navigations website.
+developed by Keawe Aquarian 260351368, Magda Prieto 261067065, Qi Yao 261051100
+script date Nov, 22 2022
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Agence de voyages proposant des forfaits pour des vacances dans le monde entier.">
+  <meta name="keywords" content="Vacances, vols, forfaits, hôtels, paradis, plages, aventure">
+  <title>Formulaire de reservation</title>
+
+  <!-- css file -->
+  <link rel="stylesheet" href="style/headerFooterStyle.css">
+  <link rel="stylesheet" href="style/headerFooterLayout.css">
+  <!-- Load icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- js load -->
+    <script src="script/headerFooter.js"></script>
+ <!-- Main Styling -->
+  <link rel="stylesheet" href="style/booking.css">
+</head>
+
+<body>
+      <!-- Site Header -->
+      <header>
+        <div id="topNav">
+            <!-- Company Logo -->
+            <a href="Fr_home_WDN.html" class="logo"><img src="images/companylogo.jpg" alt="Web Dev Navigations Logo"></a>
+            <!-- Phone Number and popup -->
+            <button type="button" id="phoneBtn" onclick="openPhoneMessage()">1-800-888-8080 <i
+                    class="fa fa-phone"></i></button>
+            <button type="button" id="phoneBtnSmall" onclick="openPhoneMessage()"><i
+                    class="fa fa-phone fa-2x"></i></button>
+            <div class="phonePopUp" id="phonePopUp">
+                <div class="animation">
+                    <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
+                </div>
+                <h2>
+                    Appelez aujourd'hui!  1-800-888-8080
+                </h2>
+                <p>
+                    Vos vacances de rêve sont entre de bonnes mains avec nous.
+                </p>
+                <button type="button" onclick="closePhoneMessage()">
+                    Close
+                </button>
+            </div>
+            <!-- Sign in form button -->
+            <button type="button" class="signInBtn" onclick="openForm()">S'inscrire</button>
+
+            <!-- Sign in form -->
+            <div class="popupLogIn" id="myForm">
+                <form action="home_WDN.html" class="logInForm">
+                    <h1>Login</h1>
+
+                    <label for="email"><b>Courriel</b></label>
+                    <input type="text" id="email" placeholder="Enter Email" name="email" required>
+
+                    <label for="password"><b>Mot de passe</b></label>
+                    <input type="password" id="password" placeholder="Enter Password" name="password" required>
+
+                    <button type="submit" class="btn">Connexion</button>
+                    <button type="button" class="btn close" onclick="closeForm()">Fermer</button>
+                </form>
+            </div>
+            <a class="language" href="booking_form.html">En</a>
+            <!-- Country select -->
+            <div class="countries">
+                <label for="countries">Choisissez un pays à visiter:</label>
+
+                <select name="countries" id="countries" onchange="handleSelect(this.value)">
+                  <option value="Australie">Australie</option>
+                  <option value="Caraïbes">Caraïbes</option>
+                  <option value="Grèce">Grèce</option>
+                  <option value="Italie">Italie</option>
+                  <option value="Maldives">Maldives</option>
+                  <option value="le Portugal">le Portugal</option>
+                  <option value="Thaïlande">Thaïlande</option>
+                </select>
+            </div>
+        </div>
+        <div id="bottomNav">
+            <!-- Website Navigation -->
+            <nav>
+                <ul>
+                    <li>
+                        <a class="nav-link" href="Fr_home_WDN.html"><span class="link">Début</span></a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="Destinations_FR.html">Paquets</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="booking_form_fr.html">Réservations</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="insurance_fr.html">Assurance</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="contact_us_fr.html">Nous Contacter</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+  <main>
+    <div class="top">
+      <h2>
+        Formulaire de réservation d'agence de voyage
+      </h2>
+<div class="hr"></div>
+    </div>
+    <form action="#" name="bookForm" class="booking-form">
+      <div>
+        <div class="input-line">
+          <div class="input-div">
+            <div class="label">Voyageur #1</div>
+            <div class="inputs">
+              <div class="input">
+                <input  type="text">
+                <div class="info">
+                  <small>Prénom</small>
+                </div>
+              </div>
+              <div class="input">
+                <input  type="text">
+                <div class="info">
+                  <small>Nom de famille</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input-div">
+            <div class="label">Date de naissance</div>
+            <div class="inputs">
+              <div class="input">
+                <input  type="date">
+                <div class="info">
+                  <small>Date</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="input-line">
+          <div class="input-div">
+            <div class="label">Email</div>
+            <div class="inputs">
+              <div class="input">
+                <input  type="text" class="mail1" id="mail1" name="mail1">
+                <div class="info">
+                  <small>example@example.com</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input-div">
+            <div class="label">Numéro de téléphone</div>
+            <div class="inputs">
+              <div class="input">
+                <input  type="tel" id="phone" placeholder="(000) 000-0000">
+                <div class="info">
+                  <small>s'il vous plaît entrer un numéro de téléphone valide</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-line">
+          <div class="input-div">
+            <div class="label">Adresse</div>
+            <div class="inputs">
+              <div class="input">
+                <input  type="email">
+                <div class="info">
+                  <small>Adresse de rue</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-line">
+          <div class="input-div">
+            <div class="inputs">
+              <div class="input">
+                <input  type="email">
+                <div class="info">
+                  <small>Adresse municipale ligne 2</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="input-line">
+          <div class="input-div">
+            <div class="inputs">
+              <div class="input">
+                <input  type="text">
+                <div class="info">
+                  <small>Ville</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input-div">
+            <div class="inputs">
+              <div class="input">
+                <input  type="text">
+                <div class="info">
+                  <small>Etat / Province </small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="input-line">
+          <div class="input-div">
+            <div class="inputs">
+              <div class="input">
+                <input  type="text">
+                <div class="info">
+                  <small>Code postal</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input-div">
+            <div class="inputs">
+              <div class="input">
+                <select name="Country" id="country">
+                  <option value="0">Veuillez sélectionner</option>
+
+                </select>
+
+                <div class="info">
+                  <small>Pays</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hr">
+      </div>
+
+
+      <div>
+        <div class="input-line">
+          <div class="input-div">
+            <div class="label">Voyageur #2</div>
+            <div class="inputs">
+              <div class="input">
+                <input type="text">
+                <div class="info">
+                  <small>Prénom</small>
+                </div>
+              </div>
+              <div class="input">
+                <input type="text">
+                <div class="info">
+                  <small>Nom de famille</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input-div">
+            <div class="label">Date de naissance</div>
+            <div class="inputs">
+              <div class="input">
+                <input type="date">
+                <div class="info">
+                  <small>Date</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="input-line">
+          <div class="input-div">
+            <div class="label">Email</div>
+            <div class="inputs">
+              <div class="input">
+                <input type="email">
+                <div class="info">
+                  <small>example@example.com</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input-div">
+            <div class="label">Numéro de téléphone</div>
+            <div class="inputs">
+              <div class="input">
+                <input type="tel" placeholder="(000) 000-0000">
+                <div class="info">
+                  <small>s'il vous plaît entrer un numéro de téléphone valide</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-line">
+          <div class="input-div">
+            <div class="label">Adresse</div>
+            <div class="inputs">
+              <div class="input">
+                <input type="email">
+                <div class="info">
+                  <small>Adresse de rue</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-line">
+          <div class="input-div">
+            <div class="inputs">
+              <div class="input">
+                <input type="email">
+                <div class="info">
+                  <small>Adresse municipale ligne 2</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="input-line">
+          <div class="input-div">
+            <div class="inputs">
+              <div class="input">
+                <input type="text">
+                <div class="info">
+                  <small>City</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input-div">
+            <div class="inputs">
+              <div class="input">
+                <input type="text">
+                <div class="info">
+                  <small>Etat / Province </small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="input-line">
+          <div class="input-div">
+            <div class="inputs">
+              <div class="input">
+                <input type="text">
+                <div class="info">
+                  <small>Code postal</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input-div">
+            <div class="inputs">
+              <div class="input">
+                <select name="Country" id="country2">
+                  <option value="0">Veuillez sélectionner</option>
+
+                </select>
+
+                <div class="info">
+                  <small>Pays</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hr">
+      </div>
+
+      <div>
+        <h4>
+        Autres voyageurs
+        </h4>
+
+      </div>
+      <div class="input-line">
+        <div class="input-div">
+          <div class="label">Nom et prénom</div>
+          <div class="inputs">
+            <div class="input">
+              <input type="text">
+            </div>
+
+          </div>
+        </div>
+        <div class="input-div">
+          <div class="label">Date de naissance</div>
+          <div class="inputs">
+            <div class="input">
+              <input type="date">
+
+            </div>
+          </div>
+        </div>
+        <div class="input-div">
+          <div class="label">Numéro de téléphone</div>
+          <div class="inputs">
+            <div class="input">
+              <input type="tel">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-line">
+        <div class="input-div">
+          <div class="label">Email</div>
+          <div class="inputs">
+            <div class="input">
+              <input type="text" style="width:340px;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn add-btn">Ajouter</button>
+
+      <div class="input-line">
+        <div class="input-div">
+          <div class="label">Date de voyage</div>
+          <div class="inputs">
+            <div class="input">
+              <input type="date" style="width:340px;">
+              <div class="info">
+                <small>Date</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="input-line">
+        <div class="input-div">
+          <div class="label">Destination</div>
+          <div class="inputs">
+            <div class="input">
+              <input type="text" style="width:340px;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="input-line">
+        <div class="input-div">
+          <div class="label">Budget réaliste $</div>
+          <div class="inputs">
+            <div class="input">
+              <input type="text" style="width:340px;">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="trip-type">
+        <h4>
+            Type de voyage
+        </h4>
+        <div class="grid">
+         
+          <div class="switch-div">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+            <span>
+                Voyage de noces
+            </span>
+          </div>
+          <div class="switch-div">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+            <span>
+                Entreprise
+            </span>
+          </div> <div class="switch-div">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+            <span>
+                Croisière
+            </span>
+          </div> <div class="switch-div">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+            <span>
+                Va-t-en
+            </span>
+          </div> <div class="switch-div">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+            <span>
+                Vacances en famille
+            </span>
+          </div> <div class="switch-div">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+            <span>
+                Autre
+            </span>
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+
+      <div class="services">
+        <h4>
+            Autres services nécessaires
+        </h4>
+        <div class="grid">
+         
+          <div class="switch-div">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+            <span>
+                Vols uniquement
+            </span>
+          </div>
+          <div class="switch-div">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+            <span>
+                Hôtel/Complexes
+            </span>
+          </div> <div class="switch-div">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+            <span>
+                Voiture de location
+            </span>
+          </div> <div class="switch-div">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+            <span>
+                Divertissement
+            </span>
+          </div> 
+
+        </div>
+      </div>
+
+
+      <br>
+      <div class="input-line">
+        <div class="input-div">
+          <div class="label">votre nom</div>
+          <div class="inputs">
+            <div class="input">
+              <input type="email">
+              <div class="info">
+                <small>Prénom</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="input-div">
+          <div class="label"> - </div>
+          <div class="inputs">
+            <div class="input">
+              <input type="text" >
+              <div class="info">
+                <small>Nom de famille</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="input-line">
+        <div class="input-div">
+          <div class="label">Dat </div>
+          <div class="inputs">
+            <div class="input">
+              <input type="date" style="width:340px;">
+              <div class="info">
+                <small>Date</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="hr" style="margin:50px 0px;margin-bottom: 30px;">
+      </div>
+      <div class="submit">
+        <input type="submit" id="submitBtn" class="submit-btn" value="soumettre" >
+      </div>
+    </form>
+  </main>
+   <!-- Site Footer -->
+   <footer>
+    <h3>À propos de nous</h3>
+    <p>Situé au centre de Montréal, Web Dev Navigations se targue d'offrir les services les plus complets et
+        expériences de voyage satisfaisantes.
+        Que vous soyez à la recherche d'une escapade rapide ou d'un long tour du monde, nous pouvons vous offrir notre point de vue
+        et des conseils, donnant à nos clients
+        les meilleures expériences aux meilleurs prix. N'oubliez pas de nous rendre visite sur les réseaux sociaux pour partager votre voyage.
+    </p>
+    <div class="social">
+        <a href="https://www.facebook.com/people/WebDev-Navigations/100088040271621/"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/WebDNavigations"><i
+                class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/webdevnavigations/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/school/mcgill-university/mycompany/verification/"><i
+                class="fa fa-linkedin"></i></a>
+    </div>
+
+    <p class="footer-text">
+      © Copyright 2022. Tous droits réservés.
+    </p>
+    <a href="mailto:contact@webdevnavigations.com" class="footer-text">contact@webdevnavigations.com</a>
+</footer>
+</body>
+
+</html>

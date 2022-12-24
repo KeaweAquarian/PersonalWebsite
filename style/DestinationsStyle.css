@@ -1,0 +1,25 @@
+/**
+ CSS style document for destinations.html.
+developed by Keawe Aquarian 260351368, Magda Prieto 261067065, Qi Yao 261051100
+script date Nov 29, 2022
+*/
+body{
+  font-family: 'Times New Roman', Times, serif;
+  }
+  
+
+  
+  /* Tablet layout settings */
+  @media (max-width: 900px) {
+
+  
+  
+  
+  }
+  
+  /* Mobile layout settings */
+  @media (max-width: 550px) {
+  
+
+
+  }
