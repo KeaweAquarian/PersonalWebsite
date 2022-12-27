@@ -55,18 +55,18 @@ main {
 }
 
 main img {
-  width: 90%;
-  padding-top: 3%;
+  background: #7991f072;
+  
 }
 
-.comments {
+/* .comments {
   width: 80%;
   margin-top: 30px;
-}
+} */
 
-.comments p {
+/* .comments p {
   padding: 10px 0;
-}
+} */
 
 .journeys {
   width: 90%;
