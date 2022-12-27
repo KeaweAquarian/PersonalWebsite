@@ -4,6 +4,32 @@ developed by Keawe Aquarian 260351368, Magda Prieto 261067065, Qi Yao 261051100
 script date Nov,  2022
 */
 
+// Headroom.js
+// https://github.com/WickyNilliams/headroom.js
+var myElement = document.querySelector("header");
+
+var headroom  = new Headroom(myElement, {
+  "offset": 220,
+  "tolerance": {
+    up: 0,
+    down: 0
+  },
+  "classes": {
+    "initial": "header--fixed",
+    "pinned": "slideDown",
+    "unpinned": "slideUp",
+    "top": "top",
+    "notTop" : "not-top",
+  }
+});
+
+headroom.init();
+
+window.addEventListener('scroll', function() {
+  if (window.pageYOffset === 0) {
+    myElement.classList.remove('slideDown')
+  }
+})
 
 
 function openForm() {

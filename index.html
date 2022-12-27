@@ -1,6 +1,6 @@
 <!--
- Html home document for web dev navigations website.
-developed by Keawe Aquarian 260351368, Magda Prieto 261067065, Qi Yao 261051100
+ Html home document for Keawe Aquarian personal website.
+developed by Keawe Aquarian 
 script date Nov, 22 2022
 -->
 
@@ -9,101 +9,53 @@ script date Nov, 22 2022
 
 <head>
     <meta charset="UTF-8">
-    <title>Web Dev Navigations</title>
-    <meta name="description" content="Travel Agency offering packeges for vacations around the world.">
-    <meta name="keywords" content="Vacations, flights, packeges, hotels, paradice, beaches, adventure">
+    <title>Keawe Aquarian Personal Website</title>
+    <meta name="description" content="A website portfolio highlighting the work of Keawe Aquarian">
+    <meta name="keywords" content="web development, programming, java, software engineer.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/headerFooterStyle.css">
-    <link rel="stylesheet" href="style/headerFooterLayout.css">
-    <link rel="stylesheet" href="style/homeStyle.css">
-    <link rel="stylesheet" href="style/homeLayout.css">
+    <link rel="stylesheet" href="style/indexHeaderLayout.css">
+    <link rel="stylesheet" href="style/indexHeaderStyle.css">
+    <link rel="stylesheet" href="style/indexStyles.css">
+    <link rel="stylesheet" href="style/indexLayout.css">
     <!-- Load icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script/home.js"></script>
+    
 </head>
 
 <!-- Main body -->
 
 <body>
+   
+
+
+
     <!-- Site Header -->
-    <header>
+    <header id="header">
         <div id="topNav">
             <!-- Company Logo -->
-            <a href="home_WDN.html" class="logo"><img src="images/companylogo.jpg" alt="Web Dev Navigations Logo"></a>
-            <!-- Phone Number and popup -->
-            <button type="button" id="phoneBtn" onclick="openPhoneMessage()">1-800-888-8080 <i
-                    class="fa fa-phone"></i></button>
-            <button type="button" id="phoneBtnSmall" onclick="openPhoneMessage()"><i
-                    class="fa fa-phone fa-2x"></i></button>
-            <div class="phonePopUp" id="phonePopUp">
-                <div class="animation">
-                    <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
-                </div>
-                <h2>
-                    Call today! 1-800-888-8080
-                </h2>
-                <p>
-                    Your dream vacation is in good hands with us.
-                </p>
-                <button type="button" onclick="closePhoneMessage()">
-                    Close
-                </button>
-            </div>
-            <!-- Sign in form button -->
-            <button type="button" class="signInBtn" onclick="openForm()">Sign In</button>
-
-            <!-- Sign in form -->
-            <div class="popupLogIn" id="myForm">
-                <form action="home_WDN.html" class="logInForm">
-                    <h1>Login</h1>
-
-                    <label for="email"><b>Email</b></label>
-                    <input type="text" id="email" placeholder="Enter Email" name="email" required>
-
-                    <label for="password"><b>Password</b></label>
-                    <input type="password" id="password" placeholder="Enter Password" name="password" required>
-
-                    <button type="submit" class="btn">Login</button>
-                    <button type="button" class="btn close" onclick="closeForm()">Close</button>
-                </form>
-            </div>
-            <!-- language toggle -->
-            <a class="language" href="Fr_home_WDN.html">Fr</a>
-
-            <!-- Country select -->
-            <div class="countries">
-                <label for="countries">Choose a country to visit:</label>
-
-                <select name="countries" id="countries" onchange="handleSelect(this.value)">
-                    <option value="Australia">Australia</option>
-                    <option value="Caribbean">Caribbean</option>
-                    <option value="Greece">Greece</option>
-                    <option value="Italy">Italy</option>
-                    <option value="Maldives">Maldives</option>
-                    <option value="Portugal">Portugal</option>
-                    <option value="Thailand">Thailand</option>
-                </select>
-            </div>
+            <a href="index.html" class="logo"><img src="images/keawelogo.png" alt="Keawe Logo"></a>
+ 
         </div>
         <div id="bottomNav">
             <!-- Website Navigation -->
             <nav>
                 <ul>
                     <li>
-                        <a class="nav-link" href="home_WDN.html"><span class="link">Home</span></a>
+                        <a class="nav-link" href="home_WDN.html"><span class="link">Work</span></a>
                     </li>
                     <li>
-                        <a class="nav-link" href="Destinations-EN.html">Destinations</a>
+                        <a class="nav-link" href="Destinations-EN.html">Experiance</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="booking_form.html">Bookings</a>
+                        <a class="nav-link" href="booking_form.html">About</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="insurance.html">Insurance</a>
+                        <a class="nav-link" href="insurance.html">Contact</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="contact-us.html">Contact</a>
+                        <a class="nav-link" href="contact-us.html">Resume</a>
                     </li>
                 </ul>
             </nav>
@@ -114,7 +66,7 @@ script date Nov, 22 2022
     <main>
 
         <!-- Opening image -->
-        <img src="images/manOnMountain.jpg" alt="Man on mountain">
+        <img src="images/allMockUps.png" alt="Man on mountain">
 
         <div class="comments">
             <h1>
@@ -495,6 +447,35 @@ script date Nov, 22 2022
 
         <a href="https://www.flaticon.com/free-icons/car" title="car icons">Icons created by Konkapp - Flaticon</a>
     </footer>
+    <script src="https://unpkg.com/headroom.js"></script>
+    <script>
+        // Headroom.js
+// https://github.com/WickyNilliams/headroom.js
+var myElement = document.querySelector("header");
+
+var headroom  = new Headroom(myElement, {
+  "offset": 220,
+  "tolerance": {
+    up: 0,
+    down: 0
+  },
+  "classes": {
+    "initial": "header--fixed",
+    "pinned": "slideDown",
+    "unpinned": "slideUp",
+    "top": "top",
+    "notTop" : "not-top",
+  }
+});
+
+headroom.init();
+
+window.addEventListener('scroll', function() {
+  if (window.pageYOffset === 0) {
+    myElement.classList.remove('slideDown')
+  }
+})
+    </script>
 </body>
 
 </html>
