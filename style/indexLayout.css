@@ -10,7 +10,7 @@ script date Nov,  2022
 }
 
 body {
-  font-family: 'Times New Roman', Times, serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 main {
@@ -62,24 +62,61 @@ main {
 .journeys {
   width: 90%;
   margin: auto;
-  text-align: center;
+  /* text-align: center; */
   padding-top: 40px;
 }
 
 .journeysRow {
   margin-top: 20px;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
+  align-items: flex-start;
+  justify-content:left; */
 }
 
 .journeysCol {
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start; */
   border-radius: 10px;
   margin-bottom: 30px;
-  position: relative;
-  overflow: hidden;
+  /* position: relative;
+  overflow: hidden; */
   margin: 0% 60px;
-  width: 40%;
+  width: 30%;
   margin-left: 12%;
+  text-align: left;
+}
+
+.journeysCol h1 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.journeysCol p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.seeLive{
+  background-color: #faf8f8;
+  border-color:  #0606e5af;
+  padding: 6px;
+  border-style: solid;
+  border-width: 2px;
+  color: #0606e5af;
+  font-weight: 600;
+}
+
+.sourceCode{
+  background-color: #faf8f8;
+border: none;
+  padding: 4px;
+
+  color: #0606e5af;
+  font-weight: 600;
 }
 
 .journeysRow img {
