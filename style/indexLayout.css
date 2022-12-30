@@ -72,7 +72,9 @@ main {
   flex-direction: row;
   align-items: flex-start;
   justify-content:left; */
+
 }
+
 
 .journeysCol {
   /* display: flex;
@@ -83,7 +85,7 @@ main {
   /* position: relative;
   overflow: hidden; */
   margin: 0% 60px;
-  width: 30%;
+  width: 50%;
   margin-left: 12%;
   text-align: left;
 }
@@ -121,24 +123,27 @@ border: none;
 
 .journeysRow img {
   padding: 0%;
-  width: 100%;
+  width: 50%;
   height: 100%;
+  background-color: white;
 }
 
 .title {
-  margin: 0%;
+  margin-left: 29%;
+  margin-top: 10px;
+  border-radius: 24px;
   background: transparent;
-  height: 100%;
-  width: 100%;
-  position: absolute;
+  height: 95%;
+  width: 41%;
+  /* position: absolute;
   top: 0px;
-  left: 0px;
+  left: 0px; */
   transition: 0.4s;
   cursor: pointer;
 }
 
 .title:hover {
-  background: #7991f072;
+  background: #5575f33e;
 }
 
 
@@ -191,6 +196,7 @@ table tr:nth-child(1) {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 /* The actual popup (appears on top) */
