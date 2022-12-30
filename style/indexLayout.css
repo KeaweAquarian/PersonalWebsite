@@ -10,7 +10,7 @@ script date Nov,  2022
 }
 
 body {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 main {
@@ -31,7 +31,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
 }
 
 #imgMe {
@@ -41,22 +41,21 @@ main {
   float: left;
   margin: 0 0 0 10px;
   filter: brightness(90%)
-  
 }
 
 .comments h1 {
 
   font-size: 200px;
-  font-family:monospace;
+  font-family: monospace;
   width: 80%;
 }
 
 .comments h2 {
   padding: 10px 0;
   width: 70%;
- align-items: center;
+  align-items: center;
   font-size: 30px;
-  font-family:monospace;
+  font-family: monospace;
 }
 
 .journeys {
@@ -90,42 +89,57 @@ main {
   text-align: left;
 }
 
+.journeys h2 {
+
+  font-size: 40px;
+  margin: 50px;
+
+}
+
 .journeysCol h1 {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
+  font-size: 50px;
 }
 
 .journeysCol p {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
+  font-size: 25px;
 }
 
-.seeLive{
+.seeLive {
   background-color: #faf8f8;
-  border-color:  #0606e5af;
+  border-color: #fc1707;
   padding: 6px;
   border-style: solid;
   border-width: 2px;
-  color: #0606e5af;
+  color: #fc1707;
   font-weight: 600;
 }
 
-.sourceCode{
+.sourceCode {
   background-color: #faf8f8;
-border: none;
-  padding: 4px;
-
-  color: #0606e5af;
+  border: none;
+  padding: 8px;
+  color: #fffb00;
+  background-color: rgba(3, 3, 3, 0.529);
+  /* color: #0606e5af; */
   font-weight: 600;
 }
 
 .journeysRow img {
   padding: 0%;
+  margin-top: 6%;
   width: 50%;
   height: 100%;
   background-color: white;
+}
+.stackLogo img{
+  width: 50px;
+  height: 55px;
 }
 
 .title {
@@ -133,13 +147,14 @@ border: none;
   margin-top: 10px;
   border-radius: 24px;
   background: transparent;
-  height: 95%;
+  height: 100%;
   width: 41%;
   /* position: absolute;
   top: 0px;
   left: 0px; */
   transition: 0.4s;
   cursor: pointer;
+
 }
 
 .title:hover {
@@ -196,7 +211,7 @@ table tr:nth-child(1) {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 /* The actual popup (appears on top) */
@@ -254,6 +269,10 @@ table tr:nth-child(1) {
   }
 }
 
+button {
+  cursor: pointer;
+}
+
 .services {
   width: 80%;
   margin: 30px auto;
@@ -306,21 +325,23 @@ table tr:nth-child(1) {
   background: #7991f072;
 }
 
-article{
+article {
   width: 100%;
   padding-left: 20px;
 }
-#list{
+
+#list {
   /* width: 100%; */
   display: flex;
   color: #021c53ac;
   width: 100%;
-  
+
 }
 
-article h2{
+article h2 {
   margin-left: 80px;
 }
+
 .firstList {
   padding-left: 150px;
   margin-top: 10px;
@@ -379,9 +400,9 @@ article h2{
 }
 
 
-  /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
-  .social {
-    
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.social {
+
   position: fixed;
   top: 80%;
   left: 1%;
@@ -441,12 +462,13 @@ article h2{
   .journeysCol {
     margin-bottom: 20px;
   }
-  #list{
+
+  #list {
     width: 100%;
     display: flex;
     flex-direction: column;
     color: #021c53ac;
-    
+
   }
 
 }
