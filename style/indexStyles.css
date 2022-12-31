@@ -1,101 +1,33 @@
-/**
- CSS layout document for home.html.
-developed by Keawe Aquarian 260351368, Magda Prieto 261067065, Qi Yao 261051100
-script date Nov,  2022
-*/
-
-* {
-  padding: 0%;
-  margin: 0%;
-}
-
-/* .header--fixed {
-  position: absolute;
-  top: 0; 
-  width: 100%; 
-} */
-
-/* main {
-  padding-top: 110px;
-} */
-
-.header--fixed.top {
-  transition: none;
-  transform: translateY(0);
-}
-.header--fixed.not-top {
-  position: fixed;
-  transform: translateY(-100%);
-}
-.header--fixed.slideDown.not-top {
-  transition: transform 0.6s ease-in-out;
-  transform: translateY(0);
-}
-.header--fixed.slideDown.top {
-  transition: transform 0.6s ease-in-out;
-  position: fixed;
-}
-.header--fixed.slideUp.not-top {
-  transition: transform 0.6s ease-in-out;
-  transform: translateY(-100%);
-}
-.header--fixed.slideUp.top {
-  transform: translateY(-100%);
-  position: absolute;
-}
 
 
 
-main {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
 
-main img {
-  background: #7991f072;
-  
-}
 
-/* .comments {
-  width: 80%;
-  margin-top: 30px;
-} */
 
-/* .comments p {
-  padding: 10px 0;
-} */
 
-.journeys {
+/* .journeys {
   width: 90%;
   margin: auto;
   text-align: center;
   padding-top: 40px;
-}
+} */
 
-.journeysRow {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-}
 
-.journeysCol {
+/* .journeysCol {
   border-radius: 10px;
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
   margin: 0% 30px;
-}
+} */
 
-.journeysCol img {
+/* .journeysCol img {
   padding: 0%;
   width: 100%;
   height: 100%;
-}
+} */
 
-.title {
+/* .title {
   margin: 0%;
   background: transparent;
   height: 100%;
@@ -105,15 +37,15 @@ main img {
   left: 0px;
   transition: 0.4s;
   cursor: pointer;
-}
+} */
 
-.title:hover {
+/* .title:hover {
   background: #7991f072;
-}
+} */
 
 
 
-table {
+/* table {
   width: 96%;
 }
 
@@ -151,21 +83,21 @@ table tr:nth-child(1) {
   font-weight: 300;
   color: white;
   background-color: #0135a6c9;
-}
+} */
 
 /* Popup container */
-.popup {
+/* .popup {
   position: relative;
   display: inline-block;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 /* The actual popup (appears on top) */
 .popup .popuptext {
-  visibility: hidden;
+  /* visibility: hidden;
   width: 560px;
   background-color: #555;
   color: #fff;
@@ -173,13 +105,13 @@ table tr:nth-child(1) {
   border-radius: 6px;
   padding: 5px 5px;
   position: absolute;
-  z-index: 1;
+  z-index: 1; */
 }
 
 
 
 /* Popup*/
-.popup .popuptext::after {
+/* .popup .popuptext::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -188,17 +120,17 @@ table tr:nth-child(1) {
   border-width: 5px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
-}
+} */
 
 /* what pops up */
-.popup .show {
+/* .popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s
-}
+} */
 
 /* Fade action */
-@-webkit-keyframes fadeIn {
+/* @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
   }
@@ -216,9 +148,9 @@ table tr:nth-child(1) {
   to {
     opacity: 1;
   }
-}
+} */
 
-.services {
+/* .services {
   width: 80%;
   margin: 30px auto;
   text-align: center;
@@ -274,9 +206,9 @@ article{
   width: 100%;
   padding-left: 20px;
 }
-#list{
+#list{ */
   /* width: 100%; */
-  display: flex;
+  /* display: flex;
   color: #021c53ac;
   width: 100%;
   
@@ -340,11 +272,11 @@ article h2{
 .testimonialCol h3 {
   margin-top: 13px;
   text-align: right;
-}
+} */
 
 
 /* Tablet layout settings */
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
 
   .firstList {
     padding-left: 50px;
@@ -362,10 +294,10 @@ article h2{
     padding-left: 20px;
   }
 
-}
+} */
 
 /* Mobile layout settings */
-@media (max-width: 550px) {
+/* @media (max-width: 550px) {
 
   main {
     padding-top: 40%;
@@ -390,4 +322,4 @@ article h2{
     
   }
 
-}
+} */

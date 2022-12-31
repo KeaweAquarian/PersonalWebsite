@@ -16,18 +16,18 @@ script date Nov, 22 2022
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/indexHeaderLayout.css">
     <link rel="stylesheet" href="style/indexHeaderStyle.css">
-    <link rel="stylesheet" href="style/indexStyles.css">
+    <!-- <link rel="stylesheet" href="style/indexStyles.css"> -->
     <link rel="stylesheet" href="style/indexLayout.css">
     <!-- Load icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script/home.js"></script>
-    
+
 </head>
 
 <!-- Main body -->
 
 <body>
-   
+
 
 
 
@@ -35,10 +35,10 @@ script date Nov, 22 2022
     <header id="header">
         <div id="topNav">
             <!-- Company Logo -->
-                                <!-- Opening image -->
-        <img src="images/keawePhoto.jpg" alt="Photo keawe" id="imgMe">
+            <!-- Opening image -->
+            <img src="images/keawePhoto.jpg" alt="Photo keawe" id="imgMe">
             <a href="index.html" class="logo"><img src="images/keawelogo.png" alt="Keawe Logo"></a>
- 
+
         </div>
         <div id="bottomNav">
             <!-- Website Navigation -->
@@ -72,11 +72,12 @@ script date Nov, 22 2022
         <div class="comments">
             <h1>
                 Java
-               <br>&emsp; developer
+                <br>&emsp; developer
             </h1>
 
             <h2>
-                 With a passionate focus on writing well structured code leading to an amazing user experiance for your clients.
+                With a passionate focus on writing well structured code leading to an amazing user experiance for your
+                clients.
                 <!-- Serious passion for emerging technology and understanding how they can be integrated into current projects. -->
             </h2>
 
@@ -90,35 +91,61 @@ script date Nov, 22 2022
 
             <div class="journeysRow">
                 <div class="journeysCol">
-                <h1>
-                    Yelp Restaurant Clone
-                </h1>
-                <p>
-                    Using the Yelp Api database, I designed a clone of their search app that supplies a list of local restaurants based on 
-                    the users search key words. User can add their favorties to a database using SQL lite and accessed via a drag from 
-                    left to right on the screen.
-                </p>
+                    <h1>
+                        Restaurant Online Order App
+                    </h1>
+                    <p>
+                        A fully interactive application to allow clients to order from their favorite restaurant. A shopping cart is maintained
+                        with through json conversion.
+                    </p>
 
-                <div class="submit-div">
-                    
-                    <button type="submit" class="seeLive" value="See Live">See Demo</button>
-                    <button type="submit" class="sourceCode" onclick="location.href='https://github.com/KeaweAquarian/RestaurantApp';" value="Source Code">Source Code</button>
-                  </div>
-                  <div class="stackLogo">
-                    <img src="images/android-logo-12380(1).png" alt="Android logo" srcset="">
-                    <img src="images/html5-logo-31813.png" alt="">
-                    <img src="images/html5-logo-31821.png" alt="">
+                    <div class="submit-div">
+
+                        <button type="submit" class="seeLive" value="See Live">See Demo</button>
+                        <button type="submit" class="sourceCode"
+                            onclick="location.href='https://github.com/KeaweAquarian/RestaurantApp';"
+                            value="Source Code">Source Code</button>
+                    </div>
+                    <div class="stackLogo">
+                        <figure>
+                            <img src="images/html5-logo-31813.png" alt="">
+                            <figcaption>HTML5</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/html5-logo-31821.png" alt="">
+                            <figcaption>CSS</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/Java_logo_PNG2.png" alt="">
+                            <figcaption>Java</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/Sqlite-square-icon.svg.png" alt="">
+                            <figcaption>SQL Lite</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/android-logo-12380(1).png" alt="Android logo">
+                            <figcaption>Android Studio</figcaption>
+                        </figure>
+
+
+                    </div>
                 </div>
-                </div>
-                <div class="popup" onclick="myFunction(1)">
-                    
-                        <img src="images/MyRestaurant.png" alt="Sydni">
-                        <div class="title">
-                            <p>Click To See Demo</p>
-                        </div>
-                   
-                    <div class="popuptext" id="myPopup1">
-                        Australia Zodiacs take you up the spectacular King George River, where you’ll feel dwarfed by
+                <div class="popup" onclick="myFunction(2)">
+
+                    <img src="images/MyRestaurant.png" alt="Sydni">
+                    <div class="title">
+                        <p>Click To See Demo</p>
+                    </div>
+
+                    <div class="popuptext" id="myPopup2">
+
+                        <video width="360" height="560" controls>
+                            <source src="images/MyRestaurant.mp4" type="video/mp4">
+
+                            Your browser does not support the video tag.
+                        </video>
+                        <!-- Australia Zodiacs take you up the spectacular King George River, where you’ll feel dwarfed by
                         the towering
                         red rock canyon walls, then cooled by the mist of King George Falls. View an outdoor Aboriginal
                         art gallery,
@@ -126,8 +153,8 @@ script date Nov, 22 2022
                         systems in
                         Australia. Visit Montgomery Reef,
                         where the tide drops so rapidly that waters trapped atop the reef create a raging torrent as
-                        they escape.
-                        <table class="center">
+                        they escape. -->
+                        <!-- <table class="center">
                             <tr>
                                 <th>Package Name</th>
                                 <th>Duration</th>
@@ -158,14 +185,226 @@ script date Nov, 22 2022
                                 <td>7d + 6n</td>
                                 <td>1,540</td>
                             </tr>
-                        </table>
+                        </table> -->
                     </div>
-                    
+
                 </div>
 
 
             </div>
-            
+
+            <div class="journeysRow">
+                <div class="journeysCol">
+                    <h1>
+                        Restaurant Search App
+                    </h1>
+                    <p>
+                        Using the Yelp Api database, I designed a search app that supplies a list of local restaurants
+                        based on
+                        the users search key words. User can add their favorties to a list database using SQL lite and
+                        accessed via a drag from
+                        left to right on the screen.
+                    </p>
+
+                    <div class="submit-div">
+
+                        <button type="submit" class="seeLive" value="See Live">See Demo</button>
+                        <button type="submit" class="sourceCode"
+                            onclick="location.href='https://github.com/KeaweAquarian/RestaurantApp';"
+                            value="Source Code">Source Code</button>
+                    </div>
+                    <div class="stackLogo">
+                        <figure>
+                            <img src="images/html5-logo-31813.png" alt="">
+                            <figcaption>HTML5</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/html5-logo-31821.png" alt="">
+                            <figcaption>CSS</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/Java_logo_PNG2.png" alt="">
+                            <figcaption>Java</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/Sqlite-square-icon.svg.png" alt="">
+                            <figcaption>SQL Lite</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/android-logo-12380(1).png" alt="Android logo">
+                            <figcaption>Android Studio</figcaption>
+                        </figure>
+
+
+                    </div>
+                </div>
+                <div class="popup" onclick="myFunction(1)">
+
+                    <img src="images/MyYelpSearch.png" alt="Sydni">
+                    <div class="title">
+                        <p>Click To See Demo</p>
+                    </div>
+
+                    <div class="popuptext" id="myPopup1">
+
+                        <video width="360" height="560" controls>
+                            <source src="images/RestaurantSearch.mp4" type="video/mp4">
+
+                            Your browser does not support the video tag.
+                        </video>
+                        <!-- Australia Zodiacs take you up the spectacular King George River, where you’ll feel dwarfed by
+                        the towering
+                        red rock canyon walls, then cooled by the mist of King George Falls. View an outdoor Aboriginal
+                        art gallery,
+                        portraying images of the Wandjina spirits. Explore the Ord River, one of the most stunning river
+                        systems in
+                        Australia. Visit Montgomery Reef,
+                        where the tide drops so rapidly that waters trapped atop the reef create a raging torrent as
+                        they escape. -->
+                        <!-- <table class="center">
+                            <tr>
+                                <th>Package Name</th>
+                                <th>Duration</th>
+                                <th>Price p/p CAD</th>
+                            </tr>
+                            <tr>
+                                <td>Magic Australia</td>
+                                <td>3d + 2n</td>
+                                <td>660</td>
+                            </tr>
+                            <tr>
+                                <td>Great SeightSeeing</td>
+                                <td>4d +3n</td>
+                                <td>1,100</td>
+                            </tr>
+                            <tr>
+                                <td>Coral Reef</td>
+                                <td>5d +4n</td>
+                                <td>1,320</td>
+                            </tr>
+                            <tr>
+                                <td>Kangaroo Land</td>
+                                <td>6d + 5n</td>
+                                <td>1,320</td>
+                            </tr>
+                            <tr>
+                                <td>Sydney</td>
+                                <td>7d + 6n</td>
+                                <td>1,540</td>
+                            </tr>
+                        </table> -->
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="journeysRow">
+                <div class="journeysCol">
+                    <h1>
+                        Web Dev Navigations
+                    </h1>
+                    <p>
+                        A website for a travel agency offering vacation packages and travel insurance. Developed with HTML, CSS and JavaScript.
+                        
+                    </p>
+
+                    <div class="submit-div">
+                        
+
+                        <button type="submit" class="seeLive" onclick="location.href='https://keaweaquarian.github.io/WebDevNav/" value="See Live">See Demo</button>
+                        <button type="submit" class="sourceCode"
+                            onclick="location.href='https://github.com/KeaweAquarian/RestaurantApp';"
+                            value="Source Code">Source Code</button>
+                    </div>
+                    <div class="stackLogo">
+                        <figure>
+                            <img src="images/html5-logo-31813.png" alt="">
+                            <figcaption>HTML5</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/html5-logo-31821.png" alt="">
+                            <figcaption>CSS</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/Java_logo_PNG2.png" alt="">
+                            <figcaption>Java</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/Sqlite-square-icon.svg.png" alt="">
+                            <figcaption>SQL Lite</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/android-logo-12380(1).png" alt="Android logo">
+                            <figcaption>Android Studio</figcaption>
+                        </figure>
+
+
+                    </div>
+                </div>
+                <div class="popup" onclick="myFunction(3)">
+
+                    <img src="images/desktopMockup2.png" alt="Sydni">
+                    <div class="title">
+                        <p>Click To See Demo</p>
+                    </div>
+
+                    <div class="popuptext" id="myPopup3">
+
+                        <video width="360" height="560" controls>
+                            <source src="images/RestaurantSearch.mp4" type="video/mp4">
+
+                            Your browser does not support the video tag.
+                        </video>
+                        <!-- Australia Zodiacs take you up the spectacular King George River, where you’ll feel dwarfed by
+                        the towering
+                        red rock canyon walls, then cooled by the mist of King George Falls. View an outdoor Aboriginal
+                        art gallery,
+                        portraying images of the Wandjina spirits. Explore the Ord River, one of the most stunning river
+                        systems in
+                        Australia. Visit Montgomery Reef,
+                        where the tide drops so rapidly that waters trapped atop the reef create a raging torrent as
+                        they escape. -->
+                        <!-- <table class="center">
+                            <tr>
+                                <th>Package Name</th>
+                                <th>Duration</th>
+                                <th>Price p/p CAD</th>
+                            </tr>
+                            <tr>
+                                <td>Magic Australia</td>
+                                <td>3d + 2n</td>
+                                <td>660</td>
+                            </tr>
+                            <tr>
+                                <td>Great SeightSeeing</td>
+                                <td>4d +3n</td>
+                                <td>1,100</td>
+                            </tr>
+                            <tr>
+                                <td>Coral Reef</td>
+                                <td>5d +4n</td>
+                                <td>1,320</td>
+                            </tr>
+                            <tr>
+                                <td>Kangaroo Land</td>
+                                <td>6d + 5n</td>
+                                <td>1,320</td>
+                            </tr>
+                            <tr>
+                                <td>Sydney</td>
+                                <td>7d + 6n</td>
+                                <td>1,540</td>
+                            </tr>
+                        </table> -->
+                    </div>
+
+                </div>
+
+
+            </div>
+
         </section>
 
         <!-- Services -->
@@ -245,9 +484,11 @@ script date Nov, 22 2022
                 </a>
 
             </div>
+
+            
         </section>
 
- 
+
 
 
         <!-- Testimonials -->
@@ -293,11 +534,10 @@ script date Nov, 22 2022
         </p>
         <div class="social">
             <a href="https://github.com/KeaweAquarian"><i class="fa fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/keawe-aquarian-70482870/"><i
-                class="fa fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/keawe-aquarian-70482870/"><i class="fa fa-linkedin"></i></a>
             <a href="https://twitter.com/KeaweAquarian"><i class="fa fa-twitter"></i></a>
             <a href="https://www.instagram.com/keaweaquarian/"><i class="fa fa-instagram"></i></a>
-            
+
         </div>
 
         <p class="footer-text">
@@ -310,31 +550,31 @@ script date Nov, 22 2022
     <script src="https://unpkg.com/headroom.js"></script>
     <script>
         // Headroom.js
-// https://github.com/WickyNilliams/headroom.js
-var myElement = document.querySelector("header");
+        // https://github.com/WickyNilliams/headroom.js
+        var myElement = document.querySelector("header");
 
-var headroom  = new Headroom(myElement, {
-  "offset": 220,
-  "tolerance": {
-    up: 0,
-    down: 0
-  },
-  "classes": {
-    "initial": "header--fixed",
-    "pinned": "slideDown",
-    "unpinned": "slideUp",
-    "top": "top",
-    "notTop" : "not-top",
-  }
-});
+        var headroom = new Headroom(myElement, {
+            "offset": 220,
+            "tolerance": {
+                up: 0,
+                down: 0
+            },
+            "classes": {
+                "initial": "header--fixed",
+                "pinned": "slideDown",
+                "unpinned": "slideUp",
+                "top": "top",
+                "notTop": "not-top",
+            }
+        });
 
-headroom.init();
+        headroom.init();
 
-window.addEventListener('scroll', function() {
-  if (window.pageYOffset === 0) {
-    myElement.classList.remove('slideDown')
-  }
-})
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset === 0) {
+                myElement.classList.remove('slideDown')
+            }
+        })
     </script>
 </body>
 

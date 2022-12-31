@@ -9,6 +9,32 @@ script date Nov,  2022
   margin: 0%;
 }
 
+.header--fixed.top {
+  transition: none;
+  transform: translateY(0);
+}
+.header--fixed.not-top {
+  position: fixed;
+  transform: translateY(-100%);
+}
+.header--fixed.slideDown.not-top {
+  transition: transform 0.6s ease-in-out;
+  transform: translateY(0);
+}
+.header--fixed.slideDown.top {
+  transition: transform 0.6s ease-in-out;
+  position: fixed;
+}
+.header--fixed.slideUp.not-top {
+  transition: transform 0.6s ease-in-out;
+  transform: translateY(-100%);
+}
+.header--fixed.slideUp.top {
+  transform: translateY(-100%);
+  position: absolute;
+}
+
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
@@ -19,6 +45,11 @@ main {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+main img {
+  background: #7991f072;
+  
 }
 
 
@@ -61,18 +92,21 @@ main {
 .journeys {
   width: 90%;
   margin: auto;
-  /* text-align: center; */
+  text-align: center;
   padding-top: 40px;
 }
 
 .journeysRow {
   margin-top: 20px;
-  /* display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content:left; */
+   display: flex;
+  flex-direction: row; 
+  margin-bottom: 10%;
+  /* align-items: flex-start;
+  justify-content:left;  */
 
 }
+
+
 
 
 .journeysCol {
@@ -133,9 +167,21 @@ main {
 .journeysRow img {
   padding: 0%;
   margin-top: 6%;
-  width: 50%;
-  height: 100%;
+  width: 365px;
+  height: 90%;
   background-color: white;
+}
+.stackLogo {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.stackLogo figure {
+  margin: 0 10px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
 }
 .stackLogo img{
   width: 50px;
@@ -143,19 +189,22 @@ main {
 }
 
 .title {
-  margin-left: 29%;
+  margin-left: 0%;
   margin-top: 10px;
   border-radius: 24px;
   background: transparent;
-  height: 100%;
-  width: 41%;
-  /* position: absolute;
+  height: 95%;
+  width: 360px;
+  position: absolute;
   top: 0px;
-  left: 0px; */
+  left: 0px;
   transition: 0.4s;
   cursor: pointer;
+  padding-left: 5px;
 
 }
+
+
 
 .title:hover {
   background: #5575f33e;
@@ -163,7 +212,7 @@ main {
 
 
 
-table {
+/* table {
   width: 96%;
 }
 
@@ -201,30 +250,40 @@ table tr:nth-child(1) {
   font-weight: 300;
   color: white;
   background-color: #0135a6c9;
-}
+} */
 
 /* Popup container */
 .popup {
-  position: relative;
+  position: relative; 
   display: inline-block;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
 
 }
+
 
 /* The actual popup (appears on top) */
 .popup .popuptext {
   visibility: hidden;
-  width: 560px;
+  width: 355px;
   background-color: #555;
   color: #fff;
   text-align: center;
   border-radius: 6px;
-  padding: 5px 5px;
+  padding: 0;
+  margin: 0%;
   position: absolute;
   z-index: 1;
+  
+}
+.popup .popuptext video {
+  margin: 0;
+  padding: 0;
+  width: 355px;
+  
 }
 
 
@@ -235,10 +294,10 @@ table tr:nth-child(1) {
   position: absolute;
   top: 100%;
   left: 50%;
-  margin-left: -5px;
+  /* margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #555 transparent transparent transparent;
+  border-color: #555 transparent transparent transparent; */
 }
 
 /* what pops up */

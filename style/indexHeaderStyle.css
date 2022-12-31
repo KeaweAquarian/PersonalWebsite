@@ -158,11 +158,11 @@ form.search::after {
   display: table;
 }
 
-img {
+/* img {
   width: 9%;
 
   padding: 0 2%;
-}
+} */
 
 .language:hover {
   color: #0135a685;
