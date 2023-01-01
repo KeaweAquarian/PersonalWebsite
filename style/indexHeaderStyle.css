@@ -199,12 +199,12 @@ nav a:hover {
   color: black;
 
 }
-footer a{
+/* footer a{
   text-decoration: none;
   color: black;
   padding: 0;
   margin: 0%;
-}
+} */
 
 /* Tablet layout settings */
 @media (max-width: 900px) {
