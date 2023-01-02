@@ -175,6 +175,19 @@ main img {
   margin-left: 12%;
   text-align: left;
 }
+.journeysColWeb {
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start; */
+  border-radius: 10px;
+  margin-bottom: 30px;
+  /* position: relative;
+  overflow: hidden; */
+  margin: 0% 10px 0 60px;
+  width: 90%;
+  margin-left: 12%;
+  text-align: left;
+}
 
 .journeys h2 {
 
@@ -191,6 +204,19 @@ main img {
 }
 
 .journeysCol p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.journeysColWeb h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+.journeysColWeb p {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
@@ -252,6 +278,7 @@ main img {
   width: 50px;
   height: 55px;
   object-fit:scale-down;
+  background-color: transparent;
 }
 
 .title {
@@ -383,7 +410,7 @@ button {
   border-radius: 10px;
   margin-bottom: 30px;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   margin: 0% 30px;
   background: #e3e3e3;
   display: flex;
@@ -393,7 +420,8 @@ button {
 }
 
 .servicesCol img {
-  width: 100px;
+  width: 100%;
+  background-color: transparent;
 }
 
 .servicesTitle {
@@ -410,6 +438,49 @@ button {
 
 .servicesTitle:hover {
   background: #7991f072;
+}
+
+/* The actual popup (appears on top) */
+.servicesPopup .servicesPopuptext {
+
+  visibility: hidden;
+  width: 355px;
+  background-color: #555;
+  color: #fff;
+
+  border-radius: 6px;
+  padding: 5px;
+  margin: 0%;
+  position: absolute;
+  z-index: 1;
+}
+
+.servicesPopuptext h4{
+margin: 5px;
+}
+
+.servicesPopuptext .sourceCode{
+  margin-top: 5px;
+  margin-bottom: 0;
+  }
+/* Popup*/
+.servicesPopup .servicesPopuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+}
+
+/* what pops up */
+.servicesPopup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+.servicesLogo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 article {
@@ -456,6 +527,11 @@ article h2 {
   text-decoration: none;
   font-weight: bold;
   display: inline-block;  
+}
+
+.travelImg img{
+ width: 250px;
+ height: 200px;
 }
 
 
