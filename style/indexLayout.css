@@ -9,6 +9,10 @@ script date Nov,  2022
   margin: 0%;
 }
 
+body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .header--fixed.top {
   transition: none;
   transform: translateY(0);
@@ -35,29 +39,31 @@ script date Nov,  2022
 }
 
 #bottomNav{
+  margin-top: 13px;
   display: flex;
   margin-right: 20px;
+  font-style: italic;
 }
 
 .resume{
-  background-color: #faf8f8;
-  border: none;
-  padding: 4px;
+  padding: 6px 8px;
   color: #fffb00;
   background-color: rgba(117, 115, 115, 0.529);
-  /* color: #0606e5af; */
-  border: #07070766;
-  border-style: groove;
   font-weight: 600;
   font-size: 18px;
   font-style: italic;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  border: #07070766;
+  border-style: groove;
+  border-radius: 3px;
+  margin-left: 20px;
 }
 
+.resume:hover {
+  color: #fdfdfcd3;
+ }
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
+
+
 
 main {
   width: 100%;
@@ -84,6 +90,32 @@ main img {
   justify-content: center;
 
 }
+/* DEMO-SPECIFIC STYLES */
+.comments h1 {
+  color: rgb(4, 4, 4);
+  /* font-family: monospace; */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* border-right: .15em solid rgb(182, 182, 181);  */
+  /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 80% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(182, 182, 181) }
+}
 
 #imgMe {
   width: 50px;
@@ -96,7 +128,7 @@ main img {
 
 .comments h1 {
 
-  font-size: 180px;
+  font-size: 165px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-style: italic;
   width: 80%;
@@ -168,22 +200,33 @@ main img {
 .seeLive {
   background-color: #faf8f8;
   border-color: #fc1707;
-  padding: 6px;
+  border-radius: 3px;
+  padding: 8px;
   border-style: solid;
   border-width: 2px;
   color: #fc1707;
   font-weight: 600;
 }
+.seeLive:hover  {
+  color: #464646d3;
+  border-color: #464646d3;
+ }
 
 .sourceCode {
   background-color: #faf8f8;
-  border: none;
   padding: 8px;
   color: #fffb00;
   background-color: rgba(3, 3, 3, 0.529);
   /* color: #0606e5af; */
   font-weight: 600;
+  border: #07070766;
+  border-style: groove;
+  border-radius: 3px;
 }
+.sourceCode:hover  {
+  color: #fdfdfcd3;
+ }
+
 
 
 .journeysRow img {
@@ -208,6 +251,7 @@ main img {
 .stackLogo img{
   width: 50px;
   height: 55px;
+  object-fit:scale-down;
 }
 
 .title {
