@@ -549,8 +549,14 @@ article h2 {
 }
 
 .travelImg img{
+  margin-right: 10px;
  width: 250px;
  height: 200px;
+ border:2px solid #fff; 
+ box-shadow: 10px 10px 5px #ccc;
+ -moz-border-radius:25px;
+ -webkit-border-radius:25px;
+ border-radius:5px;
 }
 
 
