@@ -280,6 +280,12 @@ main img {
   object-fit:scale-down;
   background-color: transparent;
 }
+.serviceIcons img{
+  width: 50px;
+  height: 25px;
+  object-fit:scale-down;
+  background-color: transparent;
+}
 
 .title {
   margin-left: 0%;
@@ -446,9 +452,10 @@ button {
 
   visibility: hidden;
   width: 355px;
-  background-color: #555;
-  color: #fff;
-
+  /* background-color: #555; */
+  
+  color: rgb(1, 1, 1);
+background-color: rgb(231, 229, 229);
   border-radius: 6px;
   padding: 5px;
   margin: 0%;
@@ -479,9 +486,20 @@ margin: 5px;
   animation: fadeIn 1s
 }
 .servicesLogo{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  margin: 20px 50px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr 1fr 1fr;
+  place-self: center;
+
+}
+
+.servicesLogo img{
+  width: 50px;
+  height: 55px;
+  object-fit:scale-down;
+  background-color: transparent;
 }
 
 article {
