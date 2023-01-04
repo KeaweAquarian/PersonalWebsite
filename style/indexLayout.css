@@ -44,12 +44,15 @@ body {
   margin-right: 20px;
   font-style: italic;
 }
+#bottomNav a{
+font-weight: 400;
+}
 
 .resume{
   padding: 6px 8px;
   color: #fffb00;
   background-color: rgba(117, 115, 115, 0.529);
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
   font-style: italic;
   border: #07070766;
@@ -132,6 +135,7 @@ main img {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-style: italic;
   width: 80%;
+  font-weight: 500;
 }
 
 .comments h2 {
@@ -139,7 +143,12 @@ main img {
   width: 70%;
   align-items: center;
   font-size: 30px;
+  font-weight: 100;
+  font-style: italic;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#aboutMe{
+  margin-top: 100px;
 }
 
 .journeys {
