@@ -146,9 +146,64 @@ main img {
   font-weight: 100;
   font-style: italic;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 60px;
 }
-#aboutMe{
+.about{
+  width: 80%;
+  text-align: center;
+  padding: 20px;
+  /* padding-left: 60px; */
+  margin-left: 50px;
   margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  border: black 2px solid;
+  border-radius: 8px;
+}
+#aboutRow{
+  margin: 0%;
+  margin-right: 20px;
+
+ 
+  
+}
+#aboutCol{
+  padding: 20px;
+  width: 100%;
+  margin: 0;
+
+
+}
+
+.me {
+  /* background-color: #ED2939; */
+  /* float: left; */
+  width: 200px;
+  height: 200px;
+  transition: filter .5s ease-in-out;
+  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+  border-radius: 80px;
+}
+
+.me:hover {
+
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+}
+
+
+@keyframes in-out {
+	0% {
+		transform: translateX(-100%);
+	}
+	50% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
 }
 
 .journeys {
@@ -614,8 +669,8 @@ article h2 {
 footer {
   position: relative;
   height: 180px;
-  margin-left: 10%;
-  width: 83%;
+  margin-left: 5%;
+  width: 91%;
   display: flex;
   flex-direction: column;
   align-items: center;
