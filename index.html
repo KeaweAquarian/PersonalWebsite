@@ -20,7 +20,8 @@ script date Nov, 22 2022
     <link rel="stylesheet" href="style/indexLayout.css">
     <!-- Load icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script/home.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"> -->
+    <!-- <script src="script/index.js"></script> -->
 
 </head>
 
@@ -41,7 +42,9 @@ script date Nov, 22 2022
         </div>
         <div id="bottomNav">
             <!-- Website Navigation -->
-            <nav>
+            <nav id="nav">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
                 <ul>
                     <li>
                         <a class="nav-link" href="index.html#aboutMe"><span class="link">About</span></a>
@@ -56,6 +59,7 @@ script date Nov, 22 2022
             </nav>
             <a href="documents/KeaweAquarianCV.pdf" target="_blank"><button type="submit" class="resume"
                     value="Source Code">Resume</button></a>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </div>
 
     </header>
@@ -86,16 +90,20 @@ script date Nov, 22 2022
                         About me
                     </h1>
                     <p>
-                        A recent graduate of McGill University, I am excited about the prospect of expanding my skill set and growing with a product-driven company.
-                        My coursework was focused on full stack development with an in-depth understanding of the principles of information technology and its 
-                        applications.  Centered on Java programming, proficiency in all basic operations along with advanced concepts such as mobile applications, web services built on Spring Boot and full front and backend web development including JavaScript, HTML/CSS were gained.
+                        A recent graduate of McGill University, I am excited about the prospect of expanding my skill
+                        set and growing with a product-driven company.
+                        My coursework was focused on full stack development with an in-depth understanding of the
+                        principles of information technology and its
+                        applications. Centered on Java programming, proficiency in all basic operations along with
+                        advanced concepts such as mobile applications, web services built on Spring Boot and full front
+                        and backend web development including JavaScript, HTML/CSS were gained.
                     </p>
-                    </div>
                 </div>
-               
+            </div>
+
         </div>
 
-        
+
 
         <!-- Adventure options -->
         <section class="journeys" id="work">
@@ -105,9 +113,9 @@ script date Nov, 22 2022
 
             <div class="journeysRow">
                 <div class="journeysCol">
-                    <h1>
+                    <h2>
                         Restaurant Online Order App
-                    </h1>
+                    </h2>
                     <p>
                         An interactive application to allow clients to order from their favorite restaurant. A shopping
                         cart is maintained
@@ -158,9 +166,9 @@ script date Nov, 22 2022
 
             <div class="journeysRow">
                 <div class="journeysCol">
-                    <h1>
+                    <h2>
                         Restaurant Search App
-                    </h1>
+                    </h2>
                     <p>
                         Using the Yelp API database, I designed a search app that supplies a list of local restaurants
                         based on
@@ -247,12 +255,12 @@ script date Nov, 22 2022
 
                     </div>
                 </div>
-                    <div class="travelImg">
-                        <img src="images/labtopMockup.png" alt="Home Page">
-                        <img src="images/desktopMockup2.png" alt="Home Page">
-                        <img src="images/desktopMockup3.png" alt="Home Page">
-                        <img src="images/InsuranceTablet.png" alt="Home Page">
-                    </div>
+                <div class="travelImg">
+                    <img src="images/labtopMockup.png" alt="Home Page">
+                    <img src="images/desktopMockup2.png" alt="Home Page">
+                    <img src="images/desktopMockup3.png" alt="Home Page">
+                    <img src="images/InsuranceTablet.png" alt="Home Page">
+                </div>
 
             </div>
 
@@ -275,12 +283,13 @@ script date Nov, 22 2022
 
                         <div class="servicesPopuptext" id="myPopup3">
                             <h4>
-                               Using Spring Boot as the IDE and Eureka server as the registry service I have developed integrated microservices.
+                                Using Spring Boot as the IDE and Eureka server as the registry service I have developed
+                                integrated microservices.
                                 An example of a monthly fruit price database service can be seen at the link below.
                             </h4>
                             <button type="submit" class="sourceCode"
-                            onclick="location.href='https://github.com/KeaweAquarian/FruitPriceDataBase';"
-                            value="Source Code">Source Code</button>
+                                onclick="location.href='https://github.com/KeaweAquarian/FruitPriceDataBase';"
+                                value="Source Code">Source Code</button>
                             <div class="servicesLogo">
                                 <figure>
                                     <img src="images/Java_logo_PNG2.png" alt="">
@@ -309,22 +318,23 @@ script date Nov, 22 2022
 
                         <div class="servicesPopuptext" id="myPopup4">
                             <h4>
-                                Visit my GitHub to see a demonstration of a restful service that stores details about books as an object which can be updated 
+                                Visit my GitHub to see a demonstration of a restful service that stores details about
+                                books as an object which can be updated
                                 deleted or searched.
                             </h4>
                             <button type="submit" class="sourceCode"
-                            onclick="location.href='https://github.com/KeaweAquarian/RestfulBookService';"
-                            value="Source Code">Source Code</button>
+                                onclick="location.href='https://github.com/KeaweAquarian/RestfulBookService';"
+                                value="Source Code">Source Code</button>
                             <div class="servicesLogo">
-                                    <figure>
-                                        <img src="images/Java_logo_PNG2.png" alt="">
-                                        <figcaption>Java</figcaption>
-                                    </figure>
-                                    <figure>
-                                        <img src="images/IntelliJ_IDEA_Icon.svg.png" alt="">
-                                        <figcaption>IntelliJ</figcaption>
-                                    </figure>
-                                </div>
+                                <figure>
+                                    <img src="images/Java_logo_PNG2.png" alt="">
+                                    <figcaption>Java</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="images/IntelliJ_IDEA_Icon.svg.png" alt="">
+                                    <figcaption>IntelliJ</figcaption>
+                                </figure>
+                            </div>
 
                         </div>
                     </div>
@@ -369,18 +379,20 @@ script date Nov, 22 2022
 
                         <div class="servicesPopuptext" id="myPopup7">
                             <h4>
-                                Fundamental concepts and practices of network principles, local area and wide-area networks, 
-                                network topology, network protocols, Internet/intranets, client/server communication, and file sharing. 
+                                Fundamental concepts and practices of network principles, local area and wide-area
+                                networks,
+                                network topology, network protocols, Internet/intranets, client/server communication,
+                                and file sharing.
                             </h4>
                             <button type="submit" class="sourceCode"
-                            onclick="location.href='https://github.com/KeaweAquarian/Networking';"
-                            value="Source Code">Source Code</button>
+                                onclick="location.href='https://github.com/KeaweAquarian/Networking';"
+                                value="Source Code">Source Code</button>
                             <div class="servicesLogo">
-                                    <figure>
-                                        <img src="images/cisco.png" alt="cisco logo">
-                                        <figcaption>Cisco Packet Tracer</figcaption>
-                                    </figure>
-                                </div>
+                                <figure>
+                                    <img src="images/cisco.png" alt="cisco logo">
+                                    <figcaption>Cisco Packet Tracer</figcaption>
+                                </figure>
+                            </div>
 
                         </div>
                     </div>
@@ -395,18 +407,19 @@ script date Nov, 22 2022
 
                         <div class="servicesPopuptext" id="myPopup6">
                             <h4>
-                                Using both MySQL and SQL server I have experience designing and maintaining databases. Please visit my GitHub to 
+                                Using both MySQL and SQL server I have experience designing and maintaining databases.
+                                Please visit my GitHub to
                                 see a sample database for a lending library.
                             </h4>
                             <button type="submit" class="sourceCode"
-                            onclick="location.href='https://github.com/KeaweAquarian/LibraryDataBase';"
-                            value="Source Code">Source Code</button>
+                                onclick="location.href='https://github.com/KeaweAquarian/LibraryDataBase';"
+                                value="Source Code">Source Code</button>
                             <div class="servicesLogo">
-                                    <figure>
-                                        <img src="images/sql-server-icon-png-1.png" alt="">
-                                        <figcaption>SQL Server</figcaption>
-                                    </figure>
-                                </div>
+                                <figure>
+                                    <img src="images/sql-server-icon-png-1.png" alt="">
+                                    <figcaption>SQL Server</figcaption>
+                                </figure>
+                            </div>
 
                         </div>
                     </div>
@@ -441,7 +454,8 @@ script date Nov, 22 2022
         <h3>A Peak In My Head</h3>
         <p>Located in Montreal, I love the quiet moments in the morning watching the city wake up while I drink my
             coffee. Time not devoted to
-            the craft of coding, goes to my two adorable demon children or jogging along the St. Lawrence. I have been known to 
+            the craft of coding, goes to my two adorable demon children or jogging along the St. Lawrence. I have been
+            known to
             lace up my dancing shoes and two step lake into the night.
         </p>
         <div class="social">
@@ -458,33 +472,32 @@ script date Nov, 22 2022
     </footer>
     <script src="https://unpkg.com/headroom.js"></script>
     <script>
-        // Headroom.js
-        // https://github.com/WickyNilliams/headroom.js
-        var myElement = document.querySelector("header");
+        // var myElement = document.querySelector("header");
 
-        var headroom = new Headroom(myElement, {
-            "offset": 220,
-            "tolerance": {
-                up: 0,
-                down: 0
-            },
-            "classes": {
-                "initial": "header--fixed",
-                "pinned": "slideDown",
-                "unpinned": "slideUp",
-                "top": "top",
-                "notTop": "not-top",
-            }
-        });
+        // var headroom = new Headroom(myElement, {
+        //     "offset": 220,
+        //     "tolerance": {
+        //         up: 0,
+        //         down: 0
+        //     },
+        //     "classes": {
+        //         "initial": "header--fixed",
+        //         "pinned": "slideDown",
+        //         "unpinned": "slideUp",
+        //         "top": "top",
+        //         "notTop": "not-top",
+        //     }
+        // });
 
-        headroom.init();
+        // headroom.init();
 
-        window.addEventListener('scroll', function () {
-            if (window.pageYOffset === 0) {
-                myElement.classList.remove('slideDown')
-            }
-        })
+        // window.addEventListener('scroll', function () {
+        //     if (window.pageYOffset === 0) {
+        //         myElement.classList.remove('slideDown')
+        //     }
+        // })
     </script>
+     <script src="script/index.js"></script>
 </body>
 
 </html>
