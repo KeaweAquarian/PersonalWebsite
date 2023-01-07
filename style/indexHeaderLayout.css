@@ -3,40 +3,40 @@
 developed by Keawe Aquarian 260351368, Magda Prieto 261067065, Qi Yao 261051100
 script date Nov,  2022
 */
-
+/* 
 *{
   padding: 0%;
   margin: 0%;
-}
+} */
 
-body {
+/* body {
   font-family: 'Times New Roman', Times, serif;
-}
+} */
 
-header{
+/* header{
   height: 60px;
-}
+} */
 
-#topNav {
+/* #topNav {
   width: 100%;
   padding: 0;
   margin: 0%;
-}
+} */
 
-#topNav a img {
+/* #topNav a img {
   float: left;
   height: 60px;
   width: 300px;
   margin-left: 1%;
   padding-left: 0%;
   
-}
+} */
 
-#bottomNav{
+/* #bottomNav{
   float: right;
-}
+} */
 
-#phoneBtn {
+/* #phoneBtn {
   float: right;
   margin-right: 5%;
   margin: 13px;
@@ -45,8 +45,8 @@ header{
 #phoneBtnSmall {
   visibility: hidden;
   float: right;
-}
-
+} */
+/* 
 .phonePopUp {
   width: 350px;
   position: absolute;
@@ -60,8 +60,8 @@ header{
 
 .openMessage {
   visibility: visible;
-}
-
+} */
+/* 
 .phonePopUp .fa {
   width: 80px;
   height: 60px;
@@ -75,9 +75,9 @@ header{
   position: absolute;
   margin-top: -65px;
   margin-left: 130px;
-}
+} */
 
-.animation::before {
+/* .animation::before {
   content: "";
   position: absolute;
   margin-top: -20px;
@@ -98,9 +98,9 @@ header{
   border-radius: 50%;
   animation: pulse 1s linear infinite;
   animation-delay: 0.3s
-}
+} */
 
-@keyframes pulse {
+/* @keyframes pulse {
   0% {
     transform: scale(0.5);
     opacity: 0
@@ -125,15 +125,15 @@ header{
   width: 100%;
   margin-top: 45px;
   padding: 10px 0;
-}
+} */
 
 
 /* Style select */
-.countries {
+/* .countries {
   font-size: large;
   font-weight: 400;
   float: right;
-  /* width: 6%; */
+
   padding: 5px;
   margin-right: 20px;
   margin: 10px 20px;
@@ -143,18 +143,18 @@ header{
 .language {
   float: right;
   margin: 15px 20px;
-}
+} */
 
 /* Sign in button opens sign in form */
-.signInBtn {
+/* .signInBtn {
   float: right;
   padding: 9px 20px;
   margin: 5px 5px 22px 5px;
   margin-bottom: 0%;
-}
+} */
 
 /* Sign in form initially hidden */
-.popupLogIn {
+/* .popupLogIn {
   display: none;
   position: absolute;
   top: 110%;
@@ -166,38 +166,38 @@ header{
 
 .popupLogIn h1 {
   padding-bottom: 25px;
-}
+} */
 
 /* Layout log in form */
-.logInForm {
+/* .logInForm {
   max-width: 300px;
   padding: 10px;
-}
+} */
 
 /* layout input */
-.logInForm input[type=text],
+/* .logInForm input[type=text],
 .logInForm input[type=password] {
   width: 90%;
   padding: 15px;
   margin: 5px 0 22px 0;
-}
+} */
 
 
 /* Layout submit/login button */
-.logInForm .btn {
+/* .logInForm .btn {
   padding: 16px 20px;
   width: 100%;
   margin-bottom: 10px;
-}
+} */
 
-#bottomNav{
+/* #bottomNav{
   margin-top: 15px;
 }
 nav {
   padding: 1px;
-}
+} */
 
-nav ul {
+/* nav ul {
   display: flex;
   margin: 5px;
   text-align: center;
@@ -207,18 +207,18 @@ nav ul {
   font-size: 20px;
   font-style: italic;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
+} */
 
-nav a {
+/* nav a {
   padding: 6px 10px;
   
 
-}
+} */
 
-.content {
+/* .content {
   padding: 20px 30px;
   margin-top: -4px;
-}
+} */
 
 
 
@@ -311,7 +311,7 @@ footer i {
 }
 
 @media (max-width: 750px) {
-  nav {
+  /* nav {
     display:flex;
     align-items: center;
   }
@@ -319,7 +319,7 @@ footer i {
   .nav-link {
     margin: 0%;
     padding: 8px 20px;
-  }
+  } */
   
 }
 

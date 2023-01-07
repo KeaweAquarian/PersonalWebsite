@@ -4,13 +4,13 @@ developed by Keawe Aquarian 260351368, Magda Prieto 261067065, Qi Yao 261051100
 script date Nov,  2022
 */
 
-body {
+/* body {
   padding-top: 92px;
   font-family: 'Times New Roman', Times, serif;
 
-}
+} */
 
-header {
+/* header {
   background: #fff;
   position: fixed;
   top: 0;
@@ -18,16 +18,16 @@ header {
   width: 100%;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
   z-index: 10;
-}
+} */
 
-#phoneBtn {
+/* #phoneBtn {
   background-color: rgb(248, 250, 251);
   border: none;
   font-size: 18px;
   cursor: pointer;
-}
+} */
 
-#phoneBtn:hover {
+/* #phoneBtn:hover {
   color: #0135a685;
 }
 
@@ -67,11 +67,11 @@ header {
   border-radius: 5px;
   cursor: pointer;
   box-shadow: 0 6px 5px rgb(0, 0, 0, 0.2);
-}
+} */
 
 
 /* Sign in button opens sign in form */
-.signInBtn {
+/* .signInBtn {
   font-size: 16px;
   background-color: #FFFFFF;
   color: rgb(7, 7, 7);
@@ -87,76 +87,76 @@ header {
   color: black;
   text-decoration: none;
   font-size: 18px;
-}
+} */
 
 /* Set a style for the submit/login button */
-.logInForm .btn {
+/* .logInForm .btn {
   background-color: #7eb4fa8e;
   color: black;
   border: none;
   cursor: pointer;
   opacity: 0.8;
-}
+} */
 
 /* Style log in */
-.logInForm {
+/* .logInForm {
   background-color: white;
-}
+} */
 
 /* Style input fields */
-.logInForm input[type=text],
+/* .logInForm input[type=text],
 .logInForm input[type=password] {
   border: none;
   background: #f1f1f1;
 
-}
+} */
 
 /* Hover login form*/
-.logInForm input[type=text]:focus,
+/* .logInForm input[type=text]:focus,
 .logInForm input[type=password]:focus {
   background-color: #ddd;
   outline: none;
-}
+} */
 
 /* close button */
-.logInForm .close {
+/* .logInForm .close {
   background-color: rgba(248, 60, 60, 0.536);
-}
+} */
 
 /* style buttons */
-.logInForm .btn:hover,
+/* .logInForm .btn:hover,
 .open-button:hover {
   opacity: 1;
   color: #0135a685;
-}
+} */
 
 /* Style the search field */
-form.search input[type=text] {
+/* form.search input[type=text] {
   font-size: 15px;
   border: none;
   background-color: rgba(0, 0, 255, 0.038);
 
-}
+} */
 
 /* Style the submit button */
-form.search button {
+/* form.search button {
   background: #7a7a7a63;
   color: black;
   font-size: 14px;
   cursor: pointer;
-}
+} */
 
-form.search button:hover {
+/* form.search button:hover {
   background: #0135a685;
   color: white;
-}
+} */
 
 /* Clear floats */
-form.search::after {
+/* form.search::after {
   content: "";
   clear: both;
   display: table;
-}
+} */
 
 /* img {
   width: 9%;
@@ -164,16 +164,16 @@ form.search::after {
   padding: 0 2%;
 } */
 
-.language:hover {
+/* .language:hover {
   color: #0135a685;
 }
 
 #phoneBtnSmall:hover {
   color: #0135a685;
-}
+} */
 
 
-nav {
+/* nav {
   color: black;
 }
 
@@ -187,18 +187,18 @@ nav a:hover {
   font-weight: 600;
   text-decoration: none;
 
-}
+} */
 
-.content {
+/* .content {
   background: #E2EDF1;
   color: #1F3A43;
-}
+} */
 
-.social .fa {
+/* .social .fa {
   cursor: pointer;
   color: black;
 
-}
+} */
 /* footer a{
   text-decoration: none;
   color: black;
@@ -210,17 +210,17 @@ nav a:hover {
 @media (max-width: 900px) {
 
 
-  .popupLogIn {
+  /* .popupLogIn {
     top: 120%;
     left: 35%;
-  }
+  } */
 
 }
 
 /* Mobile layout settings */
 @media (max-width: 550px) {
 
-  #phoneBtnSmall {
+  /* #phoneBtnSmall {
     background-color: white;
     border: none;
     cursor: pointer;
@@ -229,5 +229,5 @@ nav a:hover {
   nav ul li {
     border: #f1f1f1;
     border-style: solid;
-  }
+  } */
 }
