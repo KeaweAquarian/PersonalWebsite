@@ -375,6 +375,7 @@ main img {
   margin-bottom: 20px;
   font-size: 25px;
 }
+
 .travelImg {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -828,7 +829,8 @@ nav .fa {
 }
 
 .travelImg img {
-width: 20.5vw;;
+  width: 20.5vw;
+  ;
 }
 
 /* Tablet layout settings */
@@ -907,23 +909,14 @@ width: 20.5vw;;
     background: transparent;
     height: 93%;
     width: 280px;
-    /* position: absolute;
-    top: 0px;
-    left: 0px; */
     transition: 0.4s;
-    cursor: pointer; 
+    cursor: pointer;
     margin-left: 28px;
   }
-
-
 
   .title:hover {
     background: #5575f33e;
   }
-
-
-
-
 
   /* Popup container */
   .popup {
@@ -933,9 +926,7 @@ width: 20.5vw;;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
   }
-
 
   /* The actual popup (appears on top) */
   .popup .popuptext {
@@ -944,7 +935,7 @@ width: 20.5vw;;
     padding: 0;
     margin: 0%;
     color: #fff;
-        position: absolute;
+    position: absolute;
     top: 16%;
     left: 10%;
 
@@ -956,7 +947,6 @@ width: 20.5vw;;
     width: 270px;
     height: 100%;
     margin-right: 45px;
-  
   }
 
   .journeysColWeb {
@@ -966,18 +956,24 @@ width: 20.5vw;;
   .journeysColWeb h2 {
     font-size: 25px;
   }
-  
+
   .journeysColWeb p {
     font-size: 15px;
   }
 
-  .journeysColWeb .stackLogo{
+  .journeysColWeb .stackLogo {
     margin-left: 0;
     padding-left: 0%;
     justify-content: start;
   }
 
-  
+  .servicesRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-left: 10%;
+  }
+
 }
 
 @media (max-width: 750px) {
@@ -1078,6 +1074,63 @@ width: 20.5vw;;
     text-align: center;
     width: 100%;
   }
+
+  /* .popup{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  } */
+  
+  .title {
+    margin-top: 15px;
+margin-left: 32%;
+    border-radius: 24px;
+    background: transparent;
+    height: 95%;
+    width: 280px;
+    transition: 0.4s;
+    cursor: pointer;
+    
+    
+  }
+
+  .title:hover {
+    background: #5575f33e;
+  }
+
+  /* Popup container */
+  .popup {
+    /* position: relative; */
+    /* display: inline-block; */
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    
+  }
+
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    width: 280px;
+    height: 70%;
+    padding: 0;
+    margin: 0%;
+    color: #fff;
+    position: absolute;
+    top: 16%;
+    left: 32%;
+
+  }
+
+  .popup .popuptext video {
+    margin: 0;
+    padding: 0;
+    width: 281px;
+    height: 100%;
+    margin-right: 45px;
+  }
+
   .journeysColWeb {
     display: flex;
     flex-direction: column;
@@ -1091,18 +1144,30 @@ width: 20.5vw;;
     text-align: center;
     font-size: 25px;
   }
-  
+
   .journeysColWeb p {
     text-align: center;
     font-size: 15px;
   }
 
-  .journeysColWeb .stackLogo{
+  .journeysColWeb .stackLogo {
     margin-left: 40px;
     padding-left: 0%;
     /* justify-content: center; */
   }
 
+  .servicesRow {
+    margin-left: 2%;
+  }
+
+  .servicesCol {
+    width: 25vw;
+    height: 25vw;
+  }
+
+  .servicesCol h3 {
+    font-size: 2.5vw;
+  }
 
 
 }
@@ -1125,6 +1190,51 @@ width: 20.5vw;;
 
   .journeysRow {
     flex-direction: column;
+  }
+
+  .title {
+    margin-top: 5px;
+margin-left: 23.5%;
+    border-radius: 24px;
+    background: transparent;
+    height: 95%;
+    width: 280px;
+    transition: 0.4s;
+    cursor: pointer;
+    
+    
+  }
+
+  .title:hover {
+    background: #5575f33e;
+  }
+
+  /* Popup container */
+  .popup {
+    /* position: relative; */
+    /* display: inline-block; */
+    cursor: pointer;
+    display: flex;
+    justify-content:end
+    
+  }
+
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    width: 285px;
+    height: 71%;
+    padding: 0;
+    margin: 0%;
+    color: #fff;
+    position: absolute;
+    top: 14%;
+    left: 23.5%;
+
+  }
+
+  .popup .popuptext video {
+    width: 285px;
+    height: 100%;
   }
 
 
@@ -1181,9 +1291,31 @@ width: 20.5vw;;
     padding-bottom: 8px; */
   }
 
+  #aboutMe {
+    width: auto;
+  }
+
+  .journeysRow {
+    margin: 20px;
+  }
+
   .me {
     width: 40px;
     height: 40px;
+  }
+
+  #contact .journeysCol{
+   padding: 0 8%;
+  }
+  footer{
+    margin: 10%;
+    height: 100%;
+  }
+  footer h3{
+    font-size: 15px;
+  }
+  footer p{
+    font-size: 14px;
   }
 
 }
