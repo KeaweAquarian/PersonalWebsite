@@ -1496,13 +1496,13 @@ nav .fa {
 @media (max-width: 450px) {
   #myPopup4{
     position: absolute;
-    left: -32vh;
+    left: -26vh;
     width: 250px;
   }
   #myPopup6{
     position: absolute;
     top: 0px;
-    left: -32vh;
+    left: -26vh;
     width: 250px;
   }
   #myPopup3{
