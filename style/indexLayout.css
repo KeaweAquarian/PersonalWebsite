@@ -692,6 +692,17 @@ button {
   object-fit: scale-down;
   background-color: transparent;
 }
+.servicesRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.servicesPopup {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 article {
   width: 100%;
@@ -767,13 +778,6 @@ article h2 {
 
 }
 
-/* footer{
-
-
-  background-size: 100% 100%;
-  padding-bottom: 40px;
-  padding-top: 0;
-} */
 
 footer {
   position: relative;
@@ -835,6 +839,7 @@ nav .fa {
   width: 20.5vw;
   ;
 }
+
 
 /* Tablet layout settings */
 @media (max-width: 1000px) {
@@ -970,15 +975,40 @@ nav .fa {
     justify-content: start;
   }
 
-  .servicesRow {
+  /* .servicesRow {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-left: 10%;
+    gap: 10px;
   }
+  .servicesPopup {
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  #myPopup4{
+    position: absolute;
+    left: -35vh;
+  }
+  #myPopup6{
+    position: absolute;
+    top: 0px;
+    left: -35vh;
+  }
+  #myPopup3{
+    position: absolute;
+    left: 10vh;
+  }
+  #myPopup7{
+    position: absolute;
+    top: 0px;
+    left: 10vh;
+  }
+
 
   #contact {
     width: auto;
+    margin-left: 5%;
   }
   footer {
     width: auto;
@@ -1183,6 +1213,25 @@ nav .fa {
   .servicesCol h3 {
     font-size: 2.5vw;
   }
+  #myPopup4{
+    position: absolute;
+    left: -32vh;
+  }
+  #myPopup6{
+    position: absolute;
+    top: 0px;
+    left: -32vh;
+  }
+  #myPopup3{
+    position: absolute;
+    left: 0vh;
+  }
+  #myPopup7{
+    position: absolute;
+    top: 0px;
+    left: 0vh;
+  }
+
   footer {
     width: auto;
     /* height: 100%; */
@@ -1367,12 +1416,33 @@ nav .fa {
     height: 40px;
   }
 
+  .servicesPopuptext{
+    left: -31vh;
+  }
   #contact {
     width: 300px;
   }
 
   #contact .journeysCol {
     padding: 0 8%;
+  }
+  #myPopup4{
+    position: absolute;
+    left: -31vh;
+  }
+  #myPopup6{
+    position: absolute;
+    top: 0px;
+    left: -31vh;
+  }
+  #myPopup3{
+    position: absolute;
+    left: -5vh;
+  }
+  #myPopup7{
+    position: absolute;
+    top: 0px;
+    left: -5vh;
   }
 
   footer {
