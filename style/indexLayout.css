@@ -1244,10 +1244,18 @@ nav .fa {
 /* Mobile layout settings */
 @media (max-width: 550px) {
 
-  #topNav a img {
-    height: 50px;
-    width: 200px;
+
+  #topNav img {
+    margin-top: 8px;
+    height: auto;
+    width: 5vh;
   }
+  #topNav a img {
+    height: auto;
+    width: 23vh;
+    margin-right: 0%;
+  }
+
 
   .comments h1 {
     font-size: 5vh;
@@ -1255,8 +1263,24 @@ nav .fa {
   .comments h2 {
     font-size: 15px
   }
-.about{
-  margin-right: 2%;
+  #aboutMe{
+    text-align: center;
+    margin: 0% 13%;
+    padding: 0%;
+  }
+  #aboutRow{
+    /* width: auto; */
+    margin: 0%;
+    /* padding: 0%; */
+  }
+#aboutCol{
+  width: auto;
+  margin: 0%;
+  padding: 0%;
+}
+.me{
+  position: absolute;
+  left: -200px;
 }
   main {
     padding-top: 10%;
@@ -1416,8 +1440,11 @@ nav .fa {
     height: 40px;
   }
 
-  .servicesPopuptext{
+  /* .servicesPopuptext{
     left: -31vh;
+  } */
+  .servicesPopuptext h4{
+    font-size: 10px;
   }
   #contact {
     width: 300px;
@@ -1428,38 +1455,64 @@ nav .fa {
   }
   #myPopup4{
     position: absolute;
-    left: -31vh;
+    left: -45vh;
+    width: 350px;
   }
   #myPopup6{
     position: absolute;
     top: 0px;
-    left: -31vh;
+    left: -45vh;
+    width: 350px;
   }
   #myPopup3{
     position: absolute;
-    left: -5vh;
+    left: 0vh;
+    width: 350px;
   }
   #myPopup7{
     position: absolute;
-    top: 0px;
-    left: -5vh;
+    left: 0vh;
+    width: 350px;
   }
 
   footer {
     width: auto;
     /* height: 100%; */
-    margin: 0 10%;
+    margin: 0 13%;
 
   }
 
   footer h3 {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   footer p {
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 0%;
   }
 
 
+}
+@media (max-width: 450px) {
+  #myPopup4{
+    position: absolute;
+    left: -32vh;
+    width: 250px;
+  }
+  #myPopup6{
+    position: absolute;
+    top: 0px;
+    left: -32vh;
+    width: 250px;
+  }
+  #myPopup3{
+    position: absolute;
+    left: -2vh;
+    width: 250px;
+  }
+  #myPopup7{
+    position: absolute;
+    left: -2vh;
+    width: 250px;
+  }
 }
