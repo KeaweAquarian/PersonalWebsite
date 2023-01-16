@@ -394,6 +394,14 @@ main img {
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
   border-radius: 5px;
+  object-fit:scale-down;
+  /* width: 80%; */
+  /* min-height: 100%; */
+}
+
+
+.imgShrink{
+  max-height: 80%;
 }
 
 .seeLive {
@@ -837,7 +845,7 @@ nav .fa {
 
 .travelImg img {
   width: 20.5vw;
-  ;
+  
 }
 
 
