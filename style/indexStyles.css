@@ -386,6 +386,9 @@ main img {
   gap: 20px;
   margin-right: 50px;
 }
+#ImageDB {
+  grid-template-columns: 1fr;
+}
 
 .travelImg img {
   width: 300px;
@@ -399,7 +402,6 @@ main img {
   /* width: 80%; */
   /* min-height: 100%; */
 }
-
 
 .imgShrink{
   max-height: 80%;
