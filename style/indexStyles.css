@@ -904,7 +904,7 @@ nav .fa {
   }
 
   .journeysCol {
-    text-align: center;
+    /* text-align: center; */
     width: 100%;
     padding-left: 0%;
     margin-left: 0%;
@@ -938,6 +938,10 @@ nav .fa {
   .title:hover {
     background: #5575f33e;
   }
+        .stackLogo {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
 
   /* Popup container */
   .popup {
@@ -1157,6 +1161,7 @@ nav .fa {
   .title:hover {
     background: #5575f33e;
   }
+  
 
   /* Popup container */
   .popup {
@@ -1262,6 +1267,7 @@ nav .fa {
     margin-top: 8px;
     height: auto;
     width: 5vh;
+    
   }
   #topNav a img {
     height: auto;
@@ -1277,9 +1283,8 @@ nav .fa {
     font-size: 15px
   }
   #aboutMe{
-    text-align: center;
-    margin: 0% 13%;
-    padding: 0%;
+    margin: 5% 13% 0 13%;
+    padding: 2%;
   }
   #aboutRow{
     /* width: auto; */
@@ -1452,6 +1457,7 @@ nav .fa {
     width: 40px;
     height: 40px;
   }
+
 
   /* .servicesPopuptext{
     left: -31vh;
