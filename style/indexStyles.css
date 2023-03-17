@@ -203,7 +203,7 @@ main img {
 }
 
 #imgMe {
-  width: 50px;
+  width: 60px;
   border-radius: 33px;
   padding: 0%;
   float: left;
@@ -237,7 +237,7 @@ main img {
   padding: 20px;
   /* padding-left: 60px; */
   margin-left: 50px;
-  margin-top: 100px;
+  margin-top: 60px;
   margin-bottom: 100px;
   display: flex;
   flex-direction: row;
@@ -245,6 +245,9 @@ main img {
   border-radius: 8px;
 }
 
+.about h1{
+  padding-bottom: 5px;
+}
 #aboutRow {
   margin: 0%;
   margin-right: 20px;
@@ -262,8 +265,7 @@ main img {
 }
 
 .me {
-  /* background-color: #ED2939; */
-  /* float: left; */
+
   width: 200px;
   height: 200px;
   transition: filter .5s ease-in-out;
@@ -274,12 +276,12 @@ main img {
   border-radius: 80px;
 }
 
-.me:hover {
+/* .me:hover {
 
   -webkit-filter: grayscale(0%);
-  /* Ch 23+, Saf 6.0+, BB 10.0+ */
+
   filter: grayscale(0%);
-  /* FF 35+ */
+
 }
 
 
@@ -295,7 +297,7 @@ main img {
   100% {
     transform: translateX(-100%);
   }
-}
+} */
 
 .journeys {
   width: 90%;
