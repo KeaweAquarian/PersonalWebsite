@@ -10,7 +10,8 @@ script date Nov,  2022
 }
 
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 main {
@@ -95,7 +96,6 @@ nav a:hover {
   margin: 5px 30px;
   font-weight: 600;
   text-decoration: none;
-
 }
 
 nav ul {
@@ -107,7 +107,8 @@ nav ul {
   list-style: none;
   font-size: 20px;
   font-style: italic;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 nav a {
@@ -131,9 +132,6 @@ nav a {
   color: #fdfdfcd3;
 }
 
-
-
-
 main {
   width: 100%;
   display: flex;
@@ -144,10 +142,7 @@ main {
 
 main img {
   background: #7991f072;
-
 }
-
-
 
 .comments {
   font-size: 20vh;
@@ -157,7 +152,6 @@ main img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 /* DEMO-SPECIFIC STYLES */
@@ -172,33 +166,30 @@ main img {
   /* Keeps the content on a single line */
   margin: 0 auto;
   /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em;
-  animation:
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 
   to {
-    width: 80%
+    width: 80%;
   }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-
   from,
   to {
-    border-color: transparent
+    border-color: transparent;
   }
 
   50% {
-    border-color: rgb(182, 182, 181)
+    border-color: rgb(182, 182, 181);
   }
 }
 
@@ -208,13 +199,13 @@ main img {
   padding: 0%;
   float: left;
   margin: 0 0 0 10px;
-  filter: brightness(90%)
+  filter: brightness(90%);
 }
 
 .comments h1 {
-
   font-size: 10.5vw;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-style: italic;
   width: 80%;
   font-weight: 500;
@@ -227,7 +218,8 @@ main img {
   font-size: 30px;
   font-weight: 100;
   font-style: italic;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   margin-bottom: 60px;
 }
 
@@ -245,30 +237,24 @@ main img {
   border-radius: 8px;
 }
 
-.about h1{
+.about h1 {
   padding-bottom: 5px;
 }
 #aboutRow {
   margin: 0%;
   margin-right: 20px;
-
-
-
 }
 
 #aboutCol {
   padding: 20px;
   width: 100%;
   margin: 0;
-
-
 }
 
 .me {
-
   width: 200px;
   height: 200px;
-  transition: filter .5s ease-in-out;
+  transition: filter 0.5s ease-in-out;
   -webkit-filter: grayscale(100%);
   /* Ch 23+, Saf 6.0+, BB 10.0+ */
   filter: grayscale(100%);
@@ -313,11 +299,7 @@ main img {
   margin-bottom: 10%;
   /* align-items: flex-start;
   justify-content:left;  */
-
 }
-
-
-
 
 .journeysCol {
   /* display: flex;
@@ -348,10 +330,8 @@ main img {
 }
 
 .journeys h2 {
-
   font-size: 40px;
   margin: 50px;
-
 }
 
 .journeysCol h2 {
@@ -400,12 +380,12 @@ main img {
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
   border-radius: 5px;
-  object-fit:scale-down;
+  object-fit: scale-down;
   /* width: 80%; */
   /* min-height: 100%; */
 }
 
-.imgShrink{
+.imgShrink {
   max-height: 80%;
 }
 
@@ -441,8 +421,6 @@ main img {
   color: #fdfdfcd3;
 }
 
-
-
 .journeysRow img {
   padding: 0%;
   margin-top: 6%;
@@ -451,8 +429,6 @@ main img {
   height: 90%;
   background-color: white;
 }
-
-
 
 .stackLogo {
   padding: 0;
@@ -469,7 +445,6 @@ main img {
 }
 
 .stackLogo img {
-
   margin: 0%;
   width: 50px;
   height: 55px;
@@ -496,18 +471,11 @@ main img {
   transition: 0.4s;
   cursor: pointer;
   padding-left: 5px;
-
 }
-
-
 
 .title:hover {
   background: #5575f33e;
 }
-
-
-
-
 
 /* Popup container */
 .popup {
@@ -518,9 +486,7 @@ main img {
   justify-content: center;
   align-items: center;
   padding: 0;
-
 }
-
 
 /* The actual popup (appears on top) */
 .popup .popuptext {
@@ -537,7 +503,6 @@ main img {
   margin-bottom: 30px;
   position: absolute;
   z-index: 1;
-
 }
 
 .popup .popuptext video {
@@ -546,10 +511,7 @@ main img {
   width: 270px;
   height: 100%;
   /* margin-left: 45px; */
-
 }
-
-
 
 /* Popup*/
 .popup .popuptext::after {
@@ -567,7 +529,7 @@ main img {
 .popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
+  animation: fadeIn 1s;
 }
 
 /* Fade action */
@@ -609,7 +571,6 @@ button {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .servicesCol {
@@ -651,7 +612,6 @@ button {
 
 /* The actual popup (appears on top) */
 .servicesPopup .servicesPopuptext {
-
   visibility: hidden;
   width: 355px;
   /* background-color: #555; */
@@ -686,17 +646,15 @@ button {
 .servicesPopup .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
+  animation: fadeIn 1s;
 }
 
 .servicesLogo {
-
   margin: 20px 50px;
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 1fr 1fr 1fr;
   place-self: center;
-
 }
 
 .servicesLogo img {
@@ -711,7 +669,6 @@ button {
   gap: 10px;
 }
 .servicesPopup {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -727,7 +684,6 @@ article {
   display: flex;
   color: #021c53ac;
   width: 100%;
-
 }
 
 article h2 {
@@ -753,7 +709,7 @@ article h2 {
 
 .button a {
   padding: 8px 12px;
-  border: 1px solid #ED2939;
+  border: 1px solid #ed2939;
   border-radius: 2px;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -763,10 +719,8 @@ article h2 {
   display: inline-block;
 }
 
-
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .social {
-
   position: fixed;
   top: 80%;
   left: 1%;
@@ -788,9 +742,7 @@ article h2 {
 .social .fa {
   cursor: pointer;
   color: black;
-
 }
-
 
 footer {
   position: relative;
@@ -804,7 +756,6 @@ footer {
   /* padding-top: 0%;
   margin-bottom: 0%; */
   padding-top: 20px;
-
 }
 
 footer::before {
@@ -819,7 +770,6 @@ footer::before {
   opacity: 0.3;
   pointer-events: none;
   height: 220px;
-
 }
 
 footer h3 {
@@ -850,13 +800,10 @@ nav .fa {
 
 .travelImg img {
   width: 20.5vw;
-  
 }
-
 
 /* Tablet layout settings */
 @media (max-width: 1000px) {
-
   #topNav a img {
     height: 50px;
     width: 250px;
@@ -875,7 +822,8 @@ nav .fa {
     list-style: none;
     font-size: 20px;
     font-style: italic;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
 
   .me {
@@ -938,10 +886,11 @@ nav .fa {
   .title:hover {
     background: #5575f33e;
   }
-        .stackLogo {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
+  .stackLogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+  }
 
   /* Popup container */
   .popup {
@@ -963,7 +912,6 @@ nav .fa {
     position: absolute;
     top: 16%;
     left: 10%;
-
   }
 
   .popup .popuptext video {
@@ -1003,25 +951,24 @@ nav .fa {
     justify-content: center;
     align-items: center;
   } */
-  #myPopup4{
+  #myPopup4 {
     position: absolute;
     left: -35vh;
   }
-  #myPopup6{
+  #myPopup6 {
     position: absolute;
     top: 0px;
     left: -35vh;
   }
-  #myPopup3{
+  #myPopup3 {
     position: absolute;
     left: 10vh;
   }
-  #myPopup7{
+  #myPopup7 {
     position: absolute;
     top: 0px;
     left: 10vh;
   }
-
 
   #contact {
     width: auto;
@@ -1031,9 +978,7 @@ nav .fa {
     width: auto;
     /* height: 100%; */
     margin: 0 6%;
-
   }
-
 }
 
 @media (max-width: 820px) {
@@ -1047,7 +992,6 @@ nav .fa {
     margin: 4px 0px 0px 20px;
   }
 
-
   nav .fa {
     display: block;
     color: #fff;
@@ -1060,7 +1004,7 @@ nav .fa {
     font-size: 8vh;
   }
   .comments h2 {
-    font-size: 20px
+    font-size: 20px;
   }
 
   .firstList {
@@ -1076,11 +1020,10 @@ nav .fa {
     right: -200%;
     text-align: left;
     z-index: 4;
-    transition: .75s;
+    transition: 0.75s;
   }
 
   nav ul {
-
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -1103,8 +1046,6 @@ nav .fa {
     margin: 0%;
     padding: 0%; */
     display: block;
-
-
   }
 
   .nav-link {
@@ -1154,14 +1095,11 @@ nav .fa {
     width: 280px;
     transition: 0.4s;
     cursor: pointer;
-
-
   }
 
   .title:hover {
     background: #5575f33e;
   }
-  
 
   /* Popup container */
   .popup {
@@ -1170,7 +1108,6 @@ nav .fa {
     cursor: pointer;
     display: flex;
     justify-content: flex-start;
-
   }
 
   /* The actual popup (appears on top) */
@@ -1183,7 +1120,6 @@ nav .fa {
     position: absolute;
     top: 16%;
     left: 32%;
-
   }
 
   .popup .popuptext video {
@@ -1231,20 +1167,20 @@ nav .fa {
   .servicesCol h3 {
     font-size: 2.5vw;
   }
-  #myPopup4{
+  #myPopup4 {
     position: absolute;
     left: -32vh;
   }
-  #myPopup6{
+  #myPopup6 {
     position: absolute;
     top: 0px;
     left: -32vh;
   }
-  #myPopup3{
+  #myPopup3 {
     position: absolute;
     left: 0vh;
   }
-  #myPopup7{
+  #myPopup7 {
     position: absolute;
     top: 0px;
     left: 0vh;
@@ -1254,20 +1190,15 @@ nav .fa {
     width: auto;
     /* height: 100%; */
     margin: 0 8%;
-
   }
-
 }
 
 /* Mobile layout settings */
 @media (max-width: 550px) {
-
-
   #topNav img {
     margin-top: 8px;
     height: auto;
     width: 5vh;
-    
   }
   #topNav a img {
     height: auto;
@@ -1275,35 +1206,33 @@ nav .fa {
     margin-right: 0%;
   }
 
-
   .comments h1 {
     font-size: 5vh;
   }
   .comments h2 {
-    font-size: 15px
+    font-size: 15px;
   }
-  #aboutMe{
+  #aboutMe {
     margin: 5% 13% 0 13%;
     padding: 2%;
   }
-  #aboutRow{
+  #aboutRow {
     /* width: auto; */
     margin: 0%;
     /* padding: 0%; */
   }
-#aboutCol{
-  width: auto;
-  margin: 0%;
-  padding: 0%;
-}
-.me{
-  position: absolute;
-  left: -200px;
-}
+  #aboutCol {
+    width: auto;
+    margin: 0%;
+    padding: 0%;
+  }
+  .me {
+    position: absolute;
+    left: -200px;
+  }
   main {
     padding-top: 10%;
   }
-
 
   .testimonialRow {
     flex-direction: column;
@@ -1316,9 +1245,7 @@ nav .fa {
   .journeysCol {
     /* align-items: flex-end; */
     width: 90%;
-
   }
-
 
   .title {
     margin-top: 3px;
@@ -1329,8 +1256,6 @@ nav .fa {
     width: 240px;
     transition: 0.4s;
     cursor: pointer;
-
-
   }
 
   .title:hover {
@@ -1353,8 +1278,6 @@ nav .fa {
     margin: 0%;
     color: #fff;
     left: 21%;
-
-
   }
 
   .popup img {
@@ -1363,7 +1286,6 @@ nav .fa {
     margin-left: 0%;
     /* padding: 0%; */
     /* align-self: baseline; */
-
   }
 
   .popup .popuptext video {
@@ -1373,13 +1295,11 @@ nav .fa {
     height: 100%;
   }
 
-
   #list {
     width: 100%;
     display: flex;
     flex-direction: column;
     color: #021c53ac;
-
   }
 
   header {
@@ -1398,7 +1318,6 @@ nav .fa {
   }
 
   nav ul {
-
     /* display: flex;
     flex-direction: column;
     align-items: center;
@@ -1406,8 +1325,6 @@ nav .fa {
     margin: 0%;
     padding: 0%; */
   }
-
-
 
   #aboutMe {
     width: auto;
@@ -1422,8 +1339,7 @@ nav .fa {
     height: 40px;
   }
 
-
-  .servicesPopuptext h4{
+  .servicesPopuptext h4 {
     font-size: 10px;
   }
   #contact {
@@ -1433,38 +1349,41 @@ nav .fa {
   #contact .journeysCol {
     padding: 0 8%;
   }
-  #myPopup4{
+  #myPopup4 {
     position: absolute;
     left: -45vh;
     width: 350px;
   }
-  #myPopup6{
+  #myPopup6 {
     position: absolute;
     top: 0px;
     left: -45vh;
     width: 350px;
   }
-  #myPopup3{
+  #myPopup3 {
     position: absolute;
     left: 0vh;
     width: 350px;
   }
-  #myPopup7{
+  #myPopup7 {
     position: absolute;
     left: 0vh;
     width: 350px;
   }
 
-  .stackLogo img{
-      width: 30px;
-        height: 35px;
+  .stackLogo {
+    gap: 5px;
+  }
+
+  .stackLogo img {
+    width: 30px;
+    height: 35px;
   }
 
   footer {
     width: auto;
     /* height: 100%; */
     margin: 0 13%;
-
   }
 
   footer h3 {
@@ -1475,27 +1394,25 @@ nav .fa {
     font-size: 12px;
     margin-bottom: 0%;
   }
-
-
 }
 @media (max-width: 450px) {
-  #myPopup4{
+  #myPopup4 {
     position: absolute;
     left: -26vh;
     width: 250px;
   }
-  #myPopup6{
+  #myPopup6 {
     position: absolute;
     top: 0px;
     left: -26vh;
     width: 250px;
   }
-  #myPopup3{
+  #myPopup3 {
     position: absolute;
     left: -2vh;
     width: 250px;
   }
-  #myPopup7{
+  #myPopup7 {
     position: absolute;
     left: -2vh;
     width: 250px;
