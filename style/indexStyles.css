@@ -64,15 +64,16 @@ header {
 
 #topNav a img {
   float: left;
-  height: 60px;
-  width: 300px;
+  /* height: 60px; */
+  width: 20vw;
   margin-left: 1%;
   padding-left: 0%;
+  margin-top: 10px;
 }
 
 #bottomNav {
   padding-top: 10px;
-  margin-top: 0px;
+  margin-top: 5px;
   display: flex;
   margin-right: 20px;
   font-style: italic;
@@ -144,53 +145,27 @@ main img {
   background: #7991f072;
 }
 
+.welcome {
+  text-align: left;
+  flex: none;
+  width: 80%;
+  margin-top: 70px;
+  padding-left: 0%;
+  font-size: 2vw;
+  font-family: "Marmelad", sans-serif;
+  padding-left: 20%;
+  background-color: #ed2939;
+}
+
 .comments {
-  font-size: 20vh;
+  width: 100%;
   padding: 10px;
-  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-/* DEMO-SPECIFIC STYLES */
-.comments h1 {
-  color: rgb(4, 4, 4);
-  /* font-family: monospace; */
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  /* border-right: .15em solid rgb(182, 182, 181);  */
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em;
-  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 80%;
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-
-  50% {
-    border-color: rgb(182, 182, 181);
-  }
+  width: fit-content;
+  padding-top: 5%;
 }
 
 #imgMe {
@@ -203,12 +178,17 @@ main img {
 }
 
 .comments h1 {
-  font-size: 10.5vw;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Cormorant Unicase", serif;
+  font-size: 8.5vw;
   font-style: italic;
   width: 80%;
   font-weight: 500;
+  margin-left: 10%;
+}
+
+.comments .logo2 {
+  margin-left: 10%;
+  width: fit-content;
 }
 
 .comments h2 {
@@ -216,10 +196,7 @@ main img {
   width: 70%;
   align-items: center;
   font-size: 30px;
-  font-weight: 100;
-  font-style: italic;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Marmelad", sans-serif;
   margin-bottom: 60px;
 }
 
@@ -1149,12 +1126,6 @@ nav .fa {
     font-size: 15px;
   }
 
-  .journeysColWeb .stackLogo {
-    margin-left: 40px;
-    padding-left: 0%;
-    /* justify-content: center; */
-  }
-
   .servicesRow {
     margin-left: 2%;
   }
@@ -1372,7 +1343,8 @@ nav .fa {
   }
 
   .stackLogo {
-    gap: 5px;
+    gap: 0;
+    border: none;
   }
 
   .stackLogo img {
