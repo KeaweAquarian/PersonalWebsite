@@ -145,7 +145,7 @@ main img {
   background: #7991f072;
 }
 
-.welcome {
+/* .welcome {
   text-align: left;
   flex: none;
   width: 80%;
@@ -155,7 +155,7 @@ main img {
   font-family: "Marmelad", sans-serif;
   padding-left: 20%;
   background-color: #ed2939;
-}
+} */
 
 .comments {
   width: 100%;
@@ -178,7 +178,7 @@ main img {
 }
 
 .comments h1 {
-  font-family: "Cormorant Unicase", serif;
+  font-family: "Marmelad", sans-serif;
   font-size: 8.5vw;
   font-style: italic;
   width: 80%;
@@ -1108,21 +1108,21 @@ nav .fa {
   }
 
   .journeysColWeb {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    width: auto;
+    width: auto; */
 
     /* justify-content: center; */
   }
 
   .journeysColWeb h2 {
-    text-align: center;
+    /* text-align: center; */
     font-size: 25px;
   }
 
   .journeysColWeb p {
-    text-align: center;
+    /* text-align: center; */
     font-size: 15px;
   }
 
@@ -1175,6 +1175,9 @@ nav .fa {
     height: auto;
     width: 23vh;
     margin-right: 0%;
+  }
+  #bottomNav {
+    padding-top: 0%;
   }
 
   .comments h1 {
@@ -1345,6 +1348,7 @@ nav .fa {
   .stackLogo {
     gap: 0;
     border: none;
+    width: 95%;
   }
 
   .stackLogo img {
