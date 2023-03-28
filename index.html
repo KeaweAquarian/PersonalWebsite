@@ -6,287 +6,384 @@ script date Nov, 22 2022
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Keawe Aquarian Personal Website</title>
-    <meta name="description" content="A website portfolio highlighting the work of Keawe Aquarian">
-    <meta name="keywords" content="Keawe aquarian, web development, programming, java, software engineer, Spring Boot.">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/indexStyles.css">
+    <meta
+      name="description"
+      content="A website portfolio highlighting the work of Keawe Aquarian"
+    />
+    <meta
+      name="keywords"
+      content="Keawe aquarian, web development, programming, java, software engineer, Spring Boot."
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/indexStyles.css" />
     <!-- Load icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital@1&family=Cormorant+Unicase:wght@500&family=Crimson+Text:wght@600&family=Marmelad&family=Oooh+Baby&family=PT+Serif:wght@700&display=swap"
-    rel="stylesheet">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital@1&family=Cormorant+Unicase:wght@500&family=Crimson+Text:wght@600&family=Marmelad&family=Oooh+Baby&family=PT+Serif:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<!-- Main body -->
+  <!-- Main body -->
 
-<body>
-
+  <body>
     <!-- Site Header -->
     <header id="header">
-        <div id="topNav">
-            <!-- Company Logo -->
-            <!-- Opening image -->
-            <img src="images/keawePhoto.jpg" alt="Photo keawe" id="imgMe">
-            <a href="index.html" class="logo"><img src="images/keaweAquarianCabridge2.png" alt="Keawe Logo"></a>
+      <div id="topNav">
+        <!-- Company Logo -->
+        <!-- Opening image -->
+        <img src="images/keawePhoto.jpg" alt="Photo keawe" id="imgMe" />
+        <a href="index.html" class="logo"
+          ><img src="images/keaweAquarianCabridge2.png" alt="Keawe Logo"
+        /></a>
+      </div>
+      <div id="bottomNav">
+        <!-- Website Navigation -->
+        <nav id="nav">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
 
-        </div>
-        <div id="bottomNav">
-            <!-- Website Navigation -->
-            <nav id="nav">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-
-                <ul>
-                    <li>
-                        <a class="nav-link" href="index.html#aboutMe"><span class="link">About</span></a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="index.html#work">Work</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="index.html#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <a id="resume" href="documents/KeaweAquarianCV.pdf" target="_blank"><button type="submit" class="resume"
-                    value="Source Code">Resume</button></a>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </div>
-
+          <ul>
+            <li>
+              <a class="nav-link" href="index.html#aboutMe"
+                ><span class="link">About</span></a
+              >
+            </li>
+            <li>
+              <a class="nav-link" href="index.html#work">Work</a>
+            </li>
+            <li>
+              <a class="nav-link" href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <a id="resume" href="documents/KeaweAquarianCV.pdf" target="_blank"
+          ><button type="submit" class="resume" value="Source Code">
+            Resume
+          </button></a
+        >
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </div>
     </header>
 
     <!-- Main section -->
     <main>
-
-
-
-<!-- <div class="welcome">
+      <!-- <div class="welcome">
 <div >
     Welcome to my site, my work is Primarily
 </div>
 </div> -->
-        <div class="comments">
-                <h1>Backend</h1>
-                     <h1 class="logo2">Developer</h1>
-            <h2>
-                Welcome to my site. I enjoy building systems that live on the web, and helping to solve real world problems with coding based solutions.
-            </h2>
-
+      <div class="comments">
+        <h1>Backend</h1>
+        <h1 class="logo2">Developer</h1>
+        <h2>
+          Welcome to my site. I enjoy building systems that live on the web, and
+          helping to solve real world problems with coding based solutions.
+        </h2>
+      </div>
+      <div class="about" id="aboutMe">
+        <img class="me" src="images/programmer2.png" alt="Programmer icon" />
+        <div class="journeysRow" id="aboutRow">
+          <div class="journeysCol" id="aboutCol">
+            <h1>About Me</h1>
+            <p>
+              For years I operated a large scale catering service. The business
+              revolved around deadlines, multitasking and coordination. During
+              that time I developed from a person that worked efficiently
+              independently, to an employer comfortable managing teams of more
+              than a dozen employees and as a mentor helping young chefs to grow
+              in their field. After 7 years running the company it was time for
+              a change to a healthier work life balance. Having built websites
+              as a hobby for much of my life, I was able to use the lock down
+              period to return to school and formally pursue a career in
+              programming. Centered on the Java language and SQL databases, I
+              gained proficiency in all core operations along with advanced
+              concepts such as OOP, design patterns, java 8 and testing. I
+              learned and completed projects in mobile applications, Web
+              Services built on Spring Boot and full front and back end web
+              development including databases and cybersecurity. Since
+              graduating, I have deepened my knowledge of full stack
+              applications adding React framework and AWS cloud services to my
+              tool box, creating several full stack applications viewable in my
+              recent work section.
+            </p>
+          </div>
         </div>
-        <div class="about" id="aboutMe">
-            <img class="me" src="images/programmer2.png" alt="Programmer icon">
-            <div class="journeysRow" id="aboutRow">
-                <div class="journeysCol" id="aboutCol">
-                    <h1>
-                        About Me
-                    </h1>
-                    <p>
-                    For years I operated a large scale catering service. The business revolved around deadlines,
-                    multitasking and coordination. During that time I developed from a person that worked efficiently independently, to an employer comfortable
-                    managing teams of more than a dozen employees and as a mentor helping young chefs to grow in their field. After 7 years running
-                    the company it was time for a change to a healthier work life balance. Having built websites as a hobby for much of my life, I was able to use the lock down period to return to school and formally pursue a career in programming.
-                    Centered on the Java language and SQL databases,
-                    I gained proficiency in all core operations along with advanced concepts such as OOP, design patterns, java 8 and testing.
-                    I learned and completed projects in mobile applications, Web Services built on Spring Boot and full front and back end
-                    web development including databases and cybersecurity.
-                    Since graduating, I have deepened my knowledge of full stack applications adding React framework and AWS cloud services to my tool box, creating several
-                    full stack applications viewable in my recent work section.
+      </div>
 
-                    </p>
-                </div>
+      <!-- Adventure options -->
+      <section class="journeys" id="work">
+        <h2>Recent Work</h2>
+
+        <div class="journeysRow">
+          <div class="journeysColWeb">
+            <h2>Project Expense Tracker</h2>
+            <p>
+              This expense tracker uses Spring Boot running an a H2 database as
+              the backend. The backend employs full spring security and JWT
+              authentication and authorization The app's frontend is built on
+              React with Reactstrap for UI design. The app uses RESTful API
+              architecture, implementing full CRUD operations to make calls to
+              the backend. Additionally, image storing and retrieval is handled
+              through calls made from the backend to AWS S3 buckets.
+            </p>
+            <div class="submit-div">
+              <!-- <button type="submit" class="seeLive"
+                                                    onclick="location.href='https://myscrumboard.vercel.app/';"
+                                                    value="See Live">See
+                                                    Live</button> -->
+              <button
+                type="submit"
+                class="sourceCode"
+                onclick="location.href='https://github.com/KeaweAquarian/ExpenseTracker';"
+                value="Source Code"
+              >
+                Source Code
+              </button>
             </div>
-
+            <div class="stackLogo">
+              <figure>
+                <img src="images/spring-3-logo.png" alt="Spring Icon" />
+                <figcaption>Spring Boot</figcaption>
+              </figure>
+              <figure>
+                <img src="images/react.png" alt="React Icon" />
+                <figcaption>React</figcaption>
+              </figure>
+              <figure>
+                <img src="images/s3.jpg" alt="AWS S3 icon" />
+                <figcaption>AWS S3</figcaption>
+              </figure>
+              <figure>
+                <img src="images/Java_logo_PNG2.png" alt="Java Icon" />
+                <figcaption>Java</figcaption>
+              </figure>
+              <figure>
+                <img src="images/javascript-39417.png" alt="JavaScript Icon" />
+                <figcaption>JavaScript</figcaption>
+              </figure>
+              <figure>
+                <img src="images/html5-logo-31813.png" alt="HTML Icon" />
+                <figcaption>HTML5</figcaption>
+              </figure>
+              <figure>
+                <img src="images/html5-logo-31821.png" alt="CSS Icon" />
+                <figcaption>CSS</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="travelImg">
+            <img src="images/DashBoard.png" alt="Home Page" />
+            <img src="images/ExpenseCategory.png" alt="Home Page" />
+            <img
+              class="imgShrink"
+              src="images/DashBoardMobile.png"
+              alt="Home Page"
+            />
+            <img
+              class="imgShrink"
+              src="images/ExpenseCategoryMobile.png"
+              alt="Home Page"
+            />
+          </div>
         </div>
 
-
-
-        <!-- Adventure options -->
-        <section class="journeys" id="work">
-            <h2>
-                Recent Work
-            </h2>
-
-            <div class="journeysRow">
-                <div class="journeysColWeb">
-                    <h2>
-                        Personal Scrum Board
-                    </h2>
-                    <p>
-                        This SCRUM Board is built on React front end. It follows the Agile/Scrum process of product backlog, spring backlog, to do, in progress,
-                        completed, and finally tested. The app uses RESTful API architecture, implementing full CRUD operations, and utilizing Spring Boot for the backend
-                        and Postgres as the database.
-
-                    </p>
-                    <div class="submit-div">
-                        <!-- <button type="submit" class="seeLive"
+        <div class="journeysRow">
+          <div class="journeysColWeb">
+            <h2>Personal Scrum Board</h2>
+            <p>
+              This SCRUM Board is built on React front end. It follows the
+              Agile/Scrum process of product backlog, spring backlog, to do, in
+              progress, completed, and finally tested. The app uses RESTful API
+              architecture, implementing full CRUD operations, and utilizing
+              Spring Boot for the backend and Postgres as the database.
+            </p>
+            <div class="submit-div">
+              <!-- <button type="submit" class="seeLive"
                                         onclick="location.href='https://myscrumboard.vercel.app/';"
                                         value="See Live">See
                                         Live</button> -->
-                        <button type="submit" class="sourceCode"
-                            onclick="location.href='https://github.com/KeaweAquarian/ProjectScrumBoard';" value="Source Code">Source
-                            Code</button>
-
-                    </div>
-                    <div class="stackLogo">
-
-                        <figure>
-                            <img src="images/spring-3-logo.png" alt="Spring Icon">
-                            <figcaption>Spring Boot</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/react.png" alt="React Icon">
-                            <figcaption>React</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/postgres.png" alt="Postgres Icon">
-                            <figcaption>postgres</figcaption>
-                        </figure>
-                        <!-- <figure>
+              <button
+                type="submit"
+                class="sourceCode"
+                onclick="location.href='https://github.com/KeaweAquarian/ProjectScrumBoard';"
+                value="Source Code"
+              >
+                Source Code
+              </button>
+            </div>
+            <div class="stackLogo">
+              <figure>
+                <img src="images/spring-3-logo.png" alt="Spring Icon" />
+                <figcaption>Spring Boot</figcaption>
+              </figure>
+              <figure>
+                <img src="images/react.png" alt="React Icon" />
+                <figcaption>React</figcaption>
+              </figure>
+              <figure>
+                <img src="images/postgres.png" alt="Postgres Icon" />
+                <figcaption>postgres</figcaption>
+              </figure>
+              <!-- <figure>
                             <img src="images/elasticBeanstalk.jpg" alt="AWS icon">
                             <figcaption>AWS Beanstalk</figcaption>
                         </figure> -->
-                        <figure>
-                                <img src="images/Java_logo_PNG2.png" alt="Java Icon">
-                                <figcaption>Java</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/javascript-39417.png" alt="JavaScript Icon">
-                            <figcaption>JavaScript</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/html5-logo-31813.png" alt="HTML Icon">
-                            <figcaption>HTML5</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/html5-logo-31821.png" alt="CSS Icon">
-                            <figcaption>CSS</figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="travelImg" id="ImageDB">
-                    <img src="images/MacBook Pro 16.png" alt="Home Page">
-                    <img src="images/iPad Mini 2021.3.png" alt="Home Page">
-                </div>
+              <figure>
+                <img src="images/Java_logo_PNG2.png" alt="Java Icon" />
+                <figcaption>Java</figcaption>
+              </figure>
+              <figure>
+                <img src="images/javascript-39417.png" alt="JavaScript Icon" />
+                <figcaption>JavaScript</figcaption>
+              </figure>
+              <figure>
+                <img src="images/html5-logo-31813.png" alt="HTML Icon" />
+                <figcaption>HTML5</figcaption>
+              </figure>
+              <figure>
+                <img src="images/html5-logo-31821.png" alt="CSS Icon" />
+                <figcaption>CSS</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="travelImg" id="ImageDB">
+            <img src="images/MacBook Pro 16.png" alt="Home Page" />
+            <img src="images/iPad Mini 2021.3.png" alt="Home Page" />
+          </div>
+        </div>
+
+        <div class="journeysRow">
+          <div class="journeysColWeb">
+            <h2>My Chat GPT</h2>
+            <p>
+              A mock Chat GPT application that uses the Open AI API and their
+              text-davinci-003 model that can understand and generate natural
+              language responses to the clients requests. Test our application
+              to see how far AI has advanced.
+            </p>
+
+            <div class="submit-div">
+              <button
+                type="submit"
+                class="seeLive"
+                onclick="location.href='https://my-open-ai-git-master-keaweaquarian.vercel.app/';"
+                value="See Live"
+              >
+                See Live
+              </button>
+              <button
+                type="submit"
+                class="sourceCode"
+                onclick="location.href='https://github.com/KeaweAquarian/openAI';"
+                value="Source Code"
+              >
+                Source Code
+              </button>
+            </div>
+            <div class="stackLogo">
+              <figure>
+                <img src="images/html5-logo-31813.png" alt="HTML Icon" />
+                <figcaption>HTML5</figcaption>
+              </figure>
+              <figure>
+                <img src="images/html5-logo-31821.png" alt="CSS Icon" />
+                <figcaption>CSS</figcaption>
+              </figure>
+              <figure>
+                <img src="images/javascript-39417.png" alt="Javascript Icon" />
+                <figcaption>JavaScript</figcaption>
+              </figure>
+              <figure>
+                <img src="images/node-js.png" alt="Node Icon" />
+                <figcaption>Node.js</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="travelImg">
+            <img src="images/MacStudio.png" alt="Home Page" />
+            <img src="images/MacBookPro16.png" alt="Home Page" />
+            <img
+              class="imgShrink"
+              src="images/iPadPro2018.png"
+              alt="Home Page"
+            />
+            <img
+              class="imgShrink"
+              src="images/iPhone13Pro.png"
+              alt="Home Page"
+            />
+          </div>
+        </div>
+
+        <div class="journeysRow">
+          <div class="journeysCol">
+            <h2>Restaurant Online Order App</h2>
+            <p>
+              An interactive application to allow clients to order from their
+              favorite restaurant. A shopping cart is maintained through json
+              conversion.
+            </p>
+
+            <div class="submit-div">
+              <button
+                type="submit"
+                class="sourceCode"
+                onclick="location.href='https://github.com/KeaweAquarian/RestaurantApp';"
+                value="Source Code"
+              >
+                Source Code
+              </button>
+            </div>
+            <div class="stackLogo">
+              <figure>
+                <img src="images/Java_logo_PNG2.png" alt="Java Icon" />
+                <figcaption>Java</figcaption>
+              </figure>
+              <figure>
+                <img src="images/json.jpg" alt="Json Icon" />
+                <figcaption>JSON</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="images/android-logo-12380(1).png"
+                  alt="Android logo"
+                />
+                <figcaption>Android</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="popup" onclick="myFunction(2)">
+            <img src="images/MyRestaurant.png" alt="MyRestaurant" />
+            <div class="title">
+              <p>Click To See Demo</p>
             </div>
 
-            <div class="journeysRow">
-                <div class="journeysColWeb">
-                    <h2>
-                        My Chat GPT
-                    </h2>
-                    <p>
-                        A mock Chat GPT application that uses the Open AI API and their text-davinci-003 model that can
-                        understand and generate natural language
-                        responses to the clients requests. Test our application to see how far AI has advanced.
+            <div class="popuptext" id="myPopup2">
+              <video width="360" height="560" controls>
+                <source src="images/MyRestaurant.mp4" type="video/mp4" />
 
-                    </p>
-
-                    <div class="submit-div">
-                        <button type="submit" class="seeLive"
-                            onclick="location.href='https://my-open-ai-git-master-keaweaquarian.vercel.app/';"
-                            value="See Live">See
-                            Live</button>
-                        <button type="submit" class="sourceCode"
-                            onclick="location.href='https://github.com/KeaweAquarian/openAI';"
-                            value="Source Code">Source Code</button>
-                    </div>
-                    <div class="stackLogo">
-                        <figure>
-                            <img src="images/html5-logo-31813.png" alt="HTML Icon">
-                            <figcaption>HTML5</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/html5-logo-31821.png" alt="CSS Icon">
-                            <figcaption>CSS</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/javascript-39417.png" alt="Javascript Icon">
-                            <figcaption>JavaScript</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/node-js.png" alt="Node Icon">
-                            <figcaption>Node.js</figcaption>
-                        </figure>
-
-
-                    </div>
-                </div>
-                <div class="travelImg">
-                    <img src="images/MacStudio.png" alt="Home Page">
-                    <img src="images/MacBookPro16.png" alt="Home Page">
-                    <img class="imgShrink" src="images/iPadPro2018.png" alt="Home Page">
-                    <img class="imgShrink" src="images/iPhone13Pro.png" alt="Home Page">
-                </div>
-
+                Your browser does not support the video tag.
+              </video>
             </div>
+          </div>
+        </div>
 
-
-            <div class="journeysRow">
-                <div class="journeysCol">
-                    <h2>
-                        Restaurant Online Order App
-                    </h2>
-                    <p>
-                        An interactive application to allow clients to order from their favorite restaurant. A shopping
-                        cart is maintained
-                        through json conversion.
-                    </p>
-
-                    <div class="submit-div">
-                        <button type="submit" class="sourceCode"
-                            onclick="location.href='https://github.com/KeaweAquarian/RestaurantApp';"
-                            value="Source Code">Source Code</button>
-                    </div>
-                    <div class="stackLogo">
-                        <figure>
-                            <img src="images/Java_logo_PNG2.png" alt="Java Icon">
-                            <figcaption>Java</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/json.jpg" alt="Json Icon">
-                            <figcaption>JSON</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/android-logo-12380(1).png" alt="Android logo">
-                            <figcaption>Android</figcaption>
-                        </figure>
-
-                    </div>
-                </div>
-                <div class="popup" onclick="myFunction(2)">
-
-                    <img src="images/MyRestaurant.png" alt="MyRestaurant">
-                    <div class="title">
-                        <p>Click To See Demo</p>
-                    </div>
-
-                    <div class="popuptext" id="myPopup2">
-
-                        <video width="360" height="560" controls>
-                            <source src="images/MyRestaurant.mp4" type="video/mp4">
-
-                            Your browser does not support the video tag.
-                        </video>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-                        <!-- <div class="journeysRow">
+        <!-- <div class="journeysRow">
                             <div class="journeysColWeb">
                                 <h2>
                                     Image Database Using AWS s3 Buckets
@@ -336,183 +433,197 @@ script date Nov, 22 2022
                             </div>
                         </div> -->
 
-            <div class="journeysRow">
-                <div class="journeysCol">
-                    <h2>
-                        Restaurant Search App
-                    </h2>
-                    <p>
-                        Using the Yelp API database, I designed a search app that supplies a list of local restaurants
-                        based on
-                        the users search key words. User can add their favorites to a list database using SQL lite and
-                        accessed via a drag from
-                        left to right on the screen.
-                    </p>
+        <div class="journeysRow">
+          <div class="journeysCol">
+            <h2>Restaurant Search App</h2>
+            <p>
+              Using the Yelp API database, I designed a search app that supplies
+              a list of local restaurants based on the users search key words.
+              User can add their favorites to a list database using SQL lite and
+              accessed via a drag from left to right on the screen.
+            </p>
 
-                    <div class="submit-div">
-                        <button type="submit" class="sourceCode"
-                            onclick="location.href='https://github.com/KeaweAquarian/RestaurantApp';"
-                            value="Source Code">Source Code</button>
-                    </div>
-                    <div class="stackLogo">
-                        <figure>
-                            <img src="images/Java_logo_PNG2.png" alt="Java Icon">
-                            <figcaption>Java</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/Sqlite-square-icon.svg.png" alt="Sql Icon">
-                            <figcaption>SQL Lite</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/android-logo-12380(1).png" alt="Android logo">
-                            <figcaption>Android</figcaption>
-                        </figure>
-
-                    </div>
-                </div>
-                <div class="popup" onclick="myFunction(1)">
-
-                    <img src="images/MyYelpSearch.png" alt="MyYelp">
-                    <div class="title">
-                        <p>Click To See Demo</p>
-                    </div>
-
-                    <div class="popuptext" id="myPopup1">
-
-                        <video width="360" height="560" controls>
-                            <source src="images/RestaurantSearch.mp4" type="video/mp4">
-
-                            Your browser does not support the video tag.
-                        </video>
-
-                    </div>
-
-                </div>
-
+            <div class="submit-div">
+              <button
+                type="submit"
+                class="sourceCode"
+                onclick="location.href='https://github.com/KeaweAquarian/RestaurantApp';"
+                value="Source Code"
+              >
+                Source Code
+              </button>
+            </div>
+            <div class="stackLogo">
+              <figure>
+                <img src="images/Java_logo_PNG2.png" alt="Java Icon" />
+                <figcaption>Java</figcaption>
+              </figure>
+              <figure>
+                <img src="images/Sqlite-square-icon.svg.png" alt="Sql Icon" />
+                <figcaption>SQL Lite</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="images/android-logo-12380(1).png"
+                  alt="Android logo"
+                />
+                <figcaption>Android</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="popup" onclick="myFunction(1)">
+            <img src="images/MyYelpSearch.png" alt="MyYelp" />
+            <div class="title">
+              <p>Click To See Demo</p>
             </div>
 
-            <div class="journeysRow">
-                <div class="journeysColWeb">
-                    <h2>
-                        Web Dev Navigations
-                    </h2>
-                    <p>
-                        A website for a travel agency offering vacation packages and travel insurance. Developed with
-                        HTML, CSS and JavaScript.
+            <div class="popuptext" id="myPopup1">
+              <video width="360" height="560" controls>
+                <source src="images/RestaurantSearch.mp4" type="video/mp4" />
 
-                    </p>
-
-                    <div class="submit-div">
-                        <button type="submit" class="seeLive"
-                            onclick="location.href='https://keaweaquarian.github.io/WebDevNav/';" value="See Live">See
-                            Live</button>
-                        <button type="submit" class="sourceCode"
-                            onclick="location.href='https://github.com/KeaweAquarian/WebDevNav';"
-                            value="Source Code">Source Code</button>
-                    </div>
-                    <div class="stackLogo">
-                        <figure>
-                            <img src="images/html5-logo-31813.png" alt="HTML Icon">
-                            <figcaption>HTML5</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/html5-logo-31821.png" alt="CSS Icon">
-                            <figcaption>CSS</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/javascript-39417.png" alt="Javascript Icon">
-                            <figcaption>JavaScript</figcaption>
-                        </figure>
-
-
-                    </div>
-                </div>
-                <div class="travelImg">
-                    <img src="images/labtopMockup.png" alt="Home Page">
-                    <img src="images/desktopMockup2.png" alt="Home Page">
-                    <img src="images/desktopMockup3.png" alt="Home Page">
-                    <img src="images/InsuranceTablet.png" alt="Home Page">
-                </div>
-
+                Your browser does not support the video tag.
+              </video>
             </div>
+          </div>
+        </div>
 
-        </section>
+        <div class="journeysRow">
+          <div class="journeysColWeb">
+            <h2>Web Dev Navigations</h2>
+            <p>
+              A website for a travel agency offering vacation packages and
+              travel insurance. Developed with HTML, CSS and JavaScript.
+            </p>
 
-        <!-- Services -->
-        <section class="services">
-            <h2>
-                Other Experience
-            </h2>
+            <div class="submit-div">
+              <button
+                type="submit"
+                class="seeLive"
+                onclick="location.href='https://keaweaquarian.github.io/WebDevNav/';"
+                value="See Live"
+              >
+                See Live
+              </button>
+              <button
+                type="submit"
+                class="sourceCode"
+                onclick="location.href='https://github.com/KeaweAquarian/WebDevNav';"
+                value="Source Code"
+              >
+                Source Code
+              </button>
+            </div>
+            <div class="stackLogo">
+              <figure>
+                <img src="images/html5-logo-31813.png" alt="HTML Icon" />
+                <figcaption>HTML5</figcaption>
+              </figure>
+              <figure>
+                <img src="images/html5-logo-31821.png" alt="CSS Icon" />
+                <figcaption>CSS</figcaption>
+              </figure>
+              <figure>
+                <img src="images/javascript-39417.png" alt="Javascript Icon" />
+                <figcaption>JavaScript</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="travelImg">
+            <img src="images/labtopMockup.png" alt="Home Page" />
+            <img src="images/desktopMockup2.png" alt="Home Page" />
+            <img src="images/desktopMockup3.png" alt="Home Page" />
+            <img src="images/InsuranceTablet.png" alt="Home Page" />
+          </div>
+        </div>
+      </section>
 
-            <div class="servicesRow">
+      <!-- Services -->
+      <section class="services">
+        <h2>Other Experience</h2>
 
-                <div class="servicesPopup" onclick="myFunction(3)">
-                    <div class="servicesCol">
-                        <img src="images/microservices.png" alt="Microservices icon">
-                        <div class="servicesTitle">
-                            <h3>Microservices</h3>
-                        </div>
+        <div class="servicesRow">
+          <div class="servicesPopup" onclick="myFunction(3)">
+            <div class="servicesCol">
+              <img src="images/microservices.png" alt="Microservices icon" />
+              <div class="servicesTitle">
+                <h3>Microservices</h3>
+              </div>
 
-                        <div class="servicesPopuptext" id="myPopup3">
-                            <h4>
-                                Using Spring Boot as the IDE and Eureka server as the registry service I have developed
-                                integrated microservices.
-                                An example of a monthly fruit price database service can be seen at the link below.
-                            </h4>
-                            <button type="submit" class="sourceCode"
-                                onclick="location.href='https://github.com/KeaweAquarian/FruitPriceDataBase';"
-                                value="Source Code">Source Code</button>
-                            <div class="servicesLogo">
-                                <figure>
-                                    <img src="images/Java_logo_PNG2.png" alt="Java Icon">
-                                    <figcaption>Java</figcaption>
-                                </figure>
-                                <figure>
-                                    <img src="images/spring-3-logo.png" alt="Spring Boot Icon">
-                                    <figcaption> Spring Boot</figcaption>
-                                </figure>
-                                <figure>
-                                    <img src="images/eureuka.png" alt="Euruka Icon">
-                                    <figcaption>Eureka</figcaption>
-                                </figure>
-                            </div>
-
-                        </div>
-                    </div>
+              <div class="servicesPopuptext" id="myPopup3">
+                <h4>
+                  Using Spring Boot as the IDE and Eureka server as the registry
+                  service I have developed integrated microservices. An example
+                  of a monthly fruit price database service can be seen at the
+                  link below.
+                </h4>
+                <button
+                  type="submit"
+                  class="sourceCode"
+                  onclick="location.href='https://github.com/KeaweAquarian/FruitPriceDataBase';"
+                  value="Source Code"
+                >
+                  Source Code
+                </button>
+                <div class="servicesLogo">
+                  <figure>
+                    <img src="images/Java_logo_PNG2.png" alt="Java Icon" />
+                    <figcaption>Java</figcaption>
+                  </figure>
+                  <figure>
+                    <img
+                      src="images/spring-3-logo.png"
+                      alt="Spring Boot Icon"
+                    />
+                    <figcaption>Spring Boot</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="images/eureuka.png" alt="Euruka Icon" />
+                    <figcaption>Eureka</figcaption>
+                  </figure>
                 </div>
+              </div>
+            </div>
+          </div>
 
-                <div class="servicesPopup" onclick="myFunction(4)">
-                    <div class="servicesCol">
-                        <img src="images/restful2.png" alt="Rest icon">
-                        <div class="servicesTitle">
-                            <h3>Rest Services</h3>
-                        </div>
+          <div class="servicesPopup" onclick="myFunction(4)">
+            <div class="servicesCol">
+              <img src="images/restful2.png" alt="Rest icon" />
+              <div class="servicesTitle">
+                <h3>Rest Services</h3>
+              </div>
 
-                        <div class="servicesPopuptext" id="myPopup4">
-                            <h4>
-                                Visit my GitHub to see a demonstration of a restful service that stores details about
-                                books as an object which can be updated
-                                deleted or searched.
-                            </h4>
-                            <button type="submit" class="sourceCode"
-                                onclick="location.href='https://github.com/KeaweAquarian/RestfulBookService';"
-                                value="Source Code">Source Code</button>
-                            <div class="servicesLogo">
-                                <figure>
-                                    <img src="images/Java_logo_PNG2.png" alt="Java Icon">
-                                    <figcaption>Java</figcaption>
-                                </figure>
-                                <figure>
-                                    <img src="images/IntelliJ_IDEA_Icon.svg.png" alt="IntelliJ_IDEA_Icon">
-                                    <figcaption>IntelliJ</figcaption>
-                                </figure>
-                            </div>
-
-                        </div>
-                    </div>
+              <div class="servicesPopuptext" id="myPopup4">
+                <h4>
+                  Visit my GitHub to see a demonstration of a restful service
+                  that stores details about books as an object which can be
+                  updated deleted or searched.
+                </h4>
+                <button
+                  type="submit"
+                  class="sourceCode"
+                  onclick="location.href='https://github.com/KeaweAquarian/RestfulBookService';"
+                  value="Source Code"
+                >
+                  Source Code
+                </button>
+                <div class="servicesLogo">
+                  <figure>
+                    <img src="images/Java_logo_PNG2.png" alt="Java Icon" />
+                    <figcaption>Java</figcaption>
+                  </figure>
+                  <figure>
+                    <img
+                      src="images/IntelliJ_IDEA_Icon.svg.png"
+                      alt="IntelliJ_IDEA_Icon"
+                    />
+                    <figcaption>IntelliJ</figcaption>
+                  </figure>
                 </div>
+              </div>
+            </div>
+          </div>
 
-                <!-- <div class="servicesPopup" onclick="myFunction(5)">
+          <!-- <div class="servicesPopup" onclick="myFunction(5)">
                     <div class="servicesCol">
                         <img src="images/soap.png" alt="soap icon">
                         <div class="servicesTitle">
@@ -542,108 +653,120 @@ script date Nov, 22 2022
                     </div>
                 </div> -->
 
-                <div class="servicesPopup" onclick="myFunction(7)">
-                    <div class="servicesCol">
-                        <img src="images/networking.png" alt="database icon">
-                        <div class="servicesTitle">
-                            <h3>Networking</h3>
-                        </div>
+          <div class="servicesPopup" onclick="myFunction(7)">
+            <div class="servicesCol">
+              <img src="images/networking.png" alt="database icon" />
+              <div class="servicesTitle">
+                <h3>Networking</h3>
+              </div>
 
-                        <div class="servicesPopuptext" id="myPopup7">
-                            <h4>
-                                Fundamental concepts and practices of network principles, local area and wide-area
-                                networks,
-                                network topology, network protocols, Internet/intranets, client/server communication,
-                                and file sharing.
-                            </h4>
-                            <button type="submit" class="sourceCode"
-                                onclick="location.href='https://github.com/KeaweAquarian/Networking';"
-                                value="Source Code">Source Code</button>
-                            <div class="servicesLogo">
-                                <figure>
-                                    <img src="images/cisco.png" alt="cisco logo">
-                                    <figcaption>Cisco Packet Tracer</figcaption>
-                                </figure>
-                            </div>
-
-                        </div>
-                    </div>
+              <div class="servicesPopuptext" id="myPopup7">
+                <h4>
+                  Fundamental concepts and practices of network principles,
+                  local area and wide-area networks, network topology, network
+                  protocols, Internet/intranets, client/server communication,
+                  and file sharing.
+                </h4>
+                <button
+                  type="submit"
+                  class="sourceCode"
+                  onclick="location.href='https://github.com/KeaweAquarian/Networking';"
+                  value="Source Code"
+                >
+                  Source Code
+                </button>
+                <div class="servicesLogo">
+                  <figure>
+                    <img src="images/cisco.png" alt="cisco logo" />
+                    <figcaption>Cisco Packet Tracer</figcaption>
+                  </figure>
                 </div>
+              </div>
+            </div>
+          </div>
 
-                <div class="servicesPopup" onclick="myFunction(6)">
-                    <div class="servicesCol">
-                        <img src="images/database.png" alt="database icon">
-                        <div class="servicesTitle">
-                            <h3>Databases</h3>
-                        </div>
+          <div class="servicesPopup" onclick="myFunction(6)">
+            <div class="servicesCol">
+              <img src="images/database.png" alt="database icon" />
+              <div class="servicesTitle">
+                <h3>Databases</h3>
+              </div>
 
-                        <div class="servicesPopuptext" id="myPopup6">
-                            <h4>
-                                Using both MySQL and SQL server I have experience designing and maintaining databases.
-                                Please visit my GitHub to
-                                see a sample database for a lending library.
-                            </h4>
-                            <button type="submit" class="sourceCode"
-                                onclick="location.href='https://github.com/KeaweAquarian/LibraryDataBase';"
-                                value="Source Code">Source Code</button>
-                            <div class="servicesLogo">
-                                <figure>
-                                    <img src="images/sql-server-icon-png-1.png" alt="">
-                                    <figcaption>SQL Server</figcaption>
-                                </figure>
-                            </div>
-
-                        </div>
-                    </div>
+              <div class="servicesPopuptext" id="myPopup6">
+                <h4>
+                  Using both MySQL and SQL server I have experience designing
+                  and maintaining databases. Please visit my GitHub to see a
+                  sample database for a lending library.
+                </h4>
+                <button
+                  type="submit"
+                  class="sourceCode"
+                  onclick="location.href='https://github.com/KeaweAquarian/LibraryDataBase';"
+                  value="Source Code"
+                >
+                  Source Code
+                </button>
+                <div class="servicesLogo">
+                  <figure>
+                    <img src="images/sql-server-icon-png-1.png" alt="" />
+                    <figcaption>SQL Server</figcaption>
+                  </figure>
                 </div>
-
-
+              </div>
             </div>
-        </section>
-
-        <div class="journeysRow" id="contact">
-            <div class="journeysCol">
-                <h1>
-                    Get In Touch
-                </h1>
-                <p>
-                    Currently I am actively looking to add my skills and energy to a growing team. Able to quickly adapt
-                    to new environments
-                    and learn new technologies, I can be depended upon to make a capable addition to your team.
-                </p>
-                <a href="mailto: keaweaquarian@gmail.com"><button type="submit" class="seeLive" value="See Live">Contact
-                        Me</button>
-                </a>
-
-            </div>
-
-
+          </div>
         </div>
+      </section>
 
+      <div class="journeysRow" id="contact">
+        <div class="journeysCol">
+          <h1>Get In Touch</h1>
+          <p>
+            Currently I am actively looking to add my skills and energy to a
+            growing team. Able to quickly adapt to new environments and learn
+            new technologies, I can be depended upon to make a capable addition
+            to your team.
+          </p>
+          <a href="mailto: keaweaquarian@gmail.com"
+            ><button type="submit" class="seeLive" value="See Live">
+              Contact Me
+            </button>
+          </a>
+        </div>
+      </div>
     </main>
 
     <footer>
-        <h3>A Peak In My Head</h3>
-        <p>Originally from San Francisco, now permanently in love with Montreal. I love waking up early to enjoy the quiet moments in the morning watching the city come alive while I drink my
-            coffee. I am the father of two beautiful children, with whom I spend much of my time keeping entertained. I jog and do CrossFit and have been
-            known to
-            lace up my dancing shoes and do a bit of swing dancing in the city.
-        </p>
-        <div class="social">
-            <a href="https://github.com/KeaweAquarian"><i class="fa fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/keawe-aquarian-70482870/"><i class="fa fa-linkedin"></i></a>
-            <a href="https://twitter.com/KeaweAquarian"><i class="fa fa-twitter"></i></a>
-            <a href="https://www.instagram.com/keaweaquarian/"><i class="fa fa-instagram"></i></a>
+      <h3>A Peak In My Head</h3>
+      <p>
+        Originally from San Francisco, now permanently in love with Montreal. I
+        love waking up early to enjoy the quiet moments in the morning watching
+        the city come alive while I drink my coffee. I am the father of two
+        beautiful children, with whom I spend much of my time keeping
+        entertained. I jog and do CrossFit and have been known to lace up my
+        dancing shoes and do a bit of swing dancing in the city.
+      </p>
+      <div class="social">
+        <a href="https://github.com/KeaweAquarian"
+          ><i class="fa fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/keawe-aquarian-70482870/"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+        <a href="https://twitter.com/KeaweAquarian"
+          ><i class="fa fa-twitter"></i
+        ></a>
+        <a href="https://www.instagram.com/keaweaquarian/"
+          ><i class="fa fa-instagram"></i
+        ></a>
+      </div>
 
-        </div>
-
-        <p class="footer-text">
-            © Copyright 2022. Designed and built by Keawe Aquarian
-        </p>
+      <p class="footer-text">
+        © Copyright 2022. Designed and built by Keawe Aquarian
+      </p>
     </footer>
     <script src="https://unpkg.com/headroom.js"></script>
 
     <script src="script/index.js"></script>
-</body>
-
+  </body>
 </html>

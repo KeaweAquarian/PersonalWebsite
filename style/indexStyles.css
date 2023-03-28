@@ -410,6 +410,9 @@ main img {
 .stackLogo {
   padding: 0;
   margin-top: 20px;
+  display: grid;
+  grid-template-columns: 105px 105px 105px 105px;
+  gap: 1em;
 }
 
 .stackLogo figure {
